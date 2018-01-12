@@ -5,7 +5,7 @@
 #' @param set2 Data frame or matrix one or more columns wide.
 #' @param na.rm Logical, if \code{TRUE} then any rows in \code{set1} or \code{set2} with at least one \code{NA} are removed first.
 #' @return Matrix with \code{nrow(set1)} rows and \code{nrow(set2)} columns.
-#' @seealso \code{\link[stats]dist}}
+#' @seealso \code{\link[stats]{dist}}
 #' @examples
 #' set1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
 #' set2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
