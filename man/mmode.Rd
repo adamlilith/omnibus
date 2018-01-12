@@ -17,3 +17,7 @@ Numeric, character, or factor value.
 \description{
 Calculate the mode of numeric, character, or factor data.
 }
+\examples{
+mmode(round(10 * rnorm(1000, 2)))
+mmode(c('a', 'b', 'b', 'b', 'c', 'd', 'd'))
+}
