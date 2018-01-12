@@ -24,3 +24,6 @@ set1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
 set2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
 pairDist(set1, set2)
 }
+\seealso{
+\code{\link[stats]{dist}}
+}

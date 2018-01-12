@@ -91,5 +91,5 @@ gradLegend(
 )
 }
 \seealso{
-\code{\link{graphics::legend}}
+\code{\link[graphics]{legend}}
 }

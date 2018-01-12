@@ -26,7 +26,7 @@ annulus(x, y, inner, outer, deg = c(0, 360), n = 1000, col = "black",
 
 \item{force0}{Logical, if \code{TRUE} then negative values of inner and outer are coerced to equal 0. If \code{FALSE} then throws an error.}
 
-\item{...}{Arguments to send to [graphics::polygon()].}
+\item{...}{Arguments to send to \code{\link{graphics::polygon}}.}
 }
 \value{
 Nothing (side-effect is to add an annulus to an existing plot).
@@ -40,5 +40,5 @@ annulus(x=0.3, y=-0.2, inner=1, outer=0.6, col='cornflowerblue')
 annulus(x=-0.3, y=0.2, inner=1, outer=0.6, deg=c(0, 135), col='firebrick1', border='black')
 }
 \seealso{
-\code{\link{graphics::polygon()}}
+\code{\link{graphics::polygon}}
 }

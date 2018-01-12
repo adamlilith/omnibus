@@ -9,7 +9,7 @@ listFiles(x, ...)
 \arguments{
 \item{x}{Path name of folder containing files to list.}
 
-\item{...}{Arguments to pass to \code{list.files()} (other than \code{full.names}).}
+\item{...}{Arguments to pass to \code{list.files} (other than \code{full.names}).}
 }
 \value{
 Character list.
@@ -23,5 +23,5 @@ listFiles(R.home())
 listFiles(R.home(), pattern='README')
 }
 \seealso{
-\code{\link{list.files()}}
+\code{\link[base]{list.files}}
 }

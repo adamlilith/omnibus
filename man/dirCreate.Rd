@@ -2,7 +2,7 @@
 % Please edit documentation in R/dirCreate.r
 \name{dirCreate}
 \alias{dirCreate}
-\title{Replacement for \code{\link{base::dir.create()}}.}
+\title{Replacement for dir.create().}
 \usage{
 dirCreate(...)
 }
@@ -13,8 +13,8 @@ dirCreate(...)
 Nothing (creates a directory on the storage system).
 }
 \description{
-This function is a somewhat friendier version of \code{dir.create()} in that it automaticlaly sets \code{recursive=TRUE} and \code{showWarnings=FALSE} arguments.
+This function is a somewhat friendier version of \code{\link[base]{dir.create}} in that it automaticlaly sets \code{recursive=TRUE} and \code{showWarnings=FALSE} arguments.
 }
 \seealso{
-\code{\link{base::dir.create()}}
+\code{\link[base]{dir.create}}
 }
