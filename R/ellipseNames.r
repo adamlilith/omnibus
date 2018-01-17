@@ -7,8 +7,8 @@
 ellipseNames <- function(...) {
 
 	ellipses <- as.list(substitute(list(...)))[-1L]
-	inNames <- character()
-	for (i in seq_along(ellipses)) inNames <- c(inNames, as.character(ellipses[[i]]))
+	inNames <- rep(NA, length(ellipses))
+	for (i in seq_along(ellipses)) inNames[i] <- as.character(ellipses[[i]])
 	inNames
 	
 }
