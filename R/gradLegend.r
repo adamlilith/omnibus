@@ -39,8 +39,10 @@
 #'
 #' # rescale population (symbols size)
 #' popRescaled <- 0.1 + 3 * (log10(wealth$pop) - min(log10(wealth$pop)))
-#' plot(wealth$gdp, wealth$perCapGdp, pch=21, cex=popRescaled, bg=cols, xlab='GDP (Billion $)', ylab='GDP Per Capita ($)')
-#' text(wealth$gdp, wealth$perCapGdp, labels=as.character(wealth$country), pos=4, xpd=NA)
+#' plot(wealth$gdp, wealth$perCapGdp, pch=21,
+#' cex=popRescaled, bg=cols, xlab='GDP (Billion $)', ylab='GDP Per Capita ($)')
+#' text(wealth$gdp, wealth$perCapGdp, labels=as.character(wealth$country),
+#' pos=4, xpd=NA)
 #'
 #' gradLegend(
 #' 	x='bottomright',
