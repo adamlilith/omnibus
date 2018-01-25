@@ -2,7 +2,7 @@
 % Please edit documentation in R/pairDist.r
 \name{pairDist}
 \alias{pairDist}
-\title{Calculate pairwise distances between two matrices or data frames}
+\title{Calculate pairwise distances between two matrices or data frames.}
 \usage{
 pairDist(set1, set2, na.rm = FALSE)
 }
@@ -14,10 +14,10 @@ pairDist(set1, set2, na.rm = FALSE)
 \item{na.rm}{Logical, if \code{TRUE} then any rows in \code{set1} or \code{set2} with at least one \code{NA} are removed first.}
 }
 \value{
-Matrix with \code{nrow(set1)} rows and \code{nrow(set2)} columns.
+Matrix with \code{nrow(set1)} rows and \code{nrow(set2)} columns. Values are the distance between each row of \code{set1} and row of \code{set2}.
 }
 \description{
-This function takes two data frames or matrices and returns a matrix of Euclidean distances between the two.
+This function takes two data frames or matrices and returns a matrix of pairwise Euclidean distances between the two.
 }
 \examples{
 set1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))

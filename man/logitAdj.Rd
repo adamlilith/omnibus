@@ -9,7 +9,7 @@ logitAdj(x, epsilon = 0.01, base = 10)
 \arguments{
 \item{x}{Numeric list.}
 
-\item{epsilon}{Value to add/subtract from x to ensure log of 0 or 1 is not taken (usually a small number).}
+\item{epsilon}{Value to add/subtract from x to ensure log of 0 or 1 is not taken (usually a small number). If \code{NULL}, then the smallest value of any \code{x} > 0 and \code{1 - x} for all \code{x} < 1 is used.}
 
 \item{base}{Base of logarithm.}
 }
@@ -21,11 +21,13 @@ This function returns the logit value (\code{log(x / (1 - x))}) where a small va
 }
 \examples{
 set.seed(123)
-x <- c(0, 1, runif(10))
+x <- seq(0, 1, by=0.01)
 logitAdj(x)
 logitAdj(x, 0.001)
-logitAdj(x, base=2)
+probitAdj(x, 0.001)
+probitAdj(x, 0.001)
+probitAdj(x, auto = TRUE)
 }
 \seealso{
-[probitAdj()]
+\code{\link[omnibus]{probitAdj}}
 }
