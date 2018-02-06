@@ -13,7 +13,7 @@ dirCreate(...)
 Nothing (creates a directory on the storage system).
 }
 \description{
-This function is a somewhat friendier version of \code{\link[base]{dir.create}} in that it automaticlaly sets \code{recursive=TRUE} and \code{showWarnings=FALSE} arguments.
+This function is a somewhat friendier version of \code{\link[base]{dir.create}} in that it automatically sets \code{recursive=TRUE} and \code{showWarnings=FALSE} arguments.
 }
 \seealso{
 \code{\link[base]{dir.create}}
