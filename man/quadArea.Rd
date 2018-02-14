@@ -15,7 +15,7 @@ quadArea(x, y)
 Numeric (area of a quadrilateral in same units as \code{x} and \code{y}.
 }
 \description{
-Calculates the area of a quadrilaterial by dividing the quadrilateral into two triangles.
+Calculates the area of a quadrilateral by dividing it into two triangles and applying Heron's formula.
 }
 \examples{
 x <- c(0, 6, 4, 1)
@@ -23,4 +23,6 @@ y <- c(0, 1, 7, 4)
 quadArea(x, y)
 plot(1, type='n', xlim=c(0, 7), ylim=c(0, 7), xlab='x', ylab='y')
 polygon(x, y)
+text(x, y, LETTERS[1:4], pos=4)
+lines(x[c(1, 3)], y[c(1, 3)], lty='dashed', col='red')
 }

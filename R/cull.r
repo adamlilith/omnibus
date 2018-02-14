@@ -16,11 +16,11 @@ cull <- function(...) {
 	x <- list(...)
 
 	# if data frames or matrices
-	if (class(x[[1]]) %in% c('data.frame', 'maxtrix')) {
+	if (class(x[[1]]) %in% c('data.frame', 'matrix')) {
 		
 		# cull
 		minLength <- min(sapply(x, nrow))
-		for (i in seq_along(x)) x[[i]] <- x[[i]][1:minLength, ]
+		for (i in seq_along(x)) x[[i]] <- x[[i]][1:minLength, , drop=FALSE]
 
 	# if vectors
 	} else {
@@ -32,10 +32,6 @@ cull <- function(...) {
 	}
 	
 	# name elements of output same as names of x
-	# name elements of output same as names of x
-	# called <- as.list(substitute(list(...)))[-1L]
-	# inNames <- character()
-	# for (i in seq_along(x)) inNames <- c(inNames, as.character(called[[i]]))
 	inNames <- ellipseNames(...)
 	if (length(inNames) == length(x)) names(x) <- inNames
 	

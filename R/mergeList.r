@@ -27,10 +27,9 @@ mergeLists <- function(list1, list2) {
 
 	names1 <- names(list1)
 	names2 <- names(list2)
-	combinedNames <- sort(unique(c(names1, names2)))
+	combinedNames <- unique(c(names2, names1))
 
 	combined <- sapply(combinedNames, combineThem, list1=list1, list2=list2, simplify=FALSE)
-
 	combined
 	
 }
