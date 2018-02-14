@@ -15,13 +15,13 @@ gradLegend(x, y = NULL, inset = 0, width = 0.07, height = 0.1,
 
 \item{y}{Numeric or \code{NULL}.}
 
-\item{inset}{Numeric. If \code{x} is a word descrbing the position of the legend, then this is the degree to which the legend is inset (or outset, if negative) relative to the figure's border. If two values are supplied then the first pertains to the horizontal offset and the second the vertial offset.}
+\item{inset}{Numeric. If \code{x} is a word describing the position of the legend, then this is the degree to which the legend is inset (or outset, if negative) relative to the figure's border. If two values are supplied then the first pertains to the horizontal offset and the second the vertial offset.}
 
-\item{width}{Numeric. Scaling factor for box width (default is 1.2).}
+\item{width}{Numeric. Scaling factor for box width.}
 
-\item{height}{Numeric. Scaling factor for box height (default is 1.2).}
+\item{height}{Numeric. Scaling factor for box height.}
 
-\item{labels}{Vector of characters of numeric values. Labels (from least to most) of levels of the fcal variable indicated by the color ramp.}
+\item{labels}{Vector of characters of numeric values. Labels (from least to most) of levels of the focal variable indicated by the color ramp.}
 
 \item{labAdj}{Numeric between 0 and 1. Position of labels relative to the containing box.}
 
@@ -31,7 +31,7 @@ gradLegend(x, y = NULL, inset = 0, width = 0.07, height = 0.1,
 
 \item{title}{Character or \code{NULL}. Name of title for the legend.}
 
-\item{titleAdj}{Two numeric values between 0 and 1. Position of the legend relative to the container box. The first pertains to horizontal positioning and the second vertial positioning.}
+\item{titleAdj}{Two numeric values between 0 and 1. Position of the legend relative to the container box. The first pertains to horizontal positioning and the second vertical positioning.}
 
 \item{gradAdjX}{Two numeric values between 0 and 1. Size of the gradient bar in the x-dimension as a proportion of the container box size. The first pertains to the left side of the bar and the second the right side.}
 
