@@ -3,15 +3,15 @@
 #' This function adds a legend to an existing plot that shows a gradient in color. It first draws a "containing" box then a bar with a color gradient inside the box. A legend title and labels for levels indicated by the color bar can be added.
 #' @param x Numeric or character. Describes the location of the legend. This is a numeric value (in which case \code{y} must also be supplied) indicating the x-coordinate of the box surrounding the legend. Alternatively, it is a character describing the position of the box surrounding the legend relative to the existing plot (\code{'topleft'}, \code{'topright'}, \code{'bottomleft'},  or \code{'bottomright'}).
 #' @param y Numeric or \code{NULL}.
-#' @param inset Numeric. If \code{x} is a word descrbing the position of the legend, then this is the degree to which the legend is inset (or outset, if negative) relative to the figure's border. If two values are supplied then the first pertains to the horizontal offset and the second the vertial offset.
-#' @param width Numeric. Scaling factor for box width (default is 1.2).
-#' @param height Numeric. Scaling factor for box height (default is 1.2).
-#' @param labels Vector of characters of numeric values. Labels (from least to most) of levels of the fcal variable indicated by the color ramp.
+#' @param inset Numeric. If \code{x} is a word describing the position of the legend, then this is the degree to which the legend is inset (or outset, if negative) relative to the figure's border. If two values are supplied then the first pertains to the horizontal offset and the second the vertial offset.
+#' @param width Numeric. Scaling factor for box width.
+#' @param height Numeric. Scaling factor for box height.
+#' @param labels Vector of characters of numeric values. Labels (from least to most) of levels of the focal variable indicated by the color ramp.
 #' @param labAdj Numeric between 0 and 1. Position of labels relative to the containing box.
 #' @param col Character list. Names of colors to be used to create a gradient to fill the legend bar. The first color will be the lowest value and the last the highest value.
 #' @param border Character or integer. Name (or integer code) of color to use to draw border of the gradient bar.
 #' @param title Character or \code{NULL}. Name of title for the legend.
-#' @param titleAdj Two numeric values between 0 and 1. Position of the legend relative to the container box. The first pertains to horizontal positioning and the second vertial positioning.
+#' @param titleAdj Two numeric values between 0 and 1. Position of the legend relative to the container box. The first pertains to horizontal positioning and the second vertical positioning.
 #' @param gradAdjX Two numeric values between 0 and 1. Size of the gradient bar in the x-dimension as a proportion of the container box size. The first pertains to the left side of the bar and the second the right side.
 #' @param gradAdjY Two numeric values between 0 and 1. Size of the gradient bar in the y-dimension as a proportion of the container box size. The first pertains to the bottom of the bar and the second the top.
 #' @param boxBg Character or integer. Name (or integer code) of color to use to use for box containing legend. Leave as \code{NULL} to not draw a box.

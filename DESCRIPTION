@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
 Title: Ease-of-use tools
-Version: 0.1.5
-Date: 2018-01-25
+Version: 0.1.6
+Date: 2018-02-14
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: This package contains various functions. Its main feature is a set
