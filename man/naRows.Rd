@@ -4,7 +4,7 @@
 \alias{naRows}
 \title{Index any rows in a data frame or matrix that contain at least one \code{NA}}
 \usage{
-naRows(x)
+naRows(x, inf = FALSE)
 }
 \arguments{
 \item{x}{Data frame or matrix.}
@@ -18,4 +18,7 @@ This function returns the row number of any row in a data frame or matrix that h
 \examples{
 x <- data.frame(a=1:5, b=c(1, 2, NA, 4, 5), c=c('a', 'b', 'c', 'd', NA))
 naRows(x)
+x <- data.frame(a=1:5, b=c(1, 2, NA, 4, 5), c=c('a', 'b', 'c', Inf, NA))
+naRows(x, TRUE)
+naRows(x, FALSE)
 }
