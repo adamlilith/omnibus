@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
 Title: Ease-of-use tools
-Version: 0.2.0
-Date: 2018-02-14
+Version: 0.2.1
+Date: 2018-03-19
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: This package contains various functions. Its main feature is a set
@@ -13,4 +13,4 @@ Depends:
 License: GPL-3
 RoxygenNote: 6.0.1
 Imports:
-Suggests:
+Suggests: 
