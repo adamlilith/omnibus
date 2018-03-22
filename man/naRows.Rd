@@ -4,10 +4,14 @@
 \alias{naRows}
 \title{Index any rows in a data frame or matrix that contain at least one \code{NA}}
 \usage{
-naRows(x)
+naRows(x, inf = FALSE, inverse = FALSE)
 }
 \arguments{
 \item{x}{Data frame or matrix.}
+
+\item{inf}{Logical, if \code{TRUE} then also return row numbers of rows in which at least one element is \code{Inf} or \code{-Inf}. The default is \code{FALSE}.}
+
+\item{inverse}{Logical, if \code{TRUE} then return row numbers of rows that \emph{do not} have \code{NA}s (and possibly \code{Inf} or \code{-Inf}).  The default is \code{FALSE}.}
 }
 \value{
 Integer vector.
