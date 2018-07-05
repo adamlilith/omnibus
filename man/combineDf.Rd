@@ -11,9 +11,13 @@ combineDf(..., crosswalk, sep = "; ", use = NULL, classes = NULL,
 \item{...}{A list of data frames. If ignored, then paths and file names of data frames can be specified in \code{crosswalk}.}
 
 \item{crosswalk}{Data frame. Column names are fields desired in the output data frame. Each row corresponds to a different data frame to join. If \code{...} is not used then the first column \emph{must} have the paths and file names to CSV, RDS, or RData files representing data frames to join. Other than this column, the elements of each cell contain the name of the column in each data frame that coincides with the column name in the \code{crosswalk} table.  For example, if the final output is to have a column by the name of "species" and "data frame #1" has a column named "Species" and "data frame #2" has a column named "scientificName", then the first value in \code{crosswalk} under its "species" column will be "Species" and the second "scientificName". More complex joining can be done using the following in cells of \code{crosswalk}:
-* \code{_} at start of value: indicates the value in the \code{crosswalk} table will be read as text and repeated in the output in each row (minus the initial "_"). For example, "_inspected" will repeat the string "inspected" in every row of the output corresponding to the respective data frame.
-* \code{c(~~~~)}: This will paste together fields in source data frame named in ~~~~ using the string specified in \code{sep} ("~~~~" represents names of the respective data frame).
-* \code{NA}: Repeats \code{NA}.}
+\itemize{
+\item \code{_} at start of value: indicates the value in the \code{crosswalk} table will be read as text and repeated in the output in each row (minus the initial "_"). For example, "_inspected" will repeat the string "inspected" in every row of the output corresponding to the respective data frame.
+\item \code{c(~~~~)}: This will paste together fields in source data frame named in ~~~~ using the string specified in \code{sep} ("~~~~" represents names of the respective data frame).
+\item \code{NA}: Repeats \code{NA}.
+}}
+
+\item{sep}{Character, specifies the string to put between fields combined with the \code{c(~~~~)} format in \code{crosswalk}.}
 
 \item{use}{Logical, Character, or NULL, if \code{...} is used then this is a list of logical elements (\code{TRUE} or \code{FALSE}), \emph{or} a column name of \code{crosswalk} with logical values indicating whether or not this particular data frame is to be collated, \code{or} \code{NULL}, in which case all data frames are used (default).}
 

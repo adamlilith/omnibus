@@ -2,7 +2,7 @@ Package: omnibus
 Type: Package
 Title: Ease-of-use tools
 Version: 0.2.1
-Date: 2018-02-14
+Date: 2018-07-05
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: This package contains various functions. Its main feature is a set
@@ -10,7 +10,8 @@ Description: This package contains various functions. Its main feature is a set
     that are almost always used or othewise have better functionality.
 URL: http://www.earthSkySea.org
 Depends:
-License: GPL-3
+License: GPL (>=3)
+LazyLoad: yes
 RoxygenNote: 6.0.1
 Imports:
 Suggests:
