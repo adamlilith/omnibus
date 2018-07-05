@@ -2,12 +2,14 @@
 % Please edit documentation in R/probitAdj.r
 \name{probitAdj}
 \alias{probitAdj}
-\title{The inverse of the [logitAdj()] function which is robust to cases that equal 0 or 1}
+\title{The inverse of the \code{\link[omnibus]{logitAdj}} function which is robust to cases that equal 0 or 1}
 \usage{
 probitAdj(x, epsilon = 0.01, base = 10, auto = FALSE)
 }
 \arguments{
 \item{x}{Numeric list.}
+
+\item{epsilon}{Value or character.  If a numeric value (typically ~0.01 or smaller), then this is added/subtracted from \code{x} to ensure log of 0 or 1 is not taken. If equal to \code{auto} then the value of \code{epsilon} is taken from the attributes of \code{x}. If \code{x} has no such attribute, a warning is given and a value of 0.01 is used.}
 
 \item{base}{Base of logarithm. Use \code{base=exp(1)} for base \code{e}.}
 
@@ -17,7 +19,7 @@ probitAdj(x, epsilon = 0.01, base = 10, auto = FALSE)
 Numeric.
 }
 \description{
-This function is the inverse of the \code{logitAdj()}. That function calculates the logit of values but is robust to cases where the operanc is 0 or 1. The adjusted probit is equal to \code{(base^x + epsilon * base^x - epsilon) / (base^x + 1)}.
+This function is the inverse of \code{\link[omnibus]{logitAdj}}. That function calculates the logit of values but is robust to cases where the operanc is 0 or 1. The adjusted probit is equal to \code{(base^x + epsilon * base^x - epsilon) / (base^x + 1)}.
 }
 \examples{
 x <- seq(0, 1, by=0.1)

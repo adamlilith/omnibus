@@ -55,7 +55,7 @@ rotMatrix <- function(
 
 	# ## trim coordinates outside raster
 	# coordsValues <- coordsValues[coordValues$newX >= 1 & coordValues$newX <= ncol(x) & coordValues$newY >= 1 & coordValues$newY <= nrow(x), ]
-	coordsValues <- subset(coordsValues, newX >= 1 & newX <= ncol(x) & newY >= 1 & newY <= nrow(x))
+	coordsValues <- subset(coordsValues, coordsValues$newX >= 1 & coordsValues$newX <= ncol(x) & coordsValues$newY >= 1 & coordsValues$newY <= nrow(x))
 
 	# ## remove lines with NA
 	# coordsValues <- subset( coordsValues, !is.na(coordsValues$newX) & !is.na(coordsValues$newY) )

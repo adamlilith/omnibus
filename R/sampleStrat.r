@@ -11,31 +11,33 @@
 #' @return A data frame with one column swapped in a stratified manner relative another column or set of columns.
 #' @seealso \code{\link[base]{sample}}
 #' @examples
-#' Example #1: Scramble column 1 with respect to columns 2 and 3.
-#' Note in the output high values of a tend to be associated with
-#' high values of b and low values of c. This tendency decreases as w increases.
+#' # Example #1: Scramble column 1 with respect to columns 2 and 3.
+#' # Note in the output high values of "a" tend to be associated with
+#' # high values of "b" and low values of "c". This tendency decreases as "w" increases.
 #'
 #' x <- data.frame(a=1:20, b=1:20, c=20:1, d=c(rep('a', 10), rep('b', 10)))
 #' x
+#'
 #' # scramble by all other columns
 #' sampleStrat(x=x, col=1, w=0.2, by='all', d=0.1)
+#'
 #' # scramble by column "d"
 #' sampleStrat(x=x, col=1, w=0.2, by='d', d=0.1)
 #'
-#' Example #2: The target variable and covariate are equal
-#' (perfectly collinear). How wide must the window (set by
-#' argument 'w') be to reduce the average correlation
-#' between them to an arbitrary low level?
+#' # Example #2: The target variable and covariate are equal
+#' # (perfectly collinear). How wide must the window (set by
+#' # argument "w'" be to reduce the average correlation
+#' # between them to an arbitrary low level?
 #'
 #' df=data.frame(a=1:100, b=1:100)
 #' cor(df) #' perfect correlation
 #'
 #' corFrame <- data.frame()
 #' for (thisW in seq(0.1, 1, 0.1)) {
-#'  for (countRep in 1:10) { #' iterate 10 times
-#'  df2 <- sampleStrat(x=df, col=1, w=thisW)
-#'  corFrame <- rbind(corFrame, data.frame(w=thisW, cor=cor(df2)[1, 2]))
-#' }
+#'     for (countRep in 1:10) {
+#'         df2 <- sampleStrat(x=df, col=1, w=thisW)
+#'        corFrame <- rbind(corFrame, data.frame(w=thisW, cor=cor(df2)[1, 2]))
+#'     }
 #' }
 #'
 #' boxplot(cor ~ w, data=corFrame, xlab='w', ylab='correlation coefficient')
