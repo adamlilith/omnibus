@@ -5,7 +5,7 @@
 #' @param crosswalk Data frame. Column names are fields desired in the output data frame. Each row corresponds to a different data frame to join. If \code{...} is not used then the first column \emph{must} have the paths and file names to CSV, RDS, or RData files representing data frames to join. Other than this column, the elements of each cell contain the name of the column in each data frame that coincides with the column name in the \code{crosswalk} table.  For example, if the final output is to have a column by the name of "species" and "data frame #1" has a column named "Species" and "data frame #2" has a column named "scientificName", then the first value in \code{crosswalk} under its "species" column will be "Species" and the second "scientificName". More complex joining can be done using the following in cells of \code{crosswalk}:
 #' \itemize{
 #' \item \code{_} at start of value: indicates the value in the \code{crosswalk} table will be read as text and repeated in the output in each row (minus the initial "_"). For example, "_inspected" will repeat the string "inspected" in every row of the output corresponding to the respective data frame.
-#' \item \code{c(~~~~)}: This will paste together fields in source data frame named in ~~~~ using the string specified in \code{sep} ("~~~~" represents names of the respective data frame).
+#' \item \code{'c(~~~)'}: This will paste together fields in source data frame named in ... using the string specified in \code{sep} ("~~~" represents names of the respective data frame). Note that the entire string must be inside a single or double quotes as in \code{'c()'} or \code{"c()"} and the columns named inside \code{c()} must be delineated by the other kind of quote (single if \code{c()} is delineated by double, and vice versa).
 #' \item \code{NA}: Repeats \code{NA}.
 #' }
 #' @param classes Character or character list, specifies the classes (e.g., numeric, character) to be assigned to each column in the output table. If NULL, all classes will be assumed to be character.  If just one value is listed, all columns will be set to this class. If a list, it must be the same length as the number of columns in \code{crosswalk} and specify the class of each column.
@@ -78,10 +78,47 @@ combineDf <- function(
 		}
 
 		# populate each column in new data frame
-		newFrame <- if (dfSource == 'dots') {
-			data.frame(x=as.character(sourceFrame[ , crosswalk[countDf, 1]]))
+		if (dfSource == 'crosswalk') {
+			newFrame <- data.frame(x=rep(as.character(crosswalk[countDf, 1]), nrow(sourceFrame)))
 		} else {
-			data.frame(x=rep(as.character(crosswalk[countDf, 1]), nrow(sourceFrame)))
+		
+			countCol <- 1
+		
+			# add NA values
+			if (is.na(crosswalk[countDf, countCol])) {
+
+				newFrame <- data.frame(x=rep(NA, nrow(sourceFrame)))
+
+			# repeat values
+			} else if (substr(x=as.character(crosswalk[countDf, countCol]), start=1, stop=1)=='_') {
+
+				newFrame <- data.frame(x=rep(substr(x=as.character(crosswalk[countDf, countCol]), start=2, stop=nchar(as.character(crosswalk[countDf, countCol]))), nrow(sourceFrame)))
+
+			# concatenate values
+			} else if (substr(x=as.character(crosswalk[countDf, countCol]), start=1, stop=2)=='c(') {
+
+					# get names of fields to paste
+					fieldsToPaste <- eval(parse(text=as.character(crosswalk[countDf, countCol])))
+
+					# add first source field
+					newField <- as.character(sourceFrame[ , fieldsToPaste[1]])
+
+					# add each additional source field
+					for (countVal in 2:length(fieldsToPaste)) {
+
+						newField <- paste(newField, as.character(sourceFrame[ , fieldsToPaste[countVal]]), sep=sep)
+
+					}
+
+				newFrame <- data.frame(x=newField)
+
+			# add field values from source table
+			} else {
+
+				newFrame <- data.frame(x=sourceFrame[ , as.character(crosswalk[countDf, countCol])])
+
+			}
+			
 		}
 
 		names(newFrame)[1] <- names(crosswalk)[1]
