@@ -2,7 +2,7 @@
 % Please edit documentation in R/mergeList.r
 \name{mergeLists}
 \alias{mergeLists}
-\title{Merge two lists.
+\title{Merge two lists with precedence
 This function merges two lists to create a single, combined list. If there is a conflict (e.g., two elements have the same name), items in the second list gain preference. Adapted from Stack Overflow (http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion).}
 \usage{
 mergeLists(list1, list2)
@@ -16,7 +16,7 @@ mergeLists(list1, list2)
 List object.
 }
 \description{
-Merge two lists.
+Merge two lists with precedence
 This function merges two lists to create a single, combined list. If there is a conflict (e.g., two elements have the same name), items in the second list gain preference. Adapted from Stack Overflow (http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion).
 }
 \examples{

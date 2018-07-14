@@ -2,7 +2,7 @@
 % Please edit documentation in R/yearFromDate.r
 \name{yearFromDate}
 \alias{yearFromDate}
-\title{Returns the year from date formats that are possibly ambiguous.}
+\title{Year from date formats that are possibly ambiguous}
 \usage{
 yearFromDate(x, yearLast = TRUE)
 }

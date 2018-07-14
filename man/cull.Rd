@@ -2,7 +2,7 @@
 % Please edit documentation in R/cull.r
 \name{cull}
 \alias{cull}
-\title{Force all vectors to have length equal to the shortest or all data frames or matrices to have same number of rows as shortest.}
+\title{Force objects to have length or rows equal to the shortest}
 \usage{
 cull(...)
 }
@@ -10,7 +10,7 @@ cull(...)
 \item{...}{Vectors, matrices, or data frames.}
 }
 \description{
-Force all vectors to have length equal to the shortest or all data frames or matrices to have same number of rows as shortest.
+Force objects to have length or rows equal to the shortest
 }
 \examples{
 a <- 1:10

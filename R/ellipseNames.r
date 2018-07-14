@@ -1,4 +1,4 @@
-#' Get names of objects input as arguments in ellipse (\code{...}) form.
+#' Get names of objects input as arguments in ellipse (\code{...}) form
 #'
 #' This function returns the names of objects input into a function as ellipses. It is only useful if called inside a function.
 #' @param ... Objects.

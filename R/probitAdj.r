@@ -1,4 +1,4 @@
-#' The inverse of the \code{\link[omnibus]{logitAdj}} function which is robust to cases that equal 0 or 1
+#' Inverse of \code{logitAdj} function which is robust to cases that equal 0 or 1
 #'
 #' This function is the inverse of \code{\link[omnibus]{logitAdj}}. That function calculates the logit of values but is robust to cases where the operanc is 0 or 1. The adjusted probit is equal to \code{(base^x + epsilon * base^x - epsilon) / (base^x + 1)}.
 #'

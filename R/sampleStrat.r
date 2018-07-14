@@ -1,4 +1,4 @@
-#' Scrambles values of a given column of a data frame in a stratified manner with respect to one or more other columns.
+#' Stratified randomization
 #'
 #' This function scrambles values of a given column of a data frame in a stratified manner with respect to one or more other "covariate" columns. User can specify the other column(s) by which to scramble the target column and the starting width of the range (as a proportion of the total range of each covariate).
 #' @param x Data frame containing at least two columns, one with numeric values and at least one more with numeric or factor values.

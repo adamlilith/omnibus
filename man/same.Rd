@@ -2,7 +2,7 @@
 % Please edit documentation in R/same.r
 \name{same}
 \alias{same}
-\title{Tests if all elements of a vector are the same.}
+\title{Tests if all elements of a vector are the same}
 \usage{
 same(x, na.rm = FALSE)
 }
@@ -12,7 +12,7 @@ same(x, na.rm = FALSE)
 \item{na.rm}{Logical, if \code{TRUE} then remove \code{NA}s first. If \code{FALSE} and \code{NA}s are included with other values, then the function returns \code{FALSE}.}
 }
 \description{
-Tests if all elements of a vector are the same.
+Tests if all elements of a vector are the same
 }
 \examples{
 same(1:10)

@@ -1,4 +1,4 @@
-#' Rotate values in a matrix.
+#' Rotate values in a matrix
 #'
 #' This function rotates the values in a matrix by a user-specified number of degrees. In almost all cases some values will fall outside the matrix so they will be discarded.  Cells that have no rotated values will become \code{NA}. Only scquare matrices can be accomodated. In some cases a rotation will cause cells to have no assigned value because no original values fall within them. In these instances the mean value of surrounding cells is assigned to the cells with missing values. If the angle of rotation is too small then no rotation will occur.
 #' @param x Object of class \code{matrix}.

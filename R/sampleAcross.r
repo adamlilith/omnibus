@@ -1,4 +1,4 @@
-#' Permute selected values in two vectors or columns in two data frames or matrices.
+#' Permute values across two vectors or columns in two data frames or matrices
 #' 
 #' This function permutes values across two or more vectors or columns across two or more data frames or matrices. If vectors then all values are swapped randomly and the output is a list object with vectors of the same length. If data frames or matrices then values in selected columns are swapped across the data frames or matrices and the output is a list object with data frames or matrices of the same dimension as the originals.
 #' @param ... One or more vectors, data frames, or matrices (all objects must be the same class).

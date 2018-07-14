@@ -2,7 +2,7 @@
 % Please edit documentation in R/probitAdj.r
 \name{probitAdj}
 \alias{probitAdj}
-\title{The inverse of the \code{\link[omnibus]{logitAdj}} function which is robust to cases that equal 0 or 1}
+\title{Inverse of \code{logitAdj} function which is robust to cases that equal 0 or 1}
 \usage{
 probitAdj(x, epsilon = 0.01, base = 10, auto = FALSE)
 }

@@ -1,4 +1,5 @@
-#' Calculate the mode of numeric, character, or factor data.
+#' Calculate the mode of numeric, character, or factor data
+#'
 #' @param x Numeric, character, or factor vector.
 #' @param na.rm Logical. If \code{TRUE} then remove \code{NA}s first. Otherwise fail.
 #' @return Numeric, character, or factor value.

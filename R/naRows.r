@@ -1,4 +1,4 @@
-#' Index any rows in a data frame or matrix that contain at least one \code{NA}
+#' Index of rows in a data frame or matrix that contain at least one \code{NA}
 #'
 #' This function returns the row number of any row in a data frame or matrix that has at least one \code{NA}.
 #' @param x Data frame or matrix.

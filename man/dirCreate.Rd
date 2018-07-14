@@ -2,12 +2,12 @@
 % Please edit documentation in R/dirCreate.r
 \name{dirCreate}
 \alias{dirCreate}
-\title{Replacement for dir.create().}
+\title{Replacement for dir.create()}
 \usage{
 dirCreate(...)
 }
 \arguments{
-\item{...}{Character string(s). These indicate the path of the directory to create. Multiple strings will be pasted together into one path.}
+\item{...}{Character string(s). The path and name of the directory to create. Multiple strings will be pasted together into one path.}
 }
 \value{
 Nothing (creates a directory on the storage system).

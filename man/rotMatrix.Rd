@@ -2,7 +2,7 @@
 % Please edit documentation in R/rotMatrix.r
 \name{rotMatrix}
 \alias{rotMatrix}
-\title{Rotate values in a matrix.}
+\title{Rotate values in a matrix}
 \usage{
 rotMatrix(x, rot)
 }
