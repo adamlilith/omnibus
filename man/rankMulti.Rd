@@ -2,7 +2,7 @@
 % Please edit documentation in R/rankMulti.r
 \name{rankMulti}
 \alias{rankMulti}
-\title{A multivariate adaptation of the \code{rank()} function.
+\title{A multivariate adaptation of the \code{rank()} function
 This function ranks values in a data frame or matrix by more than one field, with ties in one field broken by subsequent fields.}
 \usage{
 rankMulti(x, cols = 1:ncol(x), ...)
@@ -18,7 +18,7 @@ rankMulti(x, cols = 1:ncol(x), ...)
 Nummeric list of ranks.
 }
 \description{
-A multivariate adaptation of the \code{rank()} function.
+A multivariate adaptation of the \code{rank()} function
 This function ranks values in a data frame or matrix by more than one field, with ties in one field broken by subsequent fields.
 }
 \examples{

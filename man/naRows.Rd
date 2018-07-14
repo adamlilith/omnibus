@@ -2,7 +2,7 @@
 % Please edit documentation in R/naRows.r
 \name{naRows}
 \alias{naRows}
-\title{Index any rows in a data frame or matrix that contain at least one \code{NA}}
+\title{Index of rows in a data frame or matrix that contain at least one \code{NA}}
 \usage{
 naRows(x, inf = FALSE, inverse = FALSE)
 }

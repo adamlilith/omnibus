@@ -2,7 +2,7 @@
 % Please edit documentation in R/mmode.r
 \name{mmode}
 \alias{mmode}
-\title{Calculate the mode of numeric, character, or factor data.}
+\title{Calculate the mode of numeric, character, or factor data}
 \usage{
 mmode(x, na.rm = FALSE)
 }
@@ -15,7 +15,7 @@ mmode(x, na.rm = FALSE)
 Numeric, character, or factor value.
 }
 \description{
-Calculate the mode of numeric, character, or factor data.
+Calculate the mode of numeric, character, or factor data
 }
 \details{
 Adapted from Ken Williams' post on StackExchange [https://stackoverflow.com/questions/2547402/is-there-a-built-in-function-for-finding-the-mode].

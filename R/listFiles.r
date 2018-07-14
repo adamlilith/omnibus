@@ -1,6 +1,6 @@
 #' Replacement for \code{list.files()}
 #'
-#' This function is a slightly friendlier version of \code{\link{base::list.files}} in that it automatically includes the \code{full.names=TRUE} argument.
+#' This function is a slightly friendlier version of \code{\link[base]{list.files}} in that it automatically includes the \code{full.names=TRUE} argument.
 #' @param x Path name of folder containing files to list.
 #' @param ... Arguments to pass to \code{list.files} (other than \code{full.names}).
 #' @return Character list.

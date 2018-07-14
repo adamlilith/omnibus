@@ -1,4 +1,4 @@
-#' Combine data frames with different fields using a crosswalk table.
+#' Combine data frames with different fields using a crosswalk table
 #'
 #' This function combines multiple data frames, possibly with different column names, into a single data frame.  Usually \code{\link[base]{merge}} will be faster and easier to implement if the columns to be merged on have the same names, and \code{\link[base]{rbind}} will always be faster and much easier if the column names match exactly.
 #' @param ... A list of data frames. If ignored, then paths and file names of data frames can be specified in \code{crosswalk}.

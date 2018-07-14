@@ -2,7 +2,7 @@
 % Please edit documentation in R/capIt.r
 \name{capIt}
 \alias{capIt}
-\title{Capitalize first letter of a string.}
+\title{Capitalize first letter of a string}
 \usage{
 capIt(x)
 }

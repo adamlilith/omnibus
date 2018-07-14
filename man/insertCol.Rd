@@ -2,7 +2,7 @@
 % Please edit documentation in R/insertCol.r
 \name{insertCol}
 \alias{insertCol}
-\title{Insert a column into a data frame or matrix.}
+\title{Insert a column into a data frame or matrix}
 \usage{
 insertCol(x, into, at, before = TRUE)
 }

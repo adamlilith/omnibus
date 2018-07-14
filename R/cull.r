@@ -1,4 +1,4 @@
-#' Force all vectors to have length equal to the shortest or all data frames or matrices to have same number of rows as shortest.
+#' Force objects to have length or rows equal to the shortest
 #'
 #' @param ... Vectors, matrices, or data frames.
 #' @examples

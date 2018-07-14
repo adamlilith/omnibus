@@ -15,7 +15,7 @@ listFiles(x, ...)
 Character list.
 }
 \description{
-This function is a slightly friendlier version of \code{\link{base::list.files}} in that it automatically includes the \code{full.names=TRUE} argument.
+This function is a slightly friendlier version of \code{\link[base]{list.files}} in that it automatically includes the \code{full.names=TRUE} argument.
 }
 \examples{
 # list files in location where R is installed

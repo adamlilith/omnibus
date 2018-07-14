@@ -1,4 +1,4 @@
-#' Insert a column into a data frame or matrix.
+#' Insert a column into a data frame or matrix
 #'
 #' This function inserts one or more columns before or after another column in a data frame or matrix. It is similar to \code{\link[base]{cbind}} except that the inserted column(s) can be placed anywhere.
 #' @param x Data frame, matrix, or vector with same number of rows or elements as \code{into}.

@@ -1,4 +1,4 @@
-#' Returns the year from date formats that are possibly ambiguous.
+#' Year from date formats that are possibly ambiguous
 #'
 #' This function attempts to return the year from characters representing dates formats. The formats can be ambigous and varied within the same set.  For example, it returns "1982" (or 9982 if century is ambigous) from "11/20/82", "1982-11-20", "Nov. 20, 1982", "20 Nov 1982", "20-Nov-1982", "20/Nov/1982", "20 Nov. 82", "20 Nov 82". The function handles ambiguous centuries (e.g., 1813, 1913, 2013) by including a dummy place holder for the century place (i.e., 9913). Note that it may return warnings like "NAs introduced by coercion", are interesting side effects.
 #' @param x Character or character list, one or more dates.
@@ -469,6 +469,7 @@ yearFromDate <- function(x, yearLast = TRUE) {
 	} # next date
 
 	years <- suppressWarnings(as.integer(years))
+	years[years == 0] <- NA
 	years
 
 }

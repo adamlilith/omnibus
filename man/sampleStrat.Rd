@@ -2,7 +2,7 @@
 % Please edit documentation in R/sampleStrat.r
 \name{sampleStrat}
 \alias{sampleStrat}
-\title{Scrambles values of a given column of a data frame in a stratified manner with respect to one or more other columns.}
+\title{Stratified randomization}
 \usage{
 sampleStrat(x, col, w = function(x) stats::sd(x, na.rm = T)/(max(x, na.rm =
   TRUE) - min(x, na.rm = TRUE)), d = 0.1, by = "all", permuteBy = TRUE)

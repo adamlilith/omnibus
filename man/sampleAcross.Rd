@@ -2,7 +2,7 @@
 % Please edit documentation in R/sampleAcross.r
 \name{sampleAcross}
 \alias{sampleAcross}
-\title{Permute selected values in two vectors or columns in two data frames or matrices.}
+\title{Permute values across two vectors or columns in two data frames or matrices}
 \usage{
 sampleAcross(..., by = NULL, replace = FALSE)
 }

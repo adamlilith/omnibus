@@ -2,7 +2,7 @@
 % Please edit documentation in R/combineDf.r
 \name{combineDf}
 \alias{combineDf}
-\title{Combine data frames with different fields using a crosswalk table.}
+\title{Combine data frames with different fields using a crosswalk table}
 \usage{
 combineDf(..., crosswalk, sep = "; ", use = NULL, classes = NULL,
   verbose = FALSE)

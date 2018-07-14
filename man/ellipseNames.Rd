@@ -2,7 +2,7 @@
 % Please edit documentation in R/ellipseNames.r
 \name{ellipseNames}
 \alias{ellipseNames}
-\title{Get names of objects input as arguments in ellipse (\code{...}) form.}
+\title{Get names of objects input as arguments in ellipse (\code{...}) form}
 \usage{
 ellipseNames(...)
 }
