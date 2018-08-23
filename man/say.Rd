@@ -4,8 +4,8 @@
 \alias{say}
 \title{Nicer version of \code{print()} or \code{cat()} function}
 \usage{
-say(..., pre = 0, post = 1, breaks = NULL, wiggle = 10, preBreak = 1,
-  level = NULL, deco = "#")
+say(..., pre = 0, post = 1, breaks = NULL, wiggle = 10,
+  preBreak = 1, level = NULL, deco = "#")
 }
 \arguments{
 \item{...}{character strings to print}

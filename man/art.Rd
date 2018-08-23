@@ -5,7 +5,8 @@
 \title{Aligned rank transform of non-oaramaric data for further analysis using ANOVA}
 \usage{
 art(x, response = names(x)[1], factors = names(x)[2:ncol(x)],
-  subject = NULL, fun = function(x) mean(x, na.rm = T), verbose = FALSE)
+  subject = NULL, fun = function(x) mean(x, na.rm = T),
+  verbose = FALSE)
 }
 \arguments{
 \item{x}{Data frame.}
