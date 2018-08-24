@@ -1,16 +1,16 @@
 Package: omnibus
 Type: Package
 Title: Ease-of-use tools
-Version: 0.2.6.3
+Version: 0.2.6.4
 Date: 2018-07-20
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: This package contains various functions. Its main feature is a set
     of functions based commonly used functions in \code{base R} but with arguments
     that are almost always used or othewise have better functionality.
-Depends:
-Imports:
-Suggests: 
+Depends: 
+Imports: 
+Suggests:
 License: GPL (>=3)
 LazyLoad: yes
 URL: http://www.earthSkySea.org

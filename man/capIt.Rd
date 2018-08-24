@@ -19,6 +19,3 @@ This function capitalizes the first letter of a string or the first letters of a
 x <- c('shots', 'were', 'exchanged at the ', 'hospital.')
 capIt(x)
 }
-\seealso{
-\code{\link[base]{toupper}}, \code{\link[base]{tolower}}
-}

@@ -4,29 +4,37 @@
 \alias{stretchMinMax}
 \title{Rescale values to the range [0, 1]}
 \usage{
-stretchMinMax(x, nudge = FALSE, na.rm = FALSE)
+stretchMinMax(x, lower = 0, upper = 1, nudgeUp = FALSE,
+  nudgeDown = FALSE, na.rm = FALSE)
 }
 \arguments{
 \item{x}{Numeric list.}
 
-\item{nudge}{Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.}
+\item{lower}{Numeric, low end of range to which to stretch.}
+
+\item{upper}{Numeric, high end of range to which to stretch.}
 
 \item{na.rm}{Logical, if \code{FALSE} (default) then if any values of \code{x} are \code{NA} then the returned value will be \code{NA}. If \code{TRUE} then \code{NA}'s are ignored in calculation.}
+
+\item{nudge}{Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.}
 }
 \value{
 Numeric value.
 }
 \description{
-This function rescales a vector of numeric values to the range [0, 1] using \code{(x - min(x)) / (max(x - min(x)))}. Optionally and after the stretch, values = 0 can be "nudged" slightly higher to half the minimum value across the rescaled vector of values > 0.
+This function rescales a vector of numeric values to an arbitrary range. Optionally, after the stretch values equal to the lowest value can be "nudged" slightly higher to half the minimum value across the rescaled vector of values > 0.
 }
 \examples{
-x <- 1:20
+x <- 1:10
 stretchMinMax(x)
-stretchMinMax(x, nudge=TRUE)
-x <- c(1:20, NA)
+stretchMinMax(x, lower=2, upper=5)
+stretchMinMax(x, nudgeUp=TRUE)
+stretchMinMax(x, lower=2, upper=5, nudgeUp=TRUE)
+stretchMinMax(x, nudgeDown=TRUE)
+stretchMinMax(x, lower=2, upper=5, nudgeUp=TRUE, nudgeDown=TRUE)
+x <- c(1:5, NA)
 stretchMinMax(x)
 stretchMinMax(x, na.rm=TRUE)
-stretchMinMax(x, nudge=TRUE, na.rm=TRUE)
 }
 \seealso{
 \code{\link[base]{scale}}
