@@ -1,5 +1,5 @@
 # omnibus
-Better utility functions for the 99%.
+Utility functions for the 99%.
 
 ## Statistics and computation ##
 * `art`: Aligned rank transform for using rank data in ANOVAs
