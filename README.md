@@ -45,4 +45,4 @@ Better utility functions for the 99%.
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
 * `say`: Replacement for `print('abc'); flush.console()`.
 
-- Adam
+Adam
