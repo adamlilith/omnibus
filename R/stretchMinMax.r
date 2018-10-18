@@ -1,4 +1,4 @@
-#' Rescale values to the range [0, 1]
+#' Rescale values
 #'
 #' This function rescales a vector of numeric values to an arbitrary range. Optionally, after the stretch values equal to the lowest value can be "nudged" slightly higher to half the minimum value across the rescaled vector of values > 0.
 #' @param x Numeric list.
