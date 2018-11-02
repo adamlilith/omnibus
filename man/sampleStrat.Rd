@@ -4,8 +4,9 @@
 \alias{sampleStrat}
 \title{Stratified randomization}
 \usage{
-sampleStrat(x, col, w = function(x) stats::sd(x, na.rm = T)/(max(x, na.rm =
-  TRUE) - min(x, na.rm = TRUE)), d = 0.1, by = "all", permuteBy = TRUE)
+sampleStrat(x, col, w = function(x) stats::sd(x, na.rm = T)/(max(x, na.rm
+  = TRUE) - min(x, na.rm = TRUE)), d = 0.1, by = "all",
+  permuteBy = TRUE)
 }
 \arguments{
 \item{x}{Data frame containing at least two columns, one with numeric values and at least one more with numeric or factor values.}

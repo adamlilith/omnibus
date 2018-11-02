@@ -1,4 +1,5 @@
 #' A multivariate adaptation of the \code{rank()} function
+#'
 #' This function ranks values in a data frame or matrix by more than one field, with ties in one field broken by subsequent fields.
 #' @param x Data frame or matrix.
 #' @param cols Names or indices of columns by which to rank, with first one gaining preference over the second, second over the third, etc.

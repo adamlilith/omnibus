@@ -20,5 +20,5 @@ x <- c('shots', 'were', 'exchanged at the ', 'hospital.')
 capIt(x)
 }
 \seealso{
-\code{\link[base]{toupper}}, \code{\link[base]{tolower}}
+\code{\link{toupper}}, \code{\link{tolower}},
 }
