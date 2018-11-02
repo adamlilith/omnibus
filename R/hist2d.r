@@ -69,7 +69,7 @@ hist2d <- function(
 		if (length(inThisBreak1) > 0) {
 		
 			x2InThisX1 <- x2[inThisBreak1]
-			thisHist2 <- hist(x2InThisX1, breaks=breaks2, freq=TRUE, plot=FALSE, ...)
+			thisHist2 <- hist(x2InThisX1, breaks=breaks2, freq=NULL, plot=FALSE, ...)
 			tallies[ , count1] <- thisHist2$counts
 			
 		}
