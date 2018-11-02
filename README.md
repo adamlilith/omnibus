@@ -27,6 +27,7 @@ Utility functions for the 99%.
 ## Data properties and analysis ##
 * `countDecDigits`: Count number of digits after a decimal.
 * `histOverlap`: Histogram with overlapping or arbitrary bins.
+* `hist2d`: Two-dimensional histogram.
 * `longRun`: Longest run of a given sequence in a vector.
 * `rankMulti`: Rank using secondary, tertiary, etc. fields as tie-breakers.
 * `same`: Are all elements of a vector the same?

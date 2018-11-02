@@ -2,7 +2,7 @@
 % Please edit documentation in R/stretchMinMax.r
 \name{stretchMinMax}
 \alias{stretchMinMax}
-\title{Rescale values to the range [0, 1]}
+\title{Rescale values}
 \usage{
 stretchMinMax(x, lower = 0, upper = 1, nudgeUp = FALSE,
   nudgeDown = FALSE, na.rm = FALSE)

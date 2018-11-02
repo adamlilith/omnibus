@@ -3,7 +3,7 @@
 #' This function capitalizes the first letter of a string or the first letters of a list of strings.
 #' @param x Character or character list.
 #' @return Character or character list.
-#' @seealso
+#' @seealso \code{\link{toupper}}, \code{\link{tolower}}, 
 #' @examples
 #' x <- c('shots', 'were', 'exchanged at the ', 'hospital.')
 #' capIt(x)
