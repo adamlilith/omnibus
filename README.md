@@ -1,17 +1,8 @@
 # omnibus
 Utility functions for the 99%.
 
-## Statistics and computation ##
-* `art`: Aligned rank transform for using rank data in ANOVAs
-* `geoMean`: Geometric mean.
-* `logitAdj` and `probitAdj`: Logit and probit transform robust to values that equal 0 or 1.
-* `mmode`: Modal value
-* `sampleAcross`: Permute values across two vectors or columns in two data frames or matrices.
-* `sampleStrat`: Stratified randomization where strata are continuous values.
-* `se`: Standard error
-
 ## Geometry ##
-* `pairDist`: Pairwise Euclidian distance between two sets of points.
+* `pairDist`: Pairwise Euclidean distance between two sets of points.
 * `quadArea`: Area of a quadrilateral.
 
 ## Data manipulation ##
@@ -26,10 +17,7 @@ Utility functions for the 99%.
 
 ## Data properties and analysis ##
 * `countDecDigits`: Count number of digits after a decimal.
-* `hist2d`: Two-dimensional histogram.
-* `histOverlap`: Histogram with overlapping or arbitrary bins.
 * `longRun`: Longest run of a given sequence in a vector.
-* `rankMulti`: Rank using secondary, tertiary, etc. fields as tie-breakers.
 * `same`: Are all elements of a vector the same?
 * `yearFromDate`: Attempt to find the year across dates with non-standard formats.
 
