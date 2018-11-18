@@ -1,6 +1,6 @@
 #' Combine data frames with different fields using a crosswalk table
 #'
-#' This function combines multiple data frames, possibly with different column names, into a single data frame.  Usually \code{\link[base]{merge}} will be faster and easier to implement if the columns to be merged on have the same names, and \code{\link[base]{rbind}} will always be faster and much easier if the column names match exactly.
+#' This function combines multiple data frames, possibly with different column names, into a single data frame.  Usually \code{\link[base]{merge}} will be faster and easier to implement if the columns to be merged on have the same names, and \code{\link{rbind}} will always be faster and much easier if the column names match exactly.
 #' @param ... A list of data frames. If ignored, then paths and file names of data frames can be specified in \code{crosswalk}.
 #' @param crosswalk Data frame. Column names are fields desired in the output data frame. Each row corresponds to a different data frame to join. If \code{...} is not used then the first column \emph{must} have the paths and file names to CSV, RDS, or RData files representing data frames to join. Other than this column, the elements of each cell contain the name of the column in each data frame that coincides with the column name in the \code{crosswalk} table.  For example, if the final output is to have a column by the name of "species" and "data frame #1" has a column named "Species" and "data frame #2" has a column named "scientificName", then the first value in \code{crosswalk} under its "species" column will be "Species" and the second "scientificName". More complex joining can be done using the following in cells of \code{crosswalk}:
 #' \itemize{
@@ -13,7 +13,7 @@
 #' @param sep Character, specifies the string to put between fields combined with the \code{c(~~~~)} format in \code{crosswalk}.
 #' @param verbose Logical, if \code{TRUE} prints extra information during execution.  Useful for debugging the \code{crosswalk} table.
 #' @return A data frame.
-#' @seealso \code{\link[base]{merge}}, \code{\link[base]{rbind}}
+#' @seealso \code{\link[base]{merge}}, \code{\link{rbind}}
 #' @examples
 #' df1 <- data.frame(x1=1:5, x2='valid', x3=letters[1:5], x4=LETTERS[1:5], x5='stuff')
 #' df2 <- data.frame(y1=11:15, y3=rev(letters)[1:5])
@@ -81,9 +81,9 @@ combineDf <- function(
 		if (dfSource == 'crosswalk') {
 			newFrame <- data.frame(x=rep(as.character(crosswalk[countDf, 1]), nrow(sourceFrame)))
 		} else {
-		
+
 			countCol <- 1
-		
+
 			# add NA values
 			if (is.na(crosswalk[countDf, countCol])) {
 
@@ -118,7 +118,7 @@ combineDf <- function(
 				newFrame <- data.frame(x=sourceFrame[ , as.character(crosswalk[countDf, countCol])])
 
 			}
-			
+
 		}
 
 		names(newFrame)[1] <- names(crosswalk)[1]

@@ -1,6 +1,15 @@
 # omnibus
 Utility functions for the 99%.
 
+To install `omnibus` do the following:
+
+`install.packages('devtools') # if you haven't done this already`
+
+`library(devtools)`
+
+`install_github('adamlilith/omnibus')`
+
+
 ## Statistics and computation ##
 * `art`: Aligned rank transform for using rank data in ANOVAs
 * `geoMean`: Geometric mean.
