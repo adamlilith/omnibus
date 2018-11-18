@@ -1,6 +1,15 @@
 # omnibus
 Utility functions for the 99%.
 
+To install `omnibus` do the following:
+
+`install.packages('devtools') # if you haven't done this already`
+
+`library(devtools)`
+
+`install_github('adamlilith/omnibus')`
+
+
 ## Geometry ##
 * `pairDist`: Pairwise Euclidean distance between two sets of points.
 * `quadArea`: Area of a quadrilateral.

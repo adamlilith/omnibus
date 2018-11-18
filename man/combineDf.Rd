@@ -29,7 +29,7 @@ combineDf(..., crosswalk, sep = "; ", use = NULL, classes = NULL,
 A data frame.
 }
 \description{
-This function combines multiple data frames, possibly with different column names, into a single data frame.  Usually \code{\link[base]{merge}} will be faster and easier to implement if the columns to be merged on have the same names, and \code{\link[base]{rbind}} will always be faster and much easier if the column names match exactly.
+This function combines multiple data frames, possibly with different column names, into a single data frame.  Usually \code{\link[base]{merge}} will be faster and easier to implement if the columns to be merged on have the same names, and \code{\link{rbind}} will always be faster and much easier if the column names match exactly.
 }
 \examples{
 df1 <- data.frame(x1=1:5, x2='valid', x3=letters[1:5], x4=LETTERS[1:5], x5='stuff')
@@ -46,5 +46,5 @@ out <- combineDf(df1, df2, crosswalk=crosswalk)
 out
 }
 \seealso{
-\code{\link[base]{merge}}, \code{\link[base]{rbind}}
+\code{\link[base]{merge}}, \code{\link{rbind}}
 }
