@@ -9,6 +9,9 @@ cull(...)
 \arguments{
 \item{...}{Vectors, matrices, or data frames.}
 }
+\value{
+List objects with one element per object supplied as an argument to the function.
+}
 \description{
 Force objects to have length or rows equal to the shortest
 }
