@@ -1,6 +1,7 @@
 #' Force objects to have length or rows equal to the shortest
 #'
 #' @param ... Vectors, matrices, or data frames.
+#' @return List objects with one element per object supplied as an argument to the function.
 #' @examples
 #' a <- 1:10
 #' b <- 1:20

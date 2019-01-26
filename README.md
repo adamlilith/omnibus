@@ -21,7 +21,7 @@ To install `omnibus` do the following:
 * `mergeList`: Merge lists
 * `naOmitMulti`: Remove elements of multiple vectors if at least one element is `NA` or rows of matrices/data frames if at least one row has an `NA`.
 * `naRows`: Indices of rows with at least one `NA`.
-* `rotMatrix`: Rotate a matrix.
+* `rotateMatrix`: Rotate a matrix.
 * `stretchMinMax`: Rescale values to a given range.
 
 ## Data properties and analysis ##
