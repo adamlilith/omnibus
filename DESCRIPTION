@@ -9,7 +9,7 @@ Description: This package contains fantabulous helper functions.
 Depends:
 Imports:
 Suggests: 
-License: GPL (>=3)
+License: GPL (>=3) + file LICENSE
 LazyLoad: yes
 URL: http://www.earthSkySea.org
 RoxygenNote: 6.1.1
