@@ -26,18 +26,22 @@ insertCol <- function(
 	
 	# if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 	
-	into <- if (ncol(into) == 0) {
-		x
-	} else if (at == 1) {
-		cbind(x, into, row.names=NULL)
-	} else if (at == ncol(into)) {
-		cbind(into, x, row.names=NULL)
-	} else if (before) {
-		cbind(into[ , 1:(at - 1)], x, into[ , at:ncol(into)], row.names=NULL)
-	} else if (!before) {
-		cbind(into[ , 1:at], x, into[ , (at + 1):ncol(into)], row.names=NULL)
-	}
+	intoCols <- ncol(into)
+	rowNames <- row.names(into)
 	
+	into <- if (at == 1 & before) {
+		cbind(x, into)
+	} else if (at == 1 & !before) {
+		cbind(into[ , 1, drop=FALSE], x, into[ , 2:intoCols, drop=FALSE])
+	} else if (at == intoCols) {
+		cbind(into, x)
+	} else if (before) {
+		cbind(into[ , 1:(at - 1)], x, into[ , at:intoCols])
+	} else if (!before) {
+		cbind(into[ , 1:at], x, into[ , (at + 1):intoCols])
+  }
+  
+	rownames(into) <- rowNames
 	into
 
 }
