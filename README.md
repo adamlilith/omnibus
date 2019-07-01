@@ -15,6 +15,7 @@ NB: If for some reason these commands don't work, you can install the package(s)
 
 ## Data manipulation ##
 * `combineDf`: Combine data frames with different schema.
+* `corner`: Corner of a data frame or matrix
 * `cull`: Force vectors or rows to have the same lenth or number of rows.
 * `insertCol`: Insert a column in a matrix or data frame.
 * `mergeList`: Merge lists
