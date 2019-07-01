@@ -2,6 +2,7 @@
 
 export(capIt)
 export(combineDf)
+export(corner)
 export(countDecDigits)
 export(cull)
 export(dirCreate)
