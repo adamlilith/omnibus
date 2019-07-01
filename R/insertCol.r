@@ -24,16 +24,18 @@ insertCol <- function(
 	if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
 	if (!(class(at) %in% c('numeric', 'integer'))) at <- which(names(into) %in% at)
 	
-	if (nrow(x) != nrow(into)) stop('Inserted column must have same number of rows as target data frame/matrix.')
+	# if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 	
-	into <- if (at == 1) {
-		cbind(x, into)
+	into <- if (ncol(into) == 0) {
+		x
+	} else if (at == 1) {
+		cbind(x, into, row.names=NULL)
 	} else if (at == ncol(into)) {
-		cbind(into, x)
+		cbind(into, x, row.names=NULL)
 	} else if (before) {
-		cbind(into[ , 1:(at - 1)], x, into[ , at:ncol(into)])
+		cbind(into[ , 1:(at - 1)], x, into[ , at:ncol(into)], row.names=NULL)
 	} else if (!before) {
-		cbind(into[ , 1:at], x, into[ , (at + 1):ncol(into)])
+		cbind(into[ , 1:at], x, into[ , (at + 1):ncol(into)], row.names=NULL)
 	}
 	
 	into
