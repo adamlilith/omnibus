@@ -12,4 +12,5 @@ Suggests:
 License: GPL (>=3) + file LICENSE
 LazyLoad: yes
 URL: http://www.earthSkySea.org
+Encoding: UTF-8
 RoxygenNote: 6.1.1
