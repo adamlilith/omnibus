@@ -4,8 +4,14 @@
 \alias{combineDf}
 \title{Combine data frames with different fields using a crosswalk table}
 \usage{
-combineDf(..., crosswalk, sep = "; ", use = NULL, classes = NULL,
-  verbose = FALSE)
+combineDf(
+  ...,
+  crosswalk,
+  sep = "; ",
+  use = NULL,
+  classes = NULL,
+  verbose = FALSE
+)
 }
 \arguments{
 \item{...}{A list of data frames. If ignored, then paths and file names of data frames can be specified in \code{crosswalk}.}

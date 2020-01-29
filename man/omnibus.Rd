@@ -3,7 +3,6 @@
 \docType{package}
 \name{omnibus}
 \alias{omnibus}
-\alias{omnibus-package}
 \title{omnibus: Fantabulous helper functions}
 \description{
 This package contains a set of helper functions.

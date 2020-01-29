@@ -1,6 +1,6 @@
 #' Calculate number of digits after a decimal place
 #'
-#' This function calculates the number of digits after a decimal place. Note that trailing zeros wil likely be ignored.
+#' This function calculates the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
 #' @param x Numeric or numeric list.
 #' @return Integer.
 #' @examples
