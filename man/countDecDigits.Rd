@@ -13,7 +13,7 @@ countDecDigits(x)
 Integer.
 }
 \description{
-This function calculates the number of digits after a decimal place. Note that trailing zeros wil likely be ignored.
+This function calculates the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
 }
 \examples{
 countDecDigits(c(1, 1.1, 1.12, 1.123, 1.1234, -1, 0, 10.0000, 10.0010))

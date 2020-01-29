@@ -4,8 +4,14 @@
 \alias{stretchMinMax}
 \title{Rescale values}
 \usage{
-stretchMinMax(x, lower = 0, upper = 1, nudgeUp = FALSE,
-  nudgeDown = FALSE, na.rm = FALSE)
+stretchMinMax(
+  x,
+  lower = 0,
+  upper = 1,
+  nudgeUp = FALSE,
+  nudgeDown = FALSE,
+  na.rm = FALSE
+)
 }
 \arguments{
 \item{x}{Numeric list.}
