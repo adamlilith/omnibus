@@ -46,4 +46,7 @@ NB: If for some reason these commands don't work, you can install the package(s)
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
 * `say`: Replacement for `print('abc'); flush.console()`.
 
+## Omnibus ##
+* `mirror`: Mirror image of text or numeric value.
+
 Adam
