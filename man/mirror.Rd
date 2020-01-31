@@ -9,6 +9,9 @@ mirror(x)
 \arguments{
 \item{x}{Numeric or character or a vector of numeric or character values.}
 }
+\value{
+Object with same class as \code{x}.
+}
 \description{
 This function creates a "mirror" image of a character string, a number, a matrix, or a data frame. For example "Shots were exchanged at the hospital" becomes "latipsoh eht ta degnahcxe erew stohS' and 3.14159 becomes 95141.3. Data frames and matrices will be returned with the order of columsnn reversed.
 }
