@@ -22,14 +22,14 @@
 #' }
 #' Note that you can set the minimum number of times a digit or series needs to be repeated to count as being repeated using the argument \code{minReps}. The default is 3, so digits or series of digits need to be repeated at least 3 times to count a repetition, but this can be changed:
 #' \itemize{
-#' 	\item 0.1111 returns -1 using the default requirement for 3 repetitions but -4 if the number of minimum repetitions is 5 or more.
-#' 	\item 0.121212 returns -2 using the default requirement for 3 repetitions but -6 if the number of minimum repetitions is 4 or more.
+#'	\item 0.1111 returns -1 using the default requirement for 3 repetitions but -4 if the number of minimum repetitions is 5 or more.
+#'	\item 0.121212 returns -2 using the default requirement for 3 repetitions but -6 if the number of minimum repetitions is 4 or more.
 #' }
 #' Trailing zeros are ignored, so 0.12300 returns -3. When values do not have digits after a decimal place the location of the first non-zero digit from the right is returned as a positive integer. For example:
 #' \itemize{
-#' 	\item 234 returns 1 because the first non-zero digit from the right is in the 1s place.
-#'	\item 100 -100 return 3 because the first non-zero digit from the right is in the 100s place.
-#'	\item 70001 returns 1 because the first non-zero digit from the right is in the 1s place.
+#'  \item 234 returns 1 because the first non-zero digit from the right is in the 1s place.
+#'  \item 100 -100 return 3 because the first non-zero digit from the right is in the 100s place.
+#'  \item 70001 returns 1 because the first non-zero digit from the right is in the 1s place.
 #' }
 #' However, note a few oddities:
 #' \itemize{
@@ -44,7 +44,6 @@
 #' @param minReps Integer. Number of times a digit or sequence of digits that occur after a decimal place needs to be repeated to assume it represents a repeating series and thus is assumed to arise from using decimal places to represent a fraction. Default is 3. For example, if \code{minReps} is 3 then 0.111 would be assumed to represent a repeating value because 1 occurs three times, so -1 would be returned. However, if \code{minReps} is 4 then the function would assume that if the value had had four digits, the next digit would not have been a 1, so returns -3 because there are three values after the decimal place. When the penultimate digit is >5 and the last digit is equal to the penultimate digit plus 1, then the last digit counts as a repeat of the penultimate digit.  So 0.067 is assumed to have two repeating 6s.  If \code{minReps} is 0 or 1 then the function will (usually) return the negative of the total number of decimal places in the value.
 #' @return Integer (number of digits) or \code{NA} (does not appear to be rounded).
 #' @examples
-#' x <- c(0.3, 
 #' roundedFrom(0.3)
 #' roundedFrom(0.34567)
 #' roundedFrom(0.1212125)
@@ -72,7 +71,6 @@
 #'
 #' x <- c(0.0667, 0.0667, 0.067)
 #' roundedFrom(x)
-#' roundedFrom(x, FALSE)
 #' @export
 roundedFrom <- function(x, minReps = 3) {
 
