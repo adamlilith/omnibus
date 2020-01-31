@@ -30,6 +30,7 @@ NB: If for some reason these commands don't work, you can install the package(s)
 ## Data properties and analysis ##
 * `countDecDigits`: Count number of digits after a decimal.
 * `longRun`: Longest run of a given sequence in a vector.
+* `roundedFrom`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
 * `same`: Are all elements of a vector the same?
 * `yearFromDate`: Attempt to find the year across dates with non-standard formats.
 
@@ -45,5 +46,8 @@ NB: If for some reason these commands don't work, you can install the package(s)
 * `capIt`: Capitalize first letter of a string.
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
 * `say`: Replacement for `print('abc'); flush.console()`.
+
+## Omnibus ##
+* `mirror`: Mirror image of text or numeric value.
 
 Adam

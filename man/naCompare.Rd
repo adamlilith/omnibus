@@ -8,12 +8,15 @@ naCompare(op, x, y)
 }
 \arguments{
 \item{op}{Character, the operation to perform: \code{'<'}, \code{'<='}, \code{'>'}, \code{'>='}, \code{'!='}, or \code{'=='}. Note this must be a character (i.e., put it in quotes).}
+
+\item{x}{Vector of numeric, \code{NA}, and/or \code{NaN} values. This is the first value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{x} is shorter than \code{y} then \code{x} is recycled.
+param y Vector of numeric, \code{NA}, and/or \code{NaN} values. This is the second value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{y} is shorter than \code{x} then \code{y} is recycled.}
 }
 \value{
 Vector of logical values.
 }
 \description{
-This function performs simple (vectorized) comparisons using \code{<}, \code{<=}, \code{>}, \code{>=}, \code{!=}, or \code{==}, between values and \emph{always} returns \code{TRUE} or \code{FALSE}. \code{TRUE} only occurs if the condition can be evlaauted and it is \code{TRUE}. \code{FALSE} is returned if the condition cannot be evaluated \emph{or} it is \code{FALSE}. Normally, if the condition cannot be evaluated (e.g., because at least one of the values is \code{NA} or \code{NaN}), then \code{NA} is returned.
+This function performs simple (vectorized) comparisons using \code{<}, \code{<=}, \code{>}, \code{>=}, \code{!=}, or \code{==} between values and \emph{always} returns \code{TRUE} or \code{FALSE}. \code{TRUE} only occurs if the condition can be evaluated and it is \code{TRUE}. \code{FALSE} is returned if the condition is \code{FALSE} \emph{or} it cannot be evaluated.
 }
 \examples{
 naCompare('<', c(1, 2, NA), c(10, 1, 0))
