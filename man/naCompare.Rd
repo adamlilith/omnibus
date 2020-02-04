@@ -2,22 +2,55 @@
 % Please edit documentation in R/naCompare.r
 \name{naCompare}
 \alias{naCompare}
-\title{Compare numeric values using <, <=, >, >=, !=, and == robustly to NAs}
+\alias{grapes_less_than_na_grapes}
+\alias{\%<na\%}
+\alias{\%<=na\%}
+\alias{\%==na\%}
+\alias{\%!=na\%}
+\alias{\%>na\%}
+\alias{\%>=na\%}
+\title{Compare values using <, <=, >, >=, !=, and == (robust to NAs)}
 \usage{
 naCompare(op, x, y)
+
+x \%<na\% y
+
+x \%<=na\% y
+
+x \%==na\% y
+
+x \%!=na\% y
+
+x \%>na\% y
+
+x \%>=na\% y
 }
 \arguments{
 \item{op}{Character, the operation to perform: \code{'<'}, \code{'<='}, \code{'>'}, \code{'>='}, \code{'!='}, or \code{'=='}. Note this must be a character (i.e., put it in quotes).}
 
-\item{x}{Vector of numeric, \code{NA}, and/or \code{NaN} values. This is the first value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{x} is shorter than \code{y} then \code{x} is recycled.
-param y Vector of numeric, \code{NA}, and/or \code{NaN} values. This is the second value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{y} is shorter than \code{x} then \code{y} is recycled.}
+\item{x, y}{Vectors of numeric, character, \code{NA}, and/or \code{NaN} values. This is the first value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{x} is shorter than \code{y} then \code{x} is recycled.}
 }
 \value{
 Vector of logical values.
 }
 \description{
-This function performs simple (vectorized) comparisons using \code{<}, \code{<=}, \code{>}, \code{>=}, \code{!=}, or \code{==} between values and \emph{always} returns \code{TRUE} or \code{FALSE}. \code{TRUE} only occurs if the condition can be evaluated and it is \code{TRUE}. \code{FALSE} is returned if the condition is \code{FALSE} \emph{or} it cannot be evaluated.
+This function and set of operators perform simple (vectorized) comparisons using \code{<}, \code{<=}, \code{>}, \code{>=}, \code{!=}, or \code{==} between values and \emph{always} returns \code{TRUE} or \code{FALSE}. \code{TRUE} only occurs if the condition can be evaluated and it is \code{TRUE}. \code{FALSE} is returned if the condition is \code{FALSE} \emph{or} it cannot be evaluated.
 }
+\section{Functions}{
+\itemize{
+\item \code{\%<na\%}: Compare values using < (robust to NAs)
+
+\item \code{\%<=na\%}: Compare values using <= (robust to NAs)
+
+\item \code{\%==na\%}: Compare values using == (robust to NAs)
+
+\item \code{\%!=na\%}: Compare values using != (robust to NAs)
+
+\item \code{\%>na\%}: Compare values using > (robust to NAs)
+
+\item \code{\%>=na\%}: Compare values using >= (robust to NAs)
+}}
+
 \examples{
 naCompare('<', c(1, 2, NA), c(10, 1, 0))
 naCompare('<', c(1, 2, NA), 10)
@@ -25,4 +58,26 @@ naCompare('<', c(1, 2, NA), NA)
 # compare to:
 NA < 5
 NA < NA
+
+# same operations with operators:
+1 \%<na\% 2
+1 \%<na\% NA
+3 \%==na\% 3
+NA \%==na\% 3
+4 \%!=na\% 4
+4 \%!=na\% NA
+5 \%>=na\% 3
+5 \%>=na\% NA
+3 \%==na\% c(NA, 1, 2, 3, 4)
+
+# compare to:
+1 < 2
+1 < NA
+3 == 3
+NA == 3
+4 != 4
+4 != NA
+5 >= 3
+5 >= NA
+3 == c(NA, 1, 2, 3, 4)
 }
