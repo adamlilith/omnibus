@@ -28,5 +28,5 @@ corner(x, 3)
 corner(x, 4)
 }
 \seealso{
-\code{\link[base]{head}}, \code{\link[base]{tail}}
+\code{\link{head}}, \code{\link{tail}}
 }
