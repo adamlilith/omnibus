@@ -14,6 +14,7 @@ NB: If for some reason these commands don't work, you can install the package(s)
 * `quadArea`: Area of a quadrilateral.
 
 ## Data manipulation ##
+* `%<na%`, `%<=na%`, `%==na%`, `%!=na%`, `%>na%`, and `%>=na%`: Comparative operations (>, >=, ==, !=, <, <=) but returns `FALSE` for `NA` cases (versus `NA`).
 * `combineDf`: Combine data frames with different schema.
 * `corner`: Corner of a matrix or data frame.
 * `cull`: Force vectors or rows to have the same length or number of rows.
@@ -32,13 +33,14 @@ NB: If for some reason these commands don't work, you can install the package(s)
 * `longRun`: Longest run of a given sequence in a vector.
 * `roundedSigDigits`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
 * `same`: Are all elements of a vector the same?
+* `whichPMax` and `whichPMin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
 * `yearFromDate`: Attempt to find the year across dates with non-standard formats.
 
 ## Function tools ##
 * `ellipseNames`: Get names in `...` arguments.
 
 ## System ##
-* `dirCreate`: Nicer version of `dir.create()`'
+* `dirCreate`: Nicer version of `dir.create()`
 * `eps`: Smallest floating point value your computer can think of.
 * `listFiles`: Nicer version of `list.files()`.
 

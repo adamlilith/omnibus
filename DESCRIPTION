@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
 Title: Ease-of-use tools
-Version: 0.3.3.3
-Date: 2020-01-31
+Version: 0.3.3.5
+Date: 2020-02-03
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: Fantabulous helper functions.
