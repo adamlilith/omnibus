@@ -1,6 +1,8 @@
 omnibus 0.3.3.6 (2020-02-06)
 
 * Added function isTRUENA() and isFALSE() which vectorize isTRUE() and isFALSE()
+* naCompare() and operators like %<na% are now compiled for speed.
+* insertCol() now works if the target has no rows.
 
 omnibus 0.3.3.4 (2020-02-03)
 

@@ -24,24 +24,35 @@ insertCol <- function(
 	if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
 	if (!(class(at) %in% c('numeric', 'integer'))) at <- which(names(into) %in% at)
 	
-	# if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
+	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
+
+	# x has no rows
+	if (now(x) == 0) {
 	
-	intoCols <- ncol(into)
-	rowNames <- row.names(into)
+		x <- into
+		
+	# x has rows
+	} else {
+		
+		intoCols <- ncol(into)
+		rowNames <- row.names(into)
+		
+		x <- if (at == 1 & before) {
+			cbind(x, into)
+		} else if (at == 1 & !before) {
+			cbind(into[ , 1, drop=FALSE], x, into[ , 2:intoCols, drop=FALSE])
+		} else if (at == intoCols) {
+			cbind(into, x)
+		} else if (before) {
+			cbind(into[ , 1:(at - 1)], x, into[ , at:intoCols])
+		} else if (!before) {
+			cbind(into[ , 1:at], x, into[ , (at + 1):intoCols])
+		}
+	  
+		rownames(x) <- rowNames
+		
+	}
 	
-	into <- if (at == 1 & before) {
-		cbind(x, into)
-	} else if (at == 1 & !before) {
-		cbind(into[ , 1, drop=FALSE], x, into[ , 2:intoCols, drop=FALSE])
-	} else if (at == intoCols) {
-		cbind(into, x)
-	} else if (before) {
-		cbind(into[ , 1:(at - 1)], x, into[ , at:intoCols])
-	} else if (!before) {
-		cbind(into[ , 1:at], x, into[ , (at + 1):intoCols])
-  }
-  
-	rownames(into) <- rowNames
-	into
+	x
 
 }
