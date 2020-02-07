@@ -28,9 +28,9 @@ insertCol <- function(
 	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 
 	# x has no rows
-	if (now(x) == 0) {
+	if (nrow(x) == 0) {
 	
-		x <- into
+		into <- into
 		
 	# x has rows
 	} else {
