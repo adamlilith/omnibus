@@ -1,3 +1,7 @@
+omnibus 0.3.3.6 (2020-02-06)
+
+* Added function isTRUENA() and isFALSE() which vectorize isTRUE() and isFALSE()
+
 omnibus 0.3.3.4 (2020-02-03)
 
 * Added functions whichPMax() and whichPMin() for vectorized which.max() and which.min().
