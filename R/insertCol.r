@@ -22,15 +22,15 @@ insertCol <- function(
 	before=TRUE
 ) {
 
-	if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
-	if (!(class(at) %in% c('numeric', 'integer'))) at <- which(names(into) %in% at)
-	
 	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 
-	# x has no rows
-	if (nrow(x) == 0) {
+	# if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
+	if (!is.null(at) && !(class(at) %in% c('numeric', 'integer'))) at <- which(colnames(into) %in% at)
 	
-		into <- into
+	# x has no rows
+	if (nrow(into) == 0) {
+	
+		into <- x
 		
 	# x has rows
 	} else {
