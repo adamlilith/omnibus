@@ -17,7 +17,7 @@ prefix(x, len, pad = "0")
 Character or character vector.
 }
 \description{
-Add leading characters to a string. This function is useful for ensuring, say, files get sorted in a particular order. For example, on some operating systems a file name "file 1" would come first, then "file 10", then "file 11", "file 12", etc., then "file 2", "file 21", amd sp pn. Using \code{prefix} you can add ne or more leading zeros so that file names are as "file 01", "file 02", "file 03", and so on... and they will sort that way.
+Add leading characters to a string. This function is useful for ensuring, say, files get sorted in a particular order. For example, on some operating systems a file name "file 1" would come first, then "file 10", then "file 11", "file 12", etc., then "file 2", "file 21", and so on. Using \code{prefix}, you can add one or more leading zeros so that file names are as "file 01", "file 02", "file 03", and so on... and they will sort that way.
 }
 \examples{
 prefix(1:5, len=2)
