@@ -4,16 +4,16 @@
 \alias{insertCol}
 \title{Insert a column into a data frame or matrix}
 \usage{
-insertCol(x, into, at, before = TRUE)
+insertCol(x, into, at = NULL, before = TRUE)
 }
 \arguments{
 \item{x}{Data frame, matrix, or vector with same number of rows or elements as \code{into}.}
 
 \item{into}{Data frame or matrix into which \code{x} is to be inserted.}
 
-\item{at}{Character or integer, name of column or column number at which to do insertion.}
+\item{at}{Character, integer, or \code{NULL}. Name of column or column number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{cbind(into, x} except that it retains row numbers from \code{into}.}
 
-\item{before}{Logical, if \code{TRUE} (default) then the insertion will occur in front of the column named in \code{at}, if \code{FALSE} then after.}
+\item{before}{Logical, if \code{TRUE} (default) then the insertion will occur in front of the column named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.}
 }
 \value{
 A data frame.
@@ -27,6 +27,7 @@ into <- data.frame(x1=1:5, x2='valid', x3=letters[1:5], x4=LETTERS[1:5], x5='stu
 
 insertCol(x, into=into, at='x3')
 insertCol(x, into=into, at='x3', before=FALSE)
+insertCol(x, into)
 }
 \seealso{
 \code{\link[base]{merge}}, \code{\link[base]{cbind}}
