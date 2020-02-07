@@ -35,69 +35,70 @@
 #' 5 >= NA
 #' 3 == c(NA, 1, 2, 3, 4)
 #' @export
-naCompare <- function(op, x, y) {
+naCompare <- compiler::cmpfun(function(op, x, y) {
 
 	out <- do.call(op, list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
 
 #' @describeIn naCompare Compare values using < (robust to NAs)
 #' @export
-`%<na%` <- function(x, y) {
+`%<na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('<', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
+
 #' @describeIn naCompare Compare values using <= (robust to NAs)
 #' @export
-`%<=na%` <- function(x, y) {
+`%<=na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('<=', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
 
 #' @describeIn naCompare Compare values using == (robust to NAs)
 #' @export
-`%==na%` <- function(x, y) {
+`%==na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('==', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
 
 #' @describeIn naCompare Compare values using != (robust to NAs)
 #' @export
-`%!=na%` <- function(x, y) {
+`%!=na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('!=', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
 
 #' @describeIn naCompare Compare values using > (robust to NAs)
 #' @export
-`%>na%` <- function(x, y) {
+`%>na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('>', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})
 
 #' @describeIn naCompare Compare values using >= (robust to NAs)
 #' @export
-`%>=na%` <- function(x, y) {
+`%>=na%` <- compiler::cmpfun(function(x, y) {
 
 	out <- do.call('>=', list(x, y))
 	if (anyNA(out)) out[is.na(out)] <- FALSE
 	out
 
-}
+})

@@ -7,26 +7,30 @@ To install `omnibus` do the following:
 `library(devtools)`  
 `install_github('adamlilith/omnibus')`
 
-NB: If for some reason these commands don't work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
+NB: If for some reason these commands do not work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
 
 ## Geometry ##
 * `pairDist`: Pairwise Euclidean distance between two sets of points.
 * `quadArea`: Area of a quadrilateral.
 
 ## Data manipulation ##
-* `%<na%`, `%<=na%`, `%==na%`, `%!=na%`, `%>na%`, and `%>=na%`: Comparative operations (>, >=, ==, !=, <, <=) but returns `FALSE` for `NA` cases (versus `NA`).
 * `combineDf`: Combine data frames with different schema.
 * `corner`: Corner of a matrix or data frame.
 * `cull`: Force vectors or rows to have the same length or number of rows.
 * `insertCol`: Insert column(s) in a matrix or data frame.
-* `cull`: Force vectors or rows to have the same lenth or number of rows.
+* `cull`: Force vectors or rows to have the same length or number of rows.
 * `insertCol`: Insert a column in a matrix or data frame.
 * `mergeList`: Merge lists
-* `naOmitMulti`: Remove elements of multiple vectors if at least one element is `NA` or rows of matrices/data frames if at least one row has an `NA`.
-* `naCompare`: Comparative operations (>, >=, ==, !=, <, <=) but returns `FALSE` for `NA` cases (versus `NA`).
-* `naRows`: Indices of rows with at least one `NA`.
+* `mirror`: Mirror image of text or numeric value.
 * `rotateMatrix`: Rotate a matrix.
 * `stretchMinMax`: Rescale values to a given range.
+
+## Handling NAs
+* `%<na%`, `%<=na%`, `%==na%`, `%!=na%`, `%>na%`, and `%>=na%`: Comparative operations (>, >=, ==, !=, <, <=) but returns `FALSE` for `NA` cases (versus `NA`).
+* `isTRUENA` and `isFALSENA`: Logical operators robust to `NA`
+* `naCompare`: Comparative operations (>, >=, ==, !=, <, <=) but returns `FALSE` for `NA` cases (versus `NA`).
+* `naOmitMulti`: Remove elements of multiple vectors if at least one element is `NA` or rows of matrices/data frames if at least one row has an `NA`.
+* `naRows`: Indices of rows with at least one `NA`.
 
 ## Data properties and analysis ##
 * `countDecDigits`: Count number of digits after a decimal.
@@ -48,8 +52,5 @@ NB: If for some reason these commands don't work, you can install the package(s)
 * `capIt`: Capitalize first letter of a string.
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
 * `say`: Replacement for `print('abc'); flush.console()`.
-
-## Omnibus ##
-* `mirror`: Mirror image of text or numeric value.
 
 Adam
