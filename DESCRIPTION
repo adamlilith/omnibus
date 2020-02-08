@@ -8,7 +8,7 @@ Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: Fantabulous helper functions.
 Depends:
 Imports:
-Suggests: 
+Suggests: raster
 License: GPL (>=3) + file LICENSE
 LazyLoad: yes
 URL: http://www.earthSkySea.org
