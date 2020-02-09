@@ -4,7 +4,7 @@
 #' @param ... Two or more vectors. If lengths do not match, the results will likely be be unanticipated.
 #' @param na.rm Logical, if \code{FALSE} and any of the vectors contains an \code{NA} or \code{NaN}, the function will return an \code{NA}. If \code{TRUE} (default), then \code{NA} will only be returned if all elements at that position are \code{NA} or \code{NaN}.
 #' @return Vector the same length as the input, with numeric values indicating which vector has the highest value at that position. In case of ties, the index of the first vector is returned.
-#' @seealso \code{\link{which.max}}, \code{\link{which.min}}, \code{\link{whichPMin}}, \code{\link{pmax}}, \code{\link{pmin}}
+#' @seealso \code{\link{which.max}}, \code{\link{which.min}}, \code{\link{pmax}}, \code{\link{pmin}}
 #' @examples
 #' set.seed(123)
 #' a <- sample(9, 5)
@@ -16,7 +16,9 @@
 #' b[6] <- NA
 #' c[6] <- NA
 #' whichPMax(a, b, c)
+#' whichPMin(a, b, c)
 #' whichPMax(a, b, c, na.rm=FALSE)
+#' whichPMin(a, b, c, na.rm=FALSE)
 #' @export
 whichPMax <- function(..., na.rm = TRUE) {
 
@@ -24,30 +26,76 @@ whichPMax <- function(..., na.rm = TRUE) {
 	x <- list(...)
 
 	# check for same length
-	sameLength <- TRUE
-	if (!sameLength) {
-		for (i in 1:(length(x) - 1)) {
-			if (length(x[[i]]) != length(x[[i + 1]])) {
-				sameLength <- FALSE
-			}
-		}
-	}
-	
-	if (!sameLength) warning('Vectors have different length.')
-	
-	# which.pmax
-	x <- sapply(x, as.matrix)
-	out <- apply(x, 1, which.max)
-	zeroLengths <- which(sapply(out, length) == 0)
-	if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
-	out <- unlist(out)
-	
-	# implant NAs
-	if (!na.rm & anyNA(x)) {
-		nas <- which(is.na(rowSums(x)))
-		out[nas] <- NA
-	}
+	lengths <- sapply(x, length)
+	if (max(lengths) != min(lengths)) stop('Vectors have different length.')
 
+	if (lengths[1] == 1) {
+	
+		x <- unlist(x)
+		out <- if (!na.rm & anyNA(x)) {
+			NA
+		} else {
+			which.max(unlist(x))
+		}
+		
+	} else {
+	
+		# which.pmax
+		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		out <- apply(x, 1, which.max)
+		zeroLengths <- which(sapply(out, length) == 0)
+		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
+		out <- unlist(out)
+		
+		# implant NAs
+		if (!na.rm & anyNA(x)) {
+			nas <- which(is.na(rowSums(x)))
+			out[nas] <- NA
+		}
+
+	}
+		
+	out
+
+}
+
+#' @describeIn whichPMax Which vector has minimum value at each element
+#' @export
+whichPMin <- function(..., na.rm = TRUE) {
+
+	# convert to list
+	x <- list(...)
+
+	# check for same length
+	lengths <- sapply(x, length)
+	if (max(lengths) != min(lengths)) stop('Vectors have different length.')
+
+	if (lengths[1] == 1) {
+	
+		x <- unlist(x)
+		out <- if (!na.rm & anyNA(x)) {
+			NA
+		} else {
+			which.min(unlist(x))
+		}
+		
+	} else {
+	
+		# which.pmax
+		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		out <- apply(x, 1, which.min)
+		zeroLengths <- which(sapply(out, length) == 0)
+		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
+		out <- unlist(out)
+		
+		# implant NAs
+		if (!na.rm & anyNA(x)) {
+			nas <- which(is.na(rowSums(x)))
+			out[nas] <- NA
+		}
+
+	}
+		
 	out
 
 }
