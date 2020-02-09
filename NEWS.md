@@ -1,3 +1,7 @@
+omnibus 0.3.3.8 (2020-02-08)
+
+* Fixed bug in whichPMax() and whichPMin when vectors were one unit long
+
 omnibus 0.3.3.6 (2020-02-06)
 
 * Added function isTRUENA() and isFALSE() which vectorize isTRUE() and isFALSE()

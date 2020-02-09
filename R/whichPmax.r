@@ -26,30 +26,35 @@ whichPMax <- function(..., na.rm = TRUE) {
 	x <- list(...)
 
 	# check for same length
-	sameLength <- TRUE
-	if (!sameLength) {
-		for (i in 1:(length(x) - 1)) {
-			if (length(x[[i]]) != length(x[[i + 1]])) {
-				sameLength <- FALSE
-			}
-		}
-	}
-	
-	if (!sameLength) warning('Vectors have different length.')
-	
-	# which.pmax
-	x <- sapply(x, as.matrix, nrow=length(x))
-	out <- apply(x, 1, which.max)
-	zeroLengths <- which(sapply(out, length) == 0)
-	if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
-	out <- unlist(out)
-	
-	# implant NAs
-	if (!na.rm & anyNA(x)) {
-		nas <- which(is.na(rowSums(x)))
-		out[nas] <- NA
-	}
+	lengths <- sapply(x, length)
+	if (max(lengths) != min(lengths)) stop('Vectors have different length.')
 
+	if (lengths[1] == 1) {
+	
+		x <- unlist(x)
+		out <- if (!na.rm & anyNA(x)) {
+			NA
+		} else {
+			which.max(unlist(x))
+		}
+		
+	} else {
+	
+		# which.pmax
+		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		out <- apply(x, 1, which.max)
+		zeroLengths <- which(sapply(out, length) == 0)
+		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
+		out <- unlist(out)
+		
+		# implant NAs
+		if (!na.rm & anyNA(x)) {
+			nas <- which(is.na(rowSums(x)))
+			out[nas] <- NA
+		}
+
+	}
+		
 	out
 
 }
@@ -62,30 +67,35 @@ whichPMin <- function(..., na.rm = TRUE) {
 	x <- list(...)
 
 	# check for same length
-	sameLength <- TRUE
-	if (!sameLength) {
-		for (i in 1:(length(x) - 1)) {
-			if (length(x[[i]]) != length(x[[i + 1]])) {
-				sameLength <- FALSE
-			}
-		}
-	}
-	
-	if (!sameLength) warning('Vectors have different length.')
-	
-	# which.pmax
-	x <- sapply(x, as.matrix, nrow=length(x))
-	out <- apply(x, 1, which.min)
-	zeroLengths <- which(sapply(out, length) == 0)
-	if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
-	out <- unlist(out)
-	
-	# implant NAs
-	if (!na.rm & anyNA(x)) {
-		nas <- which(is.na(rowSums(x)))
-		out[nas] <- NA
-	}
+	lengths <- sapply(x, length)
+	if (max(lengths) != min(lengths)) stop('Vectors have different length.')
 
+	if (lengths[1] == 1) {
+	
+		x <- unlist(x)
+		out <- if (!na.rm & anyNA(x)) {
+			NA
+		} else {
+			which.min(unlist(x))
+		}
+		
+	} else {
+	
+		# which.pmax
+		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		out <- apply(x, 1, which.min)
+		zeroLengths <- which(sapply(out, length) == 0)
+		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
+		out <- unlist(out)
+		
+		# implant NAs
+		if (!na.rm & anyNA(x)) {
+			nas <- which(is.na(rowSums(x)))
+			out[nas] <- NA
+		}
+
+	}
+		
 	out
 
 }
