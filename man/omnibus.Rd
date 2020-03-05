@@ -18,7 +18,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{insertCol}}: Insert column(s) in a matrix or data frame. \cr
 		\code{\link{cull}}: Force vectors or rows to have the same length or number of rows. \cr
 		\code{\link{insertCol}}: Insert a column in a matrix or data frame. \cr
-		\code{\link{mergeList}}: Merge lists. \cr
+		\code{\link{mergeLists}}: Merge lists. \cr
 		\code{\link{mirror}}: Mirror image of text or numeric value. \cr
 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
@@ -26,8 +26,10 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 
 \section{Dates}{
 
+		\code{\link{domLeap}}: Data frame of days of each month in a leap year. \cr
+		\code{\link{domNonLeap}}: Data frame of days of each month in a non-leap year. \cr
 		\code{\link{doyLeap}}: Data frame of days of year in a leap year. \cr
-		\code{\link{doyLeapNonLeap}}: Data frame of days of year in a non-leap year. \cr
+		\code{\link{doyNonLeap}}: Data frame of days of year in a non-leap year. \cr
 	\code{\link{isLeapYear}}: Is a year a leap year?  \cr
 		\code{\link{yearFromDate}}: Attempt to find the year across dates with non-standard formats. \cr
 }
