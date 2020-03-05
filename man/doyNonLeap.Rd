@@ -3,7 +3,7 @@
 \docType{data}
 \name{doyNonLeap}
 \alias{doyNonLeap}
-\title{Day of year for non-leap years}
+\title{Days of year for non-leap years}
 \format{An object of class \code{'data.frame'}.}
 \source{
 
@@ -12,7 +12,7 @@
 data(doyNonLeap)
 }
 \description{
-Data frame of day of year for each month in a non-leap year
+Data frame of days of year for each month in a non-leap year
 }
 \examples{
 data(doyNonLeap)

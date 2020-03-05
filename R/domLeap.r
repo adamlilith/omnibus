@@ -1,6 +1,6 @@
-#' Day of year for leap years
+#' Day of month for leap years
 #'
-#' Data frame of day of year for each month in a leap year.
+#' Data frame of day of month for each month in a leap year.
 #'
 #' @docType data
 #'
@@ -15,6 +15,6 @@
 #' @source
 #'
 #' @examples
-#' data(doyLeap)
-#' doyLeap
-'doyLeap'
+#' data(domLeap)
+#' domLeap
+'domLeap'

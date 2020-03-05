@@ -16,14 +16,16 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `insertCol`: Insert column(s) in a matrix or data frame.
 * `cull`: Force vectors or rows to have the same length or number of rows.
 * `insertCol`: Insert a column in a matrix or data frame.
-* `mergeList`: Merge lists.
+* `mergeLists`: Merge lists.
 * `mirror`: Mirror image of text or numeric value.
 * `rotateMatrix`: Rotate a matrix.
 * `stretchMinMax`: Rescale values to a given range.
 
 ## Dates ##
+* `domLeap`: Data frame of days of each month in a leap year. \cr
+* `domNonLeap`: Data frame of days of each month in a non-leap year. \cr
 * `doyLeap`: Data frame of days of year in a leap year.
-* `doyLeapNonLeap`: Data frame of days of year in a non-leap year.
+* `doyNonLeap`: Data frame of days of year in a non-leap year.
 * `isLeapYear`: Is a year a leap year?
 * `yearFromDate`: Attempt to find the year across dates with non-standard formats.
 
