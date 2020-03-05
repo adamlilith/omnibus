@@ -1,6 +1,6 @@
 #' Index of rows in a data frame or matrix that contain at least one \code{NA}
 #'
-#' This function returns the row number of any row in a data frame or matrix that has at least one \code{NA}.
+#' This function returns the row number of any row in a data frame or matrix that has at least one \code{NA}. This is the same as \code{which(!complete.cases(x))}.
 #' @param x Data frame or matrix.
 #' @param inf Logical, if \code{TRUE} then also return row numbers of rows in which at least one element is \code{Inf} or \code{-Inf}. The default is \code{FALSE}.
 #' @param inverse Logical, if \code{TRUE} then return row numbers of rows that \emph{do not} have \code{NA}s (and possibly \code{Inf} or \code{-Inf}).  The default is \code{FALSE}.

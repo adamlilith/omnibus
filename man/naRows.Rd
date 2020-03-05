@@ -17,7 +17,7 @@ naRows(x, inf = FALSE, inverse = FALSE)
 Integer vector.
 }
 \description{
-This function returns the row number of any row in a data frame or matrix that has at least one \code{NA}.
+This function returns the row number of any row in a data frame or matrix that has at least one \code{NA}. This is the same as \code{which(!complete.cases(x))}.
 }
 \examples{
 x <- data.frame(a=1:5, b=c(1, 2, NA, 4, 5), c=c('a', 'b', 'c', 'd', NA))
