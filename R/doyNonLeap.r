@@ -1,6 +1,6 @@
-#' Day of year for non-leap years
+#' Days of year for non-leap years
 #'
-#' Data frame of day of year for each month in a non-leap year
+#' Data frame of days of year for each month in a non-leap year
 #'
 #' @docType data
 #'
