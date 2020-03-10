@@ -1,4 +1,8 @@
-omnibus 0.3.4.0 (2020-0305)
+omnibus 0.3.4.1 (2020-XX-XX)
+
+* Added function insertRow().
+
+omnibus 0.3.4.0 (2020-03-05)
 
 * Added function isLeapYear().
 

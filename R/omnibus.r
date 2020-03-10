@@ -8,7 +8,7 @@
 #' 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 #' 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
 #' 		\code{\link{cull}}: Force vectors or rows to have the same length or number of rows. \cr
-#' 		\code{\link{insertCol}}: Insert column(s) in a matrix or data frame. \cr
+#' 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
 #' 		\code{\link{cull}}: Force vectors or rows to have the same length or number of rows. \cr
 #' 		\code{\link{insertCol}}: Insert a column in a matrix or data frame. \cr
 #' 		\code{\link{mergeLists}}: Merge lists. \cr

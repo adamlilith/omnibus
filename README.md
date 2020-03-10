@@ -13,7 +13,7 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `combineDf`: Combine data frames with different schema.
 * `corner`: Corner of a matrix or data frame.
 * `cull`: Force vectors or rows to have the same length or number of rows.
-* `insertCol`: Insert column(s) in a matrix or data frame.
+* `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `cull`: Force vectors or rows to have the same length or number of rows.
 * `insertCol`: Insert a column in a matrix or data frame.
 * `mergeLists`: Merge lists.
