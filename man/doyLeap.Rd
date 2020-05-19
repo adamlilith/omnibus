@@ -4,7 +4,9 @@
 \name{doyLeap}
 \alias{doyLeap}
 \title{Day of year for leap years}
-\format{An object of class \code{'data.frame'}.}
+\format{
+An object of class \code{'data.frame'}.
+}
 \source{
 
 }

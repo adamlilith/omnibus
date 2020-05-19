@@ -1,4 +1,9 @@
-omnibus 0.3.4.0 (2020-0305)
+omnibus 0.3.4.1 (2020-05-18)
+
+* Added function insertRow().
+* Recompile for R 4.0.0.
+
+omnibus 0.3.4.0 (2020-03-05)
 
 * Added function isLeapYear().
 
