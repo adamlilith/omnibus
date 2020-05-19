@@ -13,8 +13,8 @@
 #' }
 #' The function takes account of rounding up:
 #' \itemize{
-#'		\item 0.666 might be a truncated version of 2\/3, which each have 1 significant digit, so the function returns -1 (1 value after the decimal place).
-#'		\item 0.667 also returns -1 because this might represent a rounding of 2\/3 and it is customary to round digits up if the next digit would have been >5.
+#'		\item 0.666 might be a truncated version of 2//3. Two and three each have 1 significant digit, so the function returns -1 (1 value after the decimal place).
+#'		\item 0.667 also returns -1 because this might represent a rounding of 2//3 and it is customary to round digits up if the next digit would have been >5.
 #'		\item 0.3334 returns -4 because it is inappropriate to round 3 up to 4 if the next digit would have been 5 or less.
 #' }
 #'

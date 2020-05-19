@@ -4,7 +4,9 @@
 \name{doyNonLeap}
 \alias{doyNonLeap}
 \title{Days of year for non-leap years}
-\format{An object of class \code{'data.frame'}.}
+\format{
+An object of class \code{'data.frame'}.
+}
 \source{
 
 }

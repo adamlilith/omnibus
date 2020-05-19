@@ -4,7 +4,9 @@
 \name{domNonLeap}
 \alias{domNonLeap}
 \title{Day of month for non-leap years}
-\format{An object of class \code{'data.frame'}.}
+\format{
+An object of class \code{'data.frame'}.
+}
 \source{
 
 }
