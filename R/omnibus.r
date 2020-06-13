@@ -40,9 +40,11 @@
 #' @section Function tools:
 #' 		\code{\link{ellipseNames}}: Get names in \code{...} arguments. \cr
 #' @section System:
+#' 		\code{\link{clear}}: Erase everything in memory. \cr
 #' 		\code{\link{dirCreate}}: Nicer version of \code{\link{dir.create}} \cr
 #' 		\code{\link{eps}}: Smallest floating point value your computer can think of. \cr
 #' 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
+#'		\code{\link{lsos}}: Display largest objects in memory. \cr
 #' @section Text:
 #' 		\code{\link{capIt}}: Capitalize first letter of a string. \cr
 #' 		\code{\link{prefix}}: Add repeating character to a string to ensure it has a user-defined length (e.g., \code{7} --> \code{007}). \cr
