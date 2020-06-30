@@ -3,9 +3,7 @@ Utility functions for the 99%.
 
 To install `omnibus` do the following:
 
-`install.packages('devtools') # if you haven't done this already`  
-`library(devtools)`  
-`install_github('adamlilith/omnibus')`
+`remotes::install_github('adamlilith/omnibus')`
 
 NB: If for some reason these commands do not work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
 
@@ -51,9 +49,11 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `ellipseNames`: Get names in `...` arguments.
 
 ## System ##
-* `dirCreate`: Nicer version of `dir.create()`
+* `clear`: Erase everything in memory.
+* `dirCreate`: Nicer version of `dir.create()`.
 * `eps`: Smallest floating point value your computer can think of.
 * `listFiles`: Nicer version of `list.files()`.
+* `lsos`: Display largest objects in memory.
 
 ## Text ##
 * `capIt`: Capitalize first letter of a string.

@@ -1,3 +1,6 @@
+omnibus 0.3.4.2 (2020-XX-XX)
+* Added function clear().
+
 omnibus 0.3.4.1 (2020-05-18)
 
 * Added function insertRow().
