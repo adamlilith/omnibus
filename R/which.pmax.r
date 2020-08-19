@@ -15,12 +15,12 @@
 #' a[6] <- NA
 #' b[6] <- NA
 #' c[6] <- NA
-#' whichPMax(a, b, c)
+#' which.pmax(a, b, c)
 #' whichPMin(a, b, c)
-#' whichPMax(a, b, c, na.rm=FALSE)
+#' which.pmax(a, b, c, na.rm=FALSE)
 #' whichPMin(a, b, c, na.rm=FALSE)
 #' @export
-whichPMax <- function(..., na.rm = TRUE) {
+which.pmax <- function(..., na.rm = TRUE) {
 
 	# convert to list
 	x <- list(...)
@@ -59,7 +59,7 @@ whichPMax <- function(..., na.rm = TRUE) {
 
 }
 
-#' @describeIn whichPMax Which vector has minimum value at each element
+#' @describeIn which.pmax Which vector has minimum value at each element
 #' @export
 whichPMin <- function(..., na.rm = TRUE) {
 

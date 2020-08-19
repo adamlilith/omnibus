@@ -36,7 +36,7 @@
 #' 		\code{\link{longRun}}: Longest run of a given sequence in a vector. \cr
 #' 		\code{\link{roundedSigDigits}}: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded. \cr
 #' 		\code{\link{same}}: Are all elements of a vector the same? \cr
-#' 		\code{\link{whichPMax}} and \code{\link{whichPMin}}: Combine \code{\link{which.max}} with \code{\link{pmax}}, and \code{\link{which.min}} with \code{\link{pmin}} (vectorized \code{\link{which.max}} and \code{\link{which.min}}). \cr
+#' 		\code{\link{which.pmax}} and \code{\link{whichPMin}}: Combine \code{\link{which.max}} with \code{\link{pmax}}, and \code{\link{which.min}} with \code{\link{pmin}} (vectorized \code{\link{which.max}} and \code{\link{which.min}}). \cr
 #' @section Function tools:
 #' 		\code{\link{ellipseNames}}: Get names in \code{...} arguments. \cr
 #' @section System:
