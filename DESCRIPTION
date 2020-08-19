@@ -2,7 +2,7 @@ Package: omnibus
 Type: Package
 Title: Ease-of-use tools
 Version: 0.3.4.2
-Date: 2020-06-13
+Date: 2020-08-18
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: Fantabulous helper functions.
@@ -13,4 +13,4 @@ License: GPL (>=3) + file LICENSE
 LazyLoad: yes
 URL: http://www.earthSkySea.org
 Encoding: UTF-8
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
