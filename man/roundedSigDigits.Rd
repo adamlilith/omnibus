@@ -15,8 +15,7 @@ roundedSigDigits(x, minReps = 3)
 Integer (number of digits) or \code{NA} (does not appear to be rounded).
 }
 \description{
-This function estimates the number of significant digits in an unknown numerator and denominator in a division operation used to generate a value that (possibly) has values after the decimal place \emph{or} it estimates the number of digits to which an integer may have been rounded, depending on whether the input has values after the decimal place or is an integer. Negative values are treated as positive values so the negative of a number will returns the same value as its positive version. See \emph{Details} for more details!
-\emph{Obviously, values can appear to be rounded or repeating even when they are not!}
+This function estimates the number of significant digits in an unknown numerator and denominator in a division operation used to generate a value that (possibly) has values after the decimal place \emph{or} it estimates the number of digits to which an integer may have been rounded, depending on whether the input has values after the decimal place or is an integer. Negative values are treated as positive values so the negative of a number will returns the same value as its positive version. See \emph{Details} for more details. \emph{Obviously, values can appear to be rounded or repeating even when they are not!}
 }
 \details{
 For values with at least one non-zero digit after a decimal place with no repeated series of digits detected, the function simply returns the total number of digits (ignoring trailing zeros) times -1. For example:

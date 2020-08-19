@@ -43,7 +43,7 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `longRun`: Longest run of a given sequence in a vector.
 * `roundedSigDigits`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
 * `same`: Are all elements of a vector the same?
-* `whichPMax` and `whichPMin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
+* `which.pmax` and `which.pmin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
 
 ## Function tools ##
 * `ellipseNames`: Get names in `...` arguments.

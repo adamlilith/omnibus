@@ -1,5 +1,6 @@
-omnibus 0.3.4.2 (2020-XX-XX)
+omnibus 0.3.4.2 (2020-08-18)
 * Added function clear().
+* Renamed which.pmax() and which.pmin()
 
 omnibus 0.3.4.1 (2020-05-18)
 
