@@ -3,7 +3,7 @@ Utility functions for the 99%.
 
 To install `omnibus` do the following:
 
-`remotes::install_github('adamlilith/omnibus')`
+`remotes::install_github('adamlilith/omnibus', dependencies=TRUE)`
 
 NB: If for some reason these commands do not work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
 
