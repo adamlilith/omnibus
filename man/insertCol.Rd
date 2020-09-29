@@ -19,7 +19,7 @@ insertCol(x, into, at = NULL, before = TRUE)
 A data frame.
 }
 \description{
-This function inserts one or more columns before or after another column in a data frame or matrix. It is similar to \code{\link[base]{cbind}} except that the inserted column(s) can be placed anywhere.
+This function inserts one or more columns before or after another column in a data frame or matrix. It is similar to \code{\link{cbind}} except that the inserted column(s) can be placed anywhere.
 }
 \examples{
 x <- data.frame(y1=11:15, y2=rev(letters)[1:5])
@@ -30,5 +30,5 @@ insertCol(x, into=into, at='x3', before=FALSE)
 insertCol(x, into)
 }
 \seealso{
-\code{\link[base]{merge}}, \code{\link[base]{cbind}}
+
 }
