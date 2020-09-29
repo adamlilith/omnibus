@@ -13,6 +13,11 @@
 #' lsos(3)
 #' @export
 
+# shorthand
+lsos <- function(n=10, ...) {
+    .ls.objects(n=n, ..., orderBy='Size', decreasing=TRUE)
+}
+
 .ls.objects <- function (
 	n,
 	pattern,
@@ -46,7 +51,3 @@
 
 }
 
-# shorthand
-lsos <- function(n=10, ...) {
-    .ls.objects(n=n, ..., orderBy='Size', decreasing=TRUE)
-}
