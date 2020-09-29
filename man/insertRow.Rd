@@ -19,7 +19,7 @@ insertRow(x, into, at = NULL, before = TRUE)
 A data frame.
 }
 \description{
-This function inserts one or more rows before or after another row in a data frame or matrix. It is similar to \code{\link[base]{rbind}} except that the inserted rows(s) can be placed anywhere.
+This function inserts one or more rows before or after another row in a data frame or matrix. It is similar to \code{\link{rbind}} except that the inserted rows(s) can be placed anywhere.
 }
 \examples{
 x <- data.frame(x1=1:3, x2=LETTERS[1:3])
@@ -31,5 +31,5 @@ insertRow(x, into=into, at='b', before=FALSE)
 insertRow(x, into)
 }
 \seealso{
-\code{\link[base]{merge}}, \code{\link[base]{rbind}}
+\code{\link[base]{merge}}, \code{\link{rbind}}, \code{\link{insertCol}}
 }
