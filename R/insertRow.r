@@ -1,12 +1,12 @@
 #' Insert a row into a data frame or matrix
 #'
-#' This function inserts one or more rows before or after another row in a data frame or matrix. It is similar to \code{\link[base]{rbind}} except that the inserted rows(s) can be placed anywhere.
+#' This function inserts one or more rows before or after another row in a data frame or matrix. It is similar to \code{\link{rbind}} except that the inserted rows(s) can be placed anywhere.
 #' @param x Data frame, matrix, or vector with same number of columns or elements as \code{into}.
 #' @param into Data frame or matrix into which \code{x} is to be inserted.
 #' @param at Character, integer, or \code{NULL}. Name of row or row number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{rbind(into, x}.
 #' @param before Logical, if \code{TRUE} (default) then the insertion will occur immediately above the row named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.
 #' @return A data frame.
-#' @seealso \code{\link[base]{merge}}, \code{\link[base]{rbind}}
+#' @seealso \code{\link[base]{merge}}, \code{\link{rbind}}, \code{\link{insertCol}}
 #' @examples
 #' x <- data.frame(x1=1:3, x2=LETTERS[1:3])
 #' into <- data.frame(x1=11:15, x2='valid')

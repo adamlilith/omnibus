@@ -5,12 +5,11 @@
 #' Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 #' @details
 #' @section Data manipulation:
+#' 		\code{\link{bracket}}: Find values that bracket a given number. \cr
 #' 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 #' 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
-#' 		\code{\link{cull}}: Force vectors or rows to have the same length or number of rows. \cr
+#' 		\code{\link{cull}}: Force vectors or matrices/data frames to have the same length or number of rows. \cr
 #' 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
-#' 		\code{\link{cull}}: Force vectors or rows to have the same length or number of rows. \cr
-#' 		\code{\link{insertCol}}: Insert a column in a matrix or data frame. \cr
 #' 		\code{\link{mergeLists}}: Merge lists. \cr
 #' 		\code{\link{mirror}}: Mirror image of text or numeric value. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
@@ -37,8 +36,6 @@
 #' 		\code{\link{roundedSigDigits}}: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded. \cr
 #' 		\code{\link{same}}: Are all elements of a vector the same? \cr
 #' 		\code{\link{which.pmax}} and \code{\link{which.pmin}}: Combine \code{\link{which.max}} with \code{\link{pmax}}, and \code{\link{which.min}} with \code{\link{pmin}} (vectorized \code{\link{which.max}} and \code{\link{which.min}}). \cr
-#' @section Function tools:
-#' 		\code{\link{ellipseNames}}: Get names in \code{...} arguments. \cr
 #' @section System:
 #' 		\code{\link{clear}}: Erase everything in memory. \cr
 #' 		\code{\link{dirCreate}}: Nicer version of \code{\link{dir.create}} \cr
