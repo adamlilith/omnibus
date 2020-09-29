@@ -1,3 +1,7 @@
+omnibus 0.3.4.3 (2020-09-29)
+* Add function bracket()
+* Unexport function ellipseNames()
+
 omnibus 0.3.4.2 (2020-08-18)
 * Added function clear().
 * Renamed which.pmax() and which.pmin()

@@ -8,12 +8,11 @@ To install `omnibus` do the following:
 NB: If for some reason these commands do not work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
 
 ## Data manipulation ##
+* `bracket`: Find values that bracket a given number.
 * `combineDf`: Combine data frames with different schema.
 * `corner`: Corner of a matrix or data frame.
-* `cull`: Force vectors or rows to have the same length or number of rows.
+* `cull`: Force vectors or matrices/data frames to have the same length or number of rows.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
-* `cull`: Force vectors or rows to have the same length or number of rows.
-* `insertCol`: Insert a column in a matrix or data frame.
 * `mergeLists`: Merge lists.
 * `mirror`: Mirror image of text or numeric value.
 * `rotateMatrix`: Rotate a matrix.
@@ -44,9 +43,6 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `roundedSigDigits`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
 * `same`: Are all elements of a vector the same?
 * `which.pmax` and `which.pmin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
-
-## Function tools ##
-* `ellipseNames`: Get names in `...` arguments.
 
 ## System ##
 * `clear`: Erase everything in memory.
