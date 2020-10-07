@@ -27,8 +27,8 @@ stretchMinMax <- function(x, lower=0, upper=1, nudgeUp=FALSE, nudgeDown=FALSE, n
 	out <- out / max(out, na.rm=na.rm)
 	out <- out * (upper - lower) + lower
 
-	if (nudgeUp) out[out == lower] <- out[out == lower] + 0.5 * (min(out[out > lower], na.rm=na.rm) - lower)
-	if (nudgeDown) out[out == upper] <- out[out == upper] - 0.5 * (upper - max(out[out < upper], na.rm=na.rm))
+	if (nudgeUp) out[which(out %==na% lower)] <- out[which(out %==na% lower)] + 0.5 * (min(out[which(out %>na% lower)], na.rm=na.rm) - lower)
+	if (nudgeDown) out[which(out == upper)] <- out[which(out %==na% upper)] - 0.5 * (upper - max(out[which(out %<na% upper)], na.rm=na.rm))
 	out
 	
 }
