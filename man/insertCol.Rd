@@ -30,5 +30,5 @@ insertCol(x, into=into, at='x3', before=FALSE)
 insertCol(x, into)
 }
 \seealso{
-
+\code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}
 }

@@ -1,3 +1,6 @@
+omnibus 0.3.4.5 (2020-10-11)
+* Added roundTo()
+
 omnibus 0.3.4.4 (2020-10-05)
 * Fixed bug in stretchMinMax() when NAs are in input
 

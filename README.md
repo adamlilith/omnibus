@@ -16,11 +16,12 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `mergeLists`: Merge lists.
 * `mirror`: Mirror image of text or numeric value.
 * `rotateMatrix`: Rotate a matrix.
+* `roundTo`: Rounds a value to the nearest target value.
 * `stretchMinMax`: Rescale values to a given range.
 
 ## Dates ##
-* `domLeap`: Data frame of days of each month in a leap year. \cr
-* `domNonLeap`: Data frame of days of each month in a non-leap year. \cr
+* `domLeap`: Data frame of days of each month in a leap year.
+* `domNonLeap`: Data frame of days of each month in a non-leap year.
 * `doyLeap`: Data frame of days of year in a leap year.
 * `doyNonLeap`: Data frame of days of year in a non-leap year.
 * `isLeapYear`: Is a year a leap year?
