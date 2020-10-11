@@ -13,6 +13,7 @@
 #' 		\code{\link{mergeLists}}: Merge lists. \cr
 #' 		\code{\link{mirror}}: Mirror image of text or numeric value. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
+#' 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 #' 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 #' @section Dates:
 #' 		\code{\link{domLeap}}: Data frame of days of each month in a leap year. \cr
@@ -38,7 +39,7 @@
 #' 		\code{\link{which.pmax}} and \code{\link{which.pmin}}: Combine \code{\link{which.max}} with \code{\link{pmax}}, and \code{\link{which.min}} with \code{\link{pmin}} (vectorized \code{\link{which.max}} and \code{\link{which.min}}). \cr
 #' @section System:
 #' 		\code{\link{clear}}: Erase everything in memory. \cr
-#' 		\code{\link{dirCreate}}: Nicer version of \code{\link{dir.create}} \cr
+#' 		\code{\link{dirCreate}}: Nicer version of \code{\link{dir.create}}. \cr
 #' 		\code{\link{eps}}: Smallest floating point value your computer can think of. \cr
 #' 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
 #'		\code{\link{lsos}}: Display largest objects in memory. \cr
