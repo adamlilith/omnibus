@@ -16,8 +16,12 @@
 #' bracket(3.2, by, index=TRUE)
 #'
 #' bracket(c(3.2, 9.8, 4), by)
+#'
+#' bracket(2, c(0, 1, 1, 1, 3, 5), index=TRUE)
+#' bracket(3, c(1, 2, 10))
 #' 
 #' \donttest{
+#' by <- 1:10
 #' bracket(-100, by)
 #' bracket(100, by)
 #' }
@@ -33,27 +37,42 @@ bracket <- function(x, by, index=FALSE, warn=TRUE) {
 	
 		out <- list()
 		for (i in seq_along(x)) {
-			out[[length(out) + 1]] <- bracket(x[i], by, index)
+			out[[length(out) + 1]] <- bracket(x[i], by=by, index=index, warn=warn)
 		}
 		
 	} else {
 	
-		if (any(x == by)) {
-			firstIndex <- which(x == by)
+		if (any(x %==na% by)) {
+			firstIndex <- which(x %==na% by)
+			firstIndex <- if (tiesOuter) {
+				firstIndex[1]
+			} else {
+				firstIndex[length(firstIndex)]
+			}
 			secondIndex <- NULL
-		} else if (all(x > by)) {
+		} else if (all(x %>na% by)) {
 			firstIndex <- which.max(by)
 			secondIndex <- NULL
 			if (warn) warning('The value of "x" exceeds the maximum value in "by".')
-		} else if (all(x < by)) {
+		} else if (all(x %<na% by)) {
 			firstIndex <- which.min(by)
 			secondIndex <- NULL
 			if (warn) warning('The value of "x" is lower than the minimum value in "by".')
 		} else {
+
 			firstIndex <- which.min(abs(x - by))
+
 			byNa <- by
-			byNa[firstIndex] <- NA
+			if (byNa[firstIndex] < x) {
+				byNa[1:firstIndex] <- NA
+			} else if (byNa[firstIndex] > x) {
+				byNa[firstIndex:length(byNa)] <- NA
+			}
+			
+			if (any(byNa %==na% by[firstIndex])) byNa[byNa %==na% by[firstIndex]] <- NA
+
 			secondIndex <- which.min(abs(x - byNa))
+			
 		}
 	
 		out <- if (index) {
