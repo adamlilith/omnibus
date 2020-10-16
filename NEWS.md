@@ -1,3 +1,6 @@
+omnibus 0.3.4.6 (2020-10-16)
+* Fix bug in bracket()
+
 omnibus 0.3.4.5 (2020-10-11)
 * Added roundTo()
 

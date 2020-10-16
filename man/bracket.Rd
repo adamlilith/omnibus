@@ -32,7 +32,11 @@ bracket(3.2, by, index=TRUE)
 
 bracket(c(3.2, 9.8, 4), by)
 
+bracket(2, c(0, 1, 1, 1, 3, 5), index=TRUE)
+bracket(3, c(1, 2, 10))
+
 \donttest{
+by <- 1:10
 bracket(-100, by)
 bracket(100, by)
 }
