@@ -1,3 +1,6 @@
+omnibus 0.3.4.7 (2020-10-16)
+* Can now specify inner/outer part of bracket in bracket()
+
 omnibus 0.3.4.6 (2020-10-16)
 * Fix bug in bracket()
 
