@@ -4,7 +4,7 @@
 \alias{bracket}
 \title{Identify values bracketing another value}
 \usage{
-bracket(x, by, index = FALSE, warn = TRUE)
+bracket(x, by, index = FALSE, inner = TRUE, warn = TRUE)
 }
 \arguments{
 \item{x}{Numeric value or vector of values.}
@@ -13,27 +13,31 @@ bracket(x, by, index = FALSE, warn = TRUE)
 
 \item{index}{Logical. If \code{FALSE} (default), then numeric values in \code{by} will be returned. If \code{TRUE}, then the index or indices of the bracketing value(s) will be returned.}
 
+\item{inner}{Logical. If \code{TRUE} (default), then if \code{x} is surrounded by at least one series of repeating values, return the values (or indices) among the repeated sequence(s) closest to the value of \code{x}. If \code{FALSE}, return the value(s) (or indices) among the repeated sequence(s) farthest from the value of \code{x}. For example, if \code{index = TRUE}, \code{by = c(1, 2, 2, 2, 3, 3)}, and \code{x = 2.5}, setting \code{inner = TRUE} will return the index of the third 2 and first 3.  If \code{inner = FALSE}, then the function returns the index of the first 2 and second 3.}
+
 \item{warn}{Logical. If \code{TRUE} (default), then warn if \code{x} is outside the range of \code{by}.}
 }
 \value{
-If \code{x} is a single value, then the function will return a numeric vector of length 1 or 2, depending on how many values bracket \code{x}. If \code{x} is a vector, then the result will be a list with one element per item in \code{x} with each element having the same format as the case when \code{x} is a single value.
+If \code{x} is a single value, then the function will return a numeric vector of length 1 or 2, depending on how many values bracket \code{x}. If all values of \code{by} are the same, then the median index (or value) of \code{by} is returned. If \code{x} is a vector, then the result will be a list with one element per item in \code{x} with each element having the same format as the case when \code{x} is a single value.
 }
 \description{
-This function finds the set of values in a vector that bracket a third value, \code{x}. If \code{x} is exactly equal to one of the values in the vector, then a single value equal to \code{x} is returned. If \code{x} falls outside of the range of the vector, then the least/most extreme value of the vector is returned (depending on which side of the distribution of the vector \code{x} resides).  Optionally, users can have the function return the index of the values that bracket \code{x}.
+This function finds the set of values in a vector that bracket a third value, \code{x}. If \code{x} is exactly equal to one of the values in the vector, then a single value equal to \code{x} is returned. If \code{x} falls outside of the range of the vector, then the least/most extreme value of the vector is returned (depending on which side of the distribution of the vector \code{x} resides). Optionally, users can have the function return the index of the values that bracket \code{x}.
 }
 \examples{
-x <- 3.2
-by <- 2 * (1:10)
-bracket(3.2, by)
+by <- 2 * (1:5)
+bracket(4.2, by)
 bracket(6.8, by)
-bracket(18, by)
 
 bracket(3.2, by, index=TRUE)
-
 bracket(c(3.2, 9.8, 4), by)
 
 bracket(2, c(0, 1, 1, 1, 3, 5), index=TRUE)
 bracket(3, c(1, 2, 10))
+
+bracket(2.5, c(1, 2, 2, 2, 3, 3), index=TRUE)
+bracket(2.5, c(1, 2, 2, 2, 3, 3), index=TRUE, inner=FALSE)
+bracket(2.9, c(1, 2, 2, 2, 3, 3), index=TRUE)
+bracket(2.9, c(1, 2, 2, 2, 3, 3), index=TRUE, inner=FALSE)
 
 \donttest{
 by <- 1:10
