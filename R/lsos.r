@@ -46,6 +46,7 @@ lsos <- function(n=10, ...) {
     out <- out[c('Type', 'PrettySize', 'Rows', 'Columns')]
     names(out) <- c('Type', 'Size', 'Rows', 'Columns')
     out <- out[1:n, ]
+	out <- out[!is.na(out$Type), ]
 	
 	out
 
