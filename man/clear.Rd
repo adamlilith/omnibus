@@ -7,7 +7,7 @@
 clear(rm = FALSE)
 }
 \arguments{
-\item{rm}{Logical, if \code{FALSE} (default), everything will be cleared from memory. If \code{TRUE}, then nothing will be cleared but garbage collection will be implemented.}
+\item{rm}{Logical, if \code{TRUE} (default), everything will be cleared from memory. If \code{FALSE}, then nothing will be cleared but garbage collection will be implemented.}
 }
 \value{
 Nothing (clears everything from memory).
