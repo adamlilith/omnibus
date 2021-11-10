@@ -14,6 +14,7 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `cull`: Force vectors or matrices/data frames to have the same length or number of rows.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `mergeLists`: Merge lists.
+* `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.
 * `mirror`: Mirror image of text or numeric value.
 * `rotateMatrix`: Rotate a matrix.
 * `roundTo`: Rounds a value to the nearest target value.
