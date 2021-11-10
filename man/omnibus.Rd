@@ -18,8 +18,9 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{cull}}: Force vectors or matrices/data frames to have the same length or number of rows. \cr
 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
 		\code{\link{maxRuns}}: Maximum number of continuous "runs" of values meeting a particular condition. \cr
+		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
+		\code{\link{mmode}}: Modal value(s). \cr
 		\code{\link{mergeLists}}: Merge lists. \cr
-		\code{\link{mirror}}: Mirror image of text or numeric value. \cr
 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
@@ -43,7 +44,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 
 \section{Handling \code{NAs}}{
 
-		\code{\link[omnibus:naCompare]{\%<\%}}, \code{\link{\%<=na\%}}, \code{\link{\%==na\%}}, \code{\link{\%!=na\%}}, \code{\link{\%>na\%}}, and \code{\link{\%>=na\%}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
+		\code{\link[omnibus:naCompare]{\%<=na\%}}, \code{\link[omnibus:naCompare]{\%==na\%}}, \code{\link[omnibus:naCompare]{\%!=na\%}}, \code{\link[omnibus:naCompare]{\%>na\%}}, and \code{\link[omnibus:naCompare]{\%>=na\%}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
 		\code{\link{isTRUENA}} and \code{\link{isFALSENA}}: Logical operators robust to \code{NA}. \cr
 		\code{\link{naCompare}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
 		\code{\link{naOmitMulti}}: Remove elements of multiple vectors if at least one element is \code{NA} or rows of matrices/data frames if at least one row has an \code{NA}. \cr

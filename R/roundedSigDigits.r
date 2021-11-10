@@ -105,8 +105,8 @@ roundedSigDigits <- function(x, minReps = 3) {
 				# value is not zero
 				} else {
 					thisRun <- rle(unlist(strsplit(before, '')))
-					if (tail(thisRun$values, 1) == '0') {
-						out[i] <- tail(thisRun$lengths, 1) + 1
+					if (utils::tail(thisRun$values, 1) == '0') {
+						out[i] <- utils::tail(thisRun$lengths, 1) + 1
 					} else {
 						out[i] <- 1
 					}

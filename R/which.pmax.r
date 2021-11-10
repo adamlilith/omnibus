@@ -41,7 +41,7 @@ which.pmax <- function(..., na.rm = TRUE) {
 	} else {
 	
 		# which.pmax
-		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		x <- sapply(x, as.matrix)
 		out <- apply(x, 1, which.max)
 		zeroLengths <- which(sapply(out, length) == 0)
 		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA
@@ -82,7 +82,7 @@ which.pmin <- function(..., na.rm = TRUE) {
 	} else {
 	
 		# which.pmax
-		x <- sapply(x, as.matrix, nrow=rows, ncol=cols)
+		x <- sapply(x, as.matrix)
 		out <- apply(x, 1, which.min)
 		zeroLengths <- which(sapply(out, length) == 0)
 		if (length(zeroLengths) > 0) for (i in zeroLengths) out[[i]] <- NA

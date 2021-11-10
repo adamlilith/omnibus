@@ -19,7 +19,7 @@ same <- function(x, na.rm = FALSE) {
 		if (anyNA(x) & !all(is.na(x))) {
 			out <- FALSE
 		} else {
-			out <- all(x == omnibus::mmode(x))
+			out <- all(x == mmode(x))
 		}
 	}
 	

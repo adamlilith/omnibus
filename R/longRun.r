@@ -16,7 +16,7 @@
 
 longRun <- function(x, val, wrap = FALSE, na.rm = FALSE) {
 
-    if (na.rm) x <- na.omit(x)
+    if (na.rm) x <- stats::na.omit(x)
 
 	if (any(is.na(x))) {
 		out <- NA

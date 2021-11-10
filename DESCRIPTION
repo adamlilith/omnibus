@@ -6,10 +6,11 @@ Date: 2020-11-09
 Author: Adam B. Smith <adam.smith@mobot.org>
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
 Description: Fantabulous helper functions.
-Depends:
+Depends: 
 Imports:
 Suggests: raster
 License: GPL (>=3) + file LICENSE
+LazyData: true
 LazyLoad: yes
 URL: http://www.earthSkySea.org
 Encoding: UTF-8

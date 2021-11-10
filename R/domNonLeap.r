@@ -4,15 +4,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(domNonLeap)
-#'
 #' @format An object of class \code{'data.frame'}.
 #'
 #' @keywords datasets
-#'
-#' @references
-#'
-#' @source
 #'
 #' @examples
 #' data(domNonLeap)

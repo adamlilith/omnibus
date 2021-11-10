@@ -4,18 +4,18 @@
 \alias{lsos}
 \title{Size of objects taking most memory}
 \usage{
-lsos(n = 10, ...)
+lsos(n = 10, orderBy = "size", decreasing = TRUE, pos = 1, ...)
 }
 \arguments{
-\item{n}{Positive integer, number of objects to display.}
+\item{n}{Positive integer, maximum number of objects to display.}
 
-\item{pattern}{Character, return size of objects with this pattern in their name.}
+\item{orderBy}{Either \code{'size'} (default) or \code{'name'}.}
 
-\item{orderBy}{Either \code{NULL} (default) or any of c\code{'Type'}, \code{'Size'}, \code{'PrettySize'}, \code{'Rows'}, or \code{'Columns'}. Controls field by which objects are sorted.}
+\item{decreasing}{Logical, if \code{TRUE} (default), objects are displayed from largest to smallest.}
 
-\item{decreasing}{Logical, if \code{FALSE} (default), objects are displayed from larges to smallest.}
+\item{pos}{Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.}
 
-\item{pos}{Integer, indicates environment in which to search for objects. See help for \code{\link{ls}}.}
+\item{...}{Other arguments to pass to \code{\link{ls}}.}
 }
 \value{
 Nothing (displays a table).
@@ -24,7 +24,7 @@ Nothing (displays a table).
 Displays the largest objects in memory.
 }
 \details{
-Adapted from StackOverflow user Dirk Eddelbuettel (original function at https://stackoverflow.com/questions/1358003/tricks-to-manage-the-available-memory-in-an-r-session).
+Adapted from StackOverflow user JD Long (original function at https://stackoverflow.com/questions/1395270/determining-memory-usage-of-objects).
 }
 \examples{
 lsos()

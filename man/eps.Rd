@@ -6,9 +6,6 @@
 \usage{
 eps()
 }
-\arguments{
-\item{...}{(Not used)}
-}
 \value{
 Numeric value.
 }
