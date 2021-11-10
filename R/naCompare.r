@@ -1,6 +1,7 @@
 #' Compare values using <, <=, >, >=, !=, and == (robust to NAs)
 #'
 #' This function and set of operators perform simple (vectorized) comparisons using \code{<}, \code{<=}, \code{>}, \code{>=}, \code{!=}, or \code{==} between values and \emph{always} returns \code{TRUE} or \code{FALSE}. \code{TRUE} only occurs if the condition can be evaluated and it is \code{TRUE}. \code{FALSE} is returned if the condition is \code{FALSE} \emph{or} it cannot be evaluated.
+#'
 #' @param op Character, the operation to perform: \code{'<'}, \code{'<='}, \code{'>'}, \code{'>='}, \code{'!='}, or \code{'=='}. Note this must be a character (i.e., put it in quotes).
 #' @param x,y Vectors of numeric, character, \code{NA}, and/or \code{NaN} values. This is the first value in the operation \code{x XXX y} where \code{XXX} is the operator in \code{op}. If \code{x} is shorter than \code{y} then \code{x} is recycled.
 #' @return Vector of logical values.
@@ -34,6 +35,9 @@
 #' 5 >= 3
 #' 5 >= NA
 #' 3 == c(NA, 1, 2, 3, 4)
+#' @name naCompare
+#' @aliases `%<na%`, `%<=na%`, `%==na%`, `%!=na%`, `%>na%`, `%>=na%`
+#' @docType methods
 #' @export
 naCompare <- compiler::cmpfun(function(op, x, y) {
 
@@ -43,7 +47,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using < (robust to NAs)
+#' @name `%<na%`
+#' @title Compare values using < (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%<na%` <- compiler::cmpfun(function(x, y) {
 
@@ -53,7 +59,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using <= (robust to NAs)
+#' @name `%<=na%`
+#' @title Compare values using <= (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%<=na%` <- compiler::cmpfun(function(x, y) {
 
@@ -63,7 +71,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using == (robust to NAs)
+#' @name `%<==%`
+#' @title Compare values using == (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%==na%` <- compiler::cmpfun(function(x, y) {
 
@@ -73,7 +83,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using != (robust to NAs)
+#' @name `%!=na%`
+#' @title Compare values using != (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%!=na%` <- compiler::cmpfun(function(x, y) {
 
@@ -83,7 +95,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using > (robust to NAs)
+#' @name `%>na%`
+#' @title Compare values using > (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%>na%` <- compiler::cmpfun(function(x, y) {
 
@@ -93,7 +107,9 @@ naCompare <- compiler::cmpfun(function(op, x, y) {
 
 })
 
-#' @describeIn naCompare Compare values using >= (robust to NAs)
+#' @name `%>=na%`
+#' @title Compare values using >= (robust to NAs)
+#' @rdname naCompare
 #' @export
 `%>=na%` <- compiler::cmpfun(function(x, y) {
 

@@ -7,11 +7,8 @@
 \format{
 An object of class \code{'data.frame'}.
 }
-\source{
-
-}
 \usage{
-data(domNonLeap)
+domNonLeap
 }
 \description{
 Data frame of day of month for each month in a non-leap year.
@@ -19,8 +16,5 @@ Data frame of day of month for each month in a non-leap year.
 \examples{
 data(domNonLeap)
 domNonLeap
-}
-\references{
-
 }
 \keyword{datasets}

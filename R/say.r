@@ -69,7 +69,7 @@ say <- function(..., pre = 0, post = 1, breaks = NULL, wiggle = 10, preBreak = 1
 	if (!is.null(level) && level <= 2) cat(preSpace, paste(rep(deco, 3 + 1 + len + 1 + 3), collapse=''), '\n')
 	if (post > 0) cat(paste(rep('\n', post), collapse=''))
 	
-	flush.console()
+	utils::flush.console()
 
 }
 

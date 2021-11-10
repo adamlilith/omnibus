@@ -20,9 +20,9 @@ stretchMinMax(
 
 \item{upper}{Numeric, high end of range to which to stretch.}
 
-\item{na.rm}{Logical, if \code{FALSE} (default) then if any values of \code{x} are \code{NA} then the returned value will be \code{NA}. If \code{TRUE} then \code{NA}'s are ignored in calculation.}
+\item{nudgeUp, nudgeDown}{Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.}
 
-\item{nudge}{Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.}
+\item{na.rm}{Logical, if \code{FALSE} (default) then if any values of \code{x} are \code{NA} then the returned value will be \code{NA}. If \code{TRUE} then \code{NA}'s are ignored in calculation.}
 }
 \value{
 Numeric value.

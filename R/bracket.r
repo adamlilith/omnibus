@@ -50,7 +50,7 @@ bracket <- function(x, by, index=FALSE, inner=TRUE, warn=TRUE) {
 		if (any(x %==na% by)) {
 			firstIndex <- which(x %==na% by)
 			if (!index) return(x)
-			firstIndex <- round(median(firstIndex))
+			firstIndex <- round(stats::median(firstIndex))
 			secondIndex <- NULL
 		# x is > all values
 		} else if (all(x %>na% by)) {

@@ -4,7 +4,7 @@
 #' @param x Numeric list.
 #' @param lower Numeric, low end of range to which to stretch.
 #' @param upper Numeric, high end of range to which to stretch.
-#' @param nudge Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.
+#' @param nudgeUp,nudgeDown Logical, if \code{FALSE} (default) then do nothing. If \code{TRUE} then *after* rescaling to [0, 1], a small value will be added to all values of \code{x} equal to 0. This value is equal to \code{0.5 * min(x[x > 0])}.
 #' @param na.rm Logical, if \code{FALSE} (default) then if any values of \code{x} are \code{NA} then the returned value will be \code{NA}. If \code{TRUE} then \code{NA}'s are ignored in calculation.
 #' @return Numeric value.
 #' @seealso \code{\link[base]{scale}}

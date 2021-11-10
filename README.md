@@ -15,7 +15,8 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `mergeLists`: Merge lists.
 * `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.
-* `mirror`: Mirror image of text or numeric value.
+* `mirror`: Flip an object left-right (or up-down).
+* `mmode`: Modal value(s).
 * `rotateMatrix`: Rotate a matrix.
 * `roundTo`: Rounds a value to the nearest target value.
 * `stretchMinMax`: Rescale values to a given range.

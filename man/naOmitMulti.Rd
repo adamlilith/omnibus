@@ -13,7 +13,7 @@ naOmitMulti(...)
 List of objects of class \code{...}.
 }
 \description{
-This function removes elements in one or more equal-length vectors in which there is one \code{NA} at that position. For example, if there are three vecors \code{A}, \code{B}, and \code{C}, and \code{A} has an \code{NA} in the first position and \code{C} has an \code{NA} in the thord position, then \code{A}, \code{B}, and \code{C} will each have the elements at positions 1 and 3 removed.
+This function removes elements in one or more equal-length vectors in which there is one \code{NA} at that position. For example, if there are three vectors \code{A}, \code{B}, and \code{C}, and \code{A} has an \code{NA} in the first position and \code{C} has an \code{NA} in the third position, then \code{A}, \code{B}, and \code{C} will each have the elements at positions 1 and 3 removed.
 }
 \examples{
 a <- c(NA, 'b', 'c', 'd', 'e', NA)
@@ -22,5 +22,5 @@ c <- c(6, 7, 8, 9, 10, NA)
 naOmitMulti(a, b, c)
 }
 \seealso{
-[stats::na.omit()]
+\code{\link[stats]{na.omit}}
 }

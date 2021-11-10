@@ -1,3 +1,6 @@
+omnibus 0.3.4.8 (2021-11-09)
+* Add maxRuns()
+
 omnibus 0.3.4.7 (2020-10-16)
 * Can now specify inner/outer part of bracket in bracket()
 

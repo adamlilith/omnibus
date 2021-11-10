@@ -71,7 +71,7 @@ rotateMatrix <- function(
 	} # for each new value
 
 	## convert NA's to local average (NA's produced when, because of rounding, no value is assigned to a cell)
-	origY <- y # remember original rotated raster
+	origY <- y # remember original rotated matrix
 
 	for (countCol in 2:(ncol(y)-1)) {
 
