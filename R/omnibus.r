@@ -31,7 +31,7 @@
 #'		\code{\link{quadArea}}: Area of a quadrilateral. \cr
 #'
 #' @section Handling \code{NAs}:
-#' 		\code{\link{\%<\%}}, \code{\link{\%<=na\%}}, \code{\link{\%==na\%}}, \code{\link{\%!=na\%}}, \code{\link{\%>na\%}}, and \code{\link{\%>=na\%}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
+#' 		\code{\link[omnibus:naCompare]{\%<\%}}, \code{\link{\%<=na\%}}, \code{\link{\%==na\%}}, \code{\link{\%!=na\%}}, \code{\link{\%>na\%}}, and \code{\link{\%>=na\%}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
 #' 		\code{\link{isTRUENA}} and \code{\link{isFALSENA}}: Logical operators robust to \code{NA}. \cr
 #' 		\code{\link{naCompare}}: Comparative operations (\code{>}, \code{>=}, \code{==}, \code{!=}, \code{<}, \code{<=}) but returns \code{FALSE} for \code{NA} cases (versus \code{NA}). \cr
 #' 		\code{\link{naOmitMulti}}: Remove elements of multiple vectors if at least one element is \code{NA} or rows of matrices/data frames if at least one row has an \code{NA}. \cr
