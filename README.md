@@ -19,6 +19,7 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `mmode`: Modal value(s).
 * `rotateMatrix`: Rotate a matrix.
 * `roundTo`: Rounds a value to the nearest target value.
+* `rowColIndexing`: Convert between row and column indexing of a matrix.
 * `stretchMinMax`: Rescale values to a given range.
 
 ## Dates ##
