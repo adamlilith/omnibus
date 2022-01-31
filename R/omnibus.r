@@ -17,6 +17,7 @@
 #' 		\code{\link{mergeLists}}: Merge lists. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 #' 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
+#' 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
 #' 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 #'
 #' @section Dates:

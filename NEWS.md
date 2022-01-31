@@ -1,11 +1,14 @@
+omnibus 0.3.4.9 (2022-01-31)
+* Added rowColIndexing()
+
 omnibus 0.3.4.8 (2021-11-09)
-* Add maxRuns()
+* Added maxRuns()
 
 omnibus 0.3.4.7 (2020-10-16)
 * Can now specify inner/outer part of bracket in bracket()
 
 omnibus 0.3.4.6 (2020-10-16)
-* Fix bug in bracket()
+* Fixed bug in bracket()
 
 omnibus 0.3.4.5 (2020-10-11)
 * Added roundTo()
