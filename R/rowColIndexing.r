@@ -4,7 +4,7 @@
 #' 
 #' @param x		Either a matrix or a vector with two values, one for the number of rows and one for the number of columns in a matrix.
 #' @param cell	One or more cell indices (positive integers).
-#' @param dir	The "direction" in which to convert. If \code{'row'}, it is assumed that \code{cell} is a column-style index and so should be converted to a column index. If \code{'col'}, it is assumed that \code{cell} is a row-style index and so should be converted to a row index.
+#' @param dir	The "direction" in which to convert. If \code{'row'}, it is assumed that \code{cell} is a column-style index and so should be converted to a row-style index. If \code{'col'}, it is assumed that \code{cell} is a row-style index and so should be converted to a column-style index.
 #'
 #' @return One or more positive integers.
 #' @examples
