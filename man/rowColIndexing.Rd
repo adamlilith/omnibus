@@ -11,7 +11,7 @@ rowColIndexing(x, cell, dir)
 
 \item{cell}{One or more cell indices (positive integers).}
 
-\item{dir}{The "direction" in which to convert. If \code{'row'}, it is assumed that \code{cell} is a column-style index and so should be converted to a column index. If \code{'col'}, it is assumed that \code{cell} is a row-style index and so should be converted to a row index.}
+\item{dir}{The "direction" in which to convert. If \code{'row'}, it is assumed that \code{cell} is a column-style index and so should be converted to a row-style index. If \code{'col'}, it is assumed that \code{cell} is a row-style index and so should be converted to a column-style index.}
 }
 \value{
 One or more positive integers.
