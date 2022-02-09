@@ -9,6 +9,7 @@
 #' @return Numeric value.
 #' @seealso \code{\link[base]{scale}}
 #' @examples
+#'
 #' x <- 1:10
 #' stretchMinMax(x)
 #' stretchMinMax(x, lower=2, upper=5)
@@ -19,6 +20,7 @@
 #' x <- c(1:5, NA)
 #' stretchMinMax(x)
 #' stretchMinMax(x, na.rm=TRUE)
+#'
 #' @export
 
 stretchMinMax <- function(x, lower=0, upper=1, nudgeUp=FALSE, nudgeDown=FALSE, na.rm=FALSE) {

@@ -1,5 +1,7 @@
 #' Force objects to have length or rows equal to the shortest
 #'
+#' This function takes a set of vectors, data frames, or matrices and removes the last values/rows so that they all have a length/number of rows equal to the shortest among them.
+#'
 #' @param ... Vectors, matrices, or data frames.
 #' @return List objects with one element per object supplied as an argument to the function.
 #' @examples

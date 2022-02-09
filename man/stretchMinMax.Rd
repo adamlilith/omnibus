@@ -31,6 +31,7 @@ Numeric value.
 This function rescales a vector of numeric values to an arbitrary range. Optionally, after the stretch values equal to the lowest value can be "nudged" slightly higher to half the minimum value across the rescaled vector of values > 0.
 }
 \examples{
+
 x <- 1:10
 stretchMinMax(x)
 stretchMinMax(x, lower=2, upper=5)
@@ -41,6 +42,7 @@ stretchMinMax(x, lower=2, upper=5, nudgeUp=TRUE, nudgeDown=TRUE)
 x <- c(1:5, NA)
 stretchMinMax(x)
 stretchMinMax(x, na.rm=TRUE)
+
 }
 \seealso{
 \code{\link[base]{scale}}

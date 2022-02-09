@@ -1,6 +1,6 @@
 #' Nicer version of \code{print()} or \code{cat()} function
 #'
-#' This function is a nicer version of \code{print()} or \code{cat()}, especially when used inline for functions because it displayes immediately and pastes all strings together. It also does some rudimentary but optional word wrapping.
+#' This function is a nicer version of \code{print()} or \code{cat()}, especially when used inline for functions because it displays immediately and pastes all strings together. It also does some rudimentary but optional word wrapping.
 #' @param ... character strings to print
 #' @param pre Integer >= 0.  Number of blank lines to print before strings
 #' @param post Integer >= 0. Number of blank lines to print after strings
@@ -9,14 +9,15 @@
 #' @param preBreak If wrapping long lines indicates how subsequent lines are indented. NULL causes lines to be printed starting at column 1 on the display device. A positive integer inserts \code{preBreak} number of spaces before printing each line. A string causes each line to start with this string.
 #' @param level Integer or \code{NULL}. If \code{NULL}, then the items in ... are displayed as-is. Otherwise, a value of 1, 2, or 3 indicates teh heading level, with lower numbers causing more decoration and spacing to be used.
 #' @param deco Character. Character to decorate text with if \code{level} is not \code{NULL}.
-#' @return Nothing (side effect is outout on the display device).
-#' @seealso [sayHead()]
+#' @return Nothing (side effect is output on the display device).
 #' @examples
+#'
 #' say('The quick brown fox ', 'jumps over the lazy ', 'Susan.')
 #' say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', breaks=10)
 #' say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=1)
 #' say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=2)
 #' say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=3)
+#'
 #' @export
 
 say <- function(..., pre = 0, post = 1, breaks = NULL, wiggle = 10, preBreak = 1, level = NULL, deco = '#') {

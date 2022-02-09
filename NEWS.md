@@ -1,3 +1,8 @@
+omnibus 0.4.0 (2022-02-09)
+* Removed same()
+* Cleaned up help
+* Submission to CRAM!
+
 omnibus 0.3.4.9 (2022-01-31)
 * Added rowColIndexing()
 

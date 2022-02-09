@@ -18,7 +18,7 @@ which.pmin(..., na.rm = TRUE)
 Vector the same length as the input, with numeric values indicating which vector has the highest value at that position. In case of ties, the index of the first vector is returned.
 }
 \description{
-This function is a vectorized version of \code{which.max}, which returns the index of the value that is maximum (or the first maximum value, if there is a tie). In this case, the function is supplied two or more vectors of the same length. For each element at the same position (e.g., the first element in each vector, then the second element, etc.) the function returns an integer indicating which vector has the highest value (or the index of the first vector with the highest value in case of ties).
+These functions are vectorized versions of \code{which.max} and \code{which.min}, which return the index of the value that is maximum or minimum (or the first maximum/minimum value, if there is a tie). In this case, the function is supplied two or more vectors of the same length. For each element at the same position (e.g., the first element in each vector, then the second element, etc.) the function returns an integer indicating which vector has the highest or lowest value (or the index of the first vector with the highest or lowest value in case of ties).
 }
 \section{Functions}{
 \itemize{

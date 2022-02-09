@@ -45,7 +45,6 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `countDecDigits`: Count number of digits after a decimal.
 * `longRun`: Longest run of a given sequence in a vector.
 * `roundedSigDigits`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
-* `same`: Are all elements of a vector the same?
 * `which.pmax` and `which.pmin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
 
 ## System ##

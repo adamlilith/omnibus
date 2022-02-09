@@ -1,6 +1,6 @@
 #' Rotate values in a matrix
 #'
-#' This function rotates the values in a matrix by a user-specified number of degrees. In almost all cases some values will fall outside the matrix so they will be discarded.  Cells that have no rotated values will become \code{NA}. Only scquare matrices can be accomodated. In some cases a rotation will cause cells to have no assigned value because no original values fall within them. In these instances the mean value of surrounding cells is assigned to the cells with missing values. If the angle of rotation is too small then no rotation will occur.
+#' This function rotates the values in a matrix by a user-specified number of degrees. In almost all cases some values will fall outside the matrix so they will be discarded.  Cells that have no rotated values will become \code{NA}. Only square matrices can be accommodated. In some cases a rotation will cause cells to have no assigned value because no original values fall within them. In these instances the mean value of surrounding cells is assigned to the cells with missing values. If the angle of rotation is too small then no rotation will occur.
 #' @param x Object of class \code{matrix}.
 #' @param rot Numeric. Number of degrees to rotate matrix. Values represent difference in degrees between "north" (up) and the clockwise direction.
 #' @return A matrix.
@@ -12,7 +12,7 @@
 #' rotateMatrix(x, 180) # 180 degrees to the right
 #' rotateMatrix(x, 45) # 45 degrees to the right
 #' rotateMatrix(x, 7) # slight rotation
-#' rotateMatrix(x, 5) # no rotatation because angle is too small
+#' rotateMatrix(x, 5) # no rotation because angle is too small
 #' @export
 rotateMatrix <- function(
 	x,
@@ -53,7 +53,7 @@ rotateMatrix <- function(
 	coordsValues$newX <- round( coordsValues$newX + ( (ncol(x) + 1) / 2) )
 	coordsValues$newY <- round( ( (ncol(x) + 1) / 2 ) - coordsValues$newY)
 
-	# ## trim coordinates outside raster
+	# ## trim coordinates outside matrix
 	# coordsValues <- coordsValues[coordValues$newX >= 1 & coordValues$newX <= ncol(x) & coordValues$newY >= 1 & coordValues$newY <= nrow(x), ]
 	coordsValues <- subset(coordsValues, coordsValues$newX >= 1 & coordsValues$newX <= ncol(x) & coordsValues$newY >= 1 & coordsValues$newY <= nrow(x))
 

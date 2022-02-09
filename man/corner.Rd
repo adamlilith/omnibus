@@ -4,7 +4,7 @@
 \alias{corner}
 \title{Corner of a matrix or data frame}
 \usage{
-corner(x, corner = 1L, size = 5L)
+corner(x, corner = 1, size = 5)
 }
 \arguments{
 \item{x}{Data frame, matrix, or vector with same number of rows or elements as \code{into}.}
@@ -28,5 +28,5 @@ corner(x, 3)
 corner(x, 4)
 }
 \seealso{
-\code{\link{head}}, \code{\link{tail}}
+\code{\link[utils]{head}}, \code{\link[utils]{tail}}
 }

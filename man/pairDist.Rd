@@ -4,25 +4,25 @@
 \alias{pairDist}
 \title{Calculate pairwise distances between two matrices or data frames.}
 \usage{
-pairDist(set1, set2, na.rm = FALSE)
+pairDist(x1, x2, na.rm = FALSE)
 }
 \arguments{
-\item{set1}{Data frame or matrix one or more columns wide.}
+\item{x1}{Data frame or matrix one or more columns wide.}
 
-\item{set2}{Data frame or matrix one or more columns wide.}
+\item{x2}{Data frame or matrix one or more columns wide.}
 
-\item{na.rm}{Logical, if \code{TRUE} then any rows in \code{set1} or \code{set2} with at least one \code{NA} are removed first.}
+\item{na.rm}{Logical, if \code{TRUE} then any rows in \code{x1} or \code{x2} with at least one \code{NA} are removed first.}
 }
 \value{
-Matrix with \code{nrow(set1)} rows and \code{nrow(set2)} columns. Values are the distance between each row of \code{set1} and row of \code{set2}.
+Matrix with \code{nrow(x1)} rows and \code{nrow(x2)} columns. Values are the distance between each row of \code{x1} and row of \code{x2}.
 }
 \description{
 This function takes two data frames or matrices and returns a matrix of pairwise Euclidean distances between the two.
 }
 \examples{
-set1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
-set2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
-pairDist(set1, set2)
+x1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
+x2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
+pairDist(x1, x2)
 }
 \seealso{
 \code{\link[stats]{dist}}

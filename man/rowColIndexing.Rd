@@ -21,7 +21,14 @@ These functions converts index values of cells between row- and column-style ind
 }
 \examples{
 
-x <- matrix('a', nrow=5, ncol=8)
+# column versus row indexing
+colIndex <- matrix(1:40, nrow=5, ncol=8)
+rowIndex <- matrix(1:40, nrow=5, ncol=8, byrow=TRUE)
+colIndex
+rowIndex
+
+# examples
+x <- matrix('a', nrow=5, ncol=8, byrow=TRUE)
 rowColIndexing(x, cell=c(1, 6, 20), 'row')
 rowColIndexing(x, cell=c(1, 6, 20), 'col')
 

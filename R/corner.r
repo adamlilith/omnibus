@@ -5,7 +5,7 @@
 #' @param corner Integer in the set {\code{1, 2, 3, 4}} or character in the set {\code{'topleft', 'topright', 'bottomleft', 'bottomright'}} or in the set {\code{'tl', 'tr', 'bl', 'br'}}. Indicates which corner to return. Integers 1, 2, 3 and 4 correspond to top left, top right, bottom left, and bottom right corners. The default is 1, the top left corner.
 #' @param size Positive integer, number of rows and columns to return. If there are fewer columns/rows than indicated then all columns/rows are returned.
 #' @return A matrix or data frame.
-#' @seealso \code{\link{head}}, \code{\link{tail}}
+#' @seealso \code{\link[utils]{head}}, \code{\link[utils]{tail}}
 #' @examples
 #' x <- matrix(1:120, ncol=12, nrow=10)
 #' x
@@ -16,8 +16,8 @@
 #' @export
 corner <- function(
 	x,
-	corner = 1L,
-	size = 5L
+	corner = 1,
+	size = 5
 ) {
 
 	corner <- as.character(corner)

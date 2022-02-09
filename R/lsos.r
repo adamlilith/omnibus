@@ -4,16 +4,16 @@
 #' @param n Positive integer, maximum number of objects to display.
 #' @param orderBy Either \code{'size'} (default) or \code{'name'}.
 #' @param decreasing Logical, if \code{TRUE} (default), objects are displayed from largest to smallest.
-#' @param pos Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.
+#' @param pos Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.#"
+#' @param display If \code{TRUE} (default), print a table with memory used.
 #' @param ... Other arguments to pass to \code{\link{ls}}.
-#' @details Adapted from StackOverflow user JD Long (original function at https://stackoverflow.com/questions/1395270/determining-memory-usage-of-objects).
-#' @return Nothing (displays a table).
+#' @return Data frame (invisible).
 #' @examples
 #' lsos()
 #' lsos(3)
 #' @export
 
-lsos <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, ...) {
+lsos <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, display = TRUE, ...) {
 
 	out <- sapply(ls(pos=pos, ...), function(x){ utils::object.size(get(x)) })
 	if (length(out) == 0) {
@@ -29,6 +29,7 @@ lsos <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, ...) {
 		out <- as.data.frame(out)
 		colnames(out) <- 'size'
 	}
-	out
+	if (show) print(out)
+	invisible(out)
 
 }

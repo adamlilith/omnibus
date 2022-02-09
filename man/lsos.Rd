@@ -4,7 +4,7 @@
 \alias{lsos}
 \title{Size of objects taking most memory}
 \usage{
-lsos(n = 10, orderBy = "size", decreasing = TRUE, pos = 1, ...)
+lsos(n = 10, orderBy = "size", decreasing = TRUE, pos = 1, display = TRUE, ...)
 }
 \arguments{
 \item{n}{Positive integer, maximum number of objects to display.}
@@ -13,18 +13,17 @@ lsos(n = 10, orderBy = "size", decreasing = TRUE, pos = 1, ...)
 
 \item{decreasing}{Logical, if \code{TRUE} (default), objects are displayed from largest to smallest.}
 
-\item{pos}{Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.}
+\item{pos}{Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.#"}
+
+\item{display}{If \code{TRUE} (default), print a table with memory used.}
 
 \item{...}{Other arguments to pass to \code{\link{ls}}.}
 }
 \value{
-Nothing (displays a table).
+Data frame (invisible).
 }
 \description{
 Displays the largest objects in memory.
-}
-\details{
-Adapted from StackOverflow user JD Long (original function at https://stackoverflow.com/questions/1395270/determining-memory-usage-of-objects).
 }
 \examples{
 lsos()

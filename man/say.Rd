@@ -33,18 +33,17 @@ say(
 \item{deco}{Character. Character to decorate text with if \code{level} is not \code{NULL}.}
 }
 \value{
-Nothing (side effect is outout on the display device).
+Nothing (side effect is output on the display device).
 }
 \description{
-This function is a nicer version of \code{print()} or \code{cat()}, especially when used inline for functions because it displayes immediately and pastes all strings together. It also does some rudimentary but optional word wrapping.
+This function is a nicer version of \code{print()} or \code{cat()}, especially when used inline for functions because it displays immediately and pastes all strings together. It also does some rudimentary but optional word wrapping.
 }
 \examples{
+
 say('The quick brown fox ', 'jumps over the lazy ', 'Susan.')
 say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', breaks=10)
 say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=1)
 say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=2)
 say('The quick brown fox ', 'jumps over the lazy ', 'Susan.', level=3)
-}
-\seealso{
-[sayHead()]
+
 }
