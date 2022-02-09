@@ -1,4 +1,4 @@
-omnibus 1.1.0 (2022-02-09)
+omnibus 1.1.1 (2022-02-09)
 * Removed same()
 * Cleaned up help
 * Submission to CRAN!
