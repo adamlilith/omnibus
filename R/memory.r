@@ -13,7 +13,7 @@
 #' lsos(3)
 #' @export
 
-lsos <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, display = TRUE, ...) {
+memory <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, display = TRUE, ...) {
 
 	out <- sapply(ls(pos=pos, ...), function(x){ utils::object.size(get(x)) })
 	if (length(out) == 0) {
@@ -29,7 +29,7 @@ lsos <- function(n=10, orderBy='size', decreasing=TRUE, pos=1, display = TRUE, .
 		out <- as.data.frame(out)
 		colnames(out) <- 'size'
 	}
-	if (show) print(out)
+	if (display) print(out)
 	invisible(out)
 
 }
