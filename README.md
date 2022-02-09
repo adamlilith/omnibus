@@ -52,7 +52,7 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `dirCreate`: Nicer version of `dir.create()`.
 * `eps`: Smallest floating point value your computer can think of.
 * `listFiles`: Nicer version of `list.files()`.
-* `lsos`: Display largest objects in memory.
+* `memory`: Display largest objects in memory.
 
 ## Text ##
 * `capIt`: Capitalize first letter of a string.
