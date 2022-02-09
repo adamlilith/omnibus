@@ -2,32 +2,50 @@
 % Please edit documentation in R/insertCol.r
 \name{insertCol}
 \alias{insertCol}
-\title{Insert a column into a data frame or matrix}
+\alias{insertRow}
+\title{Insert a column or row into a data frame or matrix}
 \usage{
 insertCol(x, into, at = NULL, before = TRUE)
+
+insertRow(x, into, at = NULL, before = TRUE)
 }
 \arguments{
-\item{x}{Data frame, matrix, or vector with same number of rows or elements as \code{into}.}
+\item{x}{Data frame, matrix, or vector with same number of columns or rows or elements as \code{into}.}
 
 \item{into}{Data frame or matrix into which \code{x} is to be inserted.}
 
-\item{at}{Character, integer, or \code{NULL}. Name of column or column number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{cbind(into, x} except that it retains row numbers from \code{into}.}
+\item{at}{Character, integer, or \code{NULL}. Name of column or column number or name of row or row number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{cbind(into, x} except that it retains row numbers or column names from \code{into}.}
 
-\item{before}{Logical, if \code{TRUE} (default) then the insertion will occur in front of the column named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.}
+\item{before}{Logical, if \code{TRUE} (default) then the insertion will occur in front of the column or row named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.}
 }
 \value{
 A data frame.
 }
 \description{
-This function inserts one or more columns before or after another column in a data frame or matrix. It is similar to \code{\link{cbind}} except that the inserted column(s) can be placed anywhere.
+This function inserts one or more columns or rows before or after another column or row in a data frame or matrix. It is similar to \code{\link{cbind}} except that the inserted column(s)/row(s) can be placed anywhere.
 }
+\section{Functions}{
+\itemize{
+\item \code{insertRow}: Insert a column or row into a data frame or matrix
+}}
+
 \examples{
+
 x <- data.frame(y1=11:15, y2=rev(letters)[1:5])
 into <- data.frame(x1=1:5, x2='valid', x3=letters[1:5], x4=LETTERS[1:5], x5='stuff')
 
 insertCol(x, into=into, at='x3')
 insertCol(x, into=into, at='x3', before=FALSE)
 insertCol(x, into)
+
+x <- data.frame(x1=1:3, x2=LETTERS[1:3])
+into <- data.frame(x1=11:15, x2='valid')
+row.names(into) <- letters[1:5]
+
+insertRow(x, into=into, at='b')
+insertRow(x, into=into, at='b', before=FALSE)
+insertRow(x, into)
+
 }
 \seealso{
 \code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}

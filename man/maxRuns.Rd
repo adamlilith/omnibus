@@ -19,7 +19,7 @@ maxRuns(x, fx, args = NULL, failIfAllNA = FALSE)
 Lengths of successive runs of elements that meet the criterion. A single value of 0 indicates no conditions meet the criterion.
 }
 \description{
-Consider an ordered set of values, say {1, 4, 0, 0, 0, 2, 0, 10}. We can ask, what is the number of times in which zeroes appear successively? In this example, we have one set of three continuous zeros, and one set of a single zero. So the number of runs with 0 is 2, and the maximum run length is 3. This function calculates the number of runs based on a certain condition for defining the run. The condition is stated as a function that returns a logical value. Continuing the example, \code{function(x) x == 0}.
+Consider an ordered set of values, say {1, 4, 0, 0, 0, 2, 0, 10}. We can ask, what is the number of times in which zeroes appear successively? In this example, we have one set of three continuous zeros, and one set of a single zero. So the number of runs with zero is 2, and the maximum run length is 3. This function calculates the number of runs based on a certain condition for defining the run. The condition is stated as a function that returns a logical value. The function for this example would be \code{function(x) x == 0}.
 }
 \examples{
 

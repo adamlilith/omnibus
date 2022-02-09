@@ -1,17 +1,25 @@
 Package: omnibus
 Type: Package
 Title: Ease-of-use tools
-Version: 0.3.4.9
-Date: 2022-01-31
-Author: Adam B. Smith <adam.smith@mobot.org>
-Maintainer: Adam B. Smith <adam.smith@mobot.org>
-Description: Fantabulous helper functions.
+Version: 0.4.0
+Date: 2022-02-09
+Authors@R: 
+	c(
+		person(
+			given = c('Adam', 'B.'),
+			family = 'Smith',
+			role = c('aut', 'cre'),
+			email = 'adam.smith@mobot.org',
+			comment = c(ORCID = '0000-0002-6420-1659')
+		)
+	)
+Description: Simple helper functions.
 Depends: 
 Imports:
-Suggests: raster
+Suggests:
 License: GPL (>=3) + file LICENSE
 LazyData: true
 LazyLoad: yes
-URL: http://www.earthSkySea.org
+URL: http://www.github.com/adamlilith/omnibus
 Encoding: UTF-8
 RoxygenNote: 7.1.2

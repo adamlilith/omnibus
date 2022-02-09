@@ -1,28 +1,28 @@
 #' Calculate pairwise distances between two matrices or data frames.
 #'
 #' This function takes two data frames or matrices and returns a matrix of pairwise Euclidean distances between the two.
-#' @param set1 Data frame or matrix one or more columns wide.
-#' @param set2 Data frame or matrix one or more columns wide.
-#' @param na.rm Logical, if \code{TRUE} then any rows in \code{set1} or \code{set2} with at least one \code{NA} are removed first.
-#' @return Matrix with \code{nrow(set1)} rows and \code{nrow(set2)} columns. Values are the distance between each row of \code{set1} and row of \code{set2}.
+#' @param x1 Data frame or matrix one or more columns wide.
+#' @param x2 Data frame or matrix one or more columns wide.
+#' @param na.rm Logical, if \code{TRUE} then any rows in \code{x1} or \code{x2} with at least one \code{NA} are removed first.
+#' @return Matrix with \code{nrow(x1)} rows and \code{nrow(x2)} columns. Values are the distance between each row of \code{x1} and row of \code{x2}.
 #' @seealso \code{\link[stats]{dist}}
 #' @examples
-#' set1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
-#' set2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
-#' pairDist(set1, set2)
+#' x1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
+#' x2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
+#' pairDist(x1, x2)
 #' @export
-pairDist <- function(set1, set2, na.rm = FALSE) {
+pairDist <- function(x1, x2, na.rm = FALSE) {
 
 	if (na.rm) {
-		if (length(naRows(set1)) > 0) set1 <- set1[-naRows(set1), , drop=FALSE]
-		if (length(naRows(set2)) > 0) set2 <- set1[-naRows(set2), , drop=FALSE]
+		if (length(naRows(x1)) > 0) x1 <- x1[-naRows(x1), , drop=FALSE]
+		if (length(naRows(x2)) > 0) x2 <- x1[-naRows(x2), , drop=FALSE]
 	}
 
-	dists <- matrix(NA, nrow=nrow(set1), ncol=nrow(set2))
+	dists <- matrix(NA, nrow=nrow(x1), ncol=nrow(x2))
 
-	for (i in 1:nrow(set1)) {
-		for (j in 1:nrow(set2)) {
-			dists[i, j] <- sqrt(rowSums((set1[i, , drop=FALSE] - set2[j, , drop=FALSE])^2))
+	for (i in 1:nrow(x1)) {
+		for (j in 1:nrow(x2)) {
+			dists[i, j] <- sqrt(rowSums((x1[i, , drop=FALSE] - x2[j, , drop=FALSE])^2))
 		}
 	}
 

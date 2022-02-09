@@ -15,7 +15,7 @@ rotateMatrix(x, rot)
 A matrix.
 }
 \description{
-This function rotates the values in a matrix by a user-specified number of degrees. In almost all cases some values will fall outside the matrix so they will be discarded.  Cells that have no rotated values will become \code{NA}. Only scquare matrices can be accomodated. In some cases a rotation will cause cells to have no assigned value because no original values fall within them. In these instances the mean value of surrounding cells is assigned to the cells with missing values. If the angle of rotation is too small then no rotation will occur.
+This function rotates the values in a matrix by a user-specified number of degrees. In almost all cases some values will fall outside the matrix so they will be discarded.  Cells that have no rotated values will become \code{NA}. Only square matrices can be accommodated. In some cases a rotation will cause cells to have no assigned value because no original values fall within them. In these instances the mean value of surrounding cells is assigned to the cells with missing values. If the angle of rotation is too small then no rotation will occur.
 }
 \examples{
 x <- matrix(1:100, nrow=10)
@@ -24,7 +24,7 @@ rotateMatrix(x, 90) # 90 degrees to the right
 rotateMatrix(x, 180) # 180 degrees to the right
 rotateMatrix(x, 45) # 45 degrees to the right
 rotateMatrix(x, 7) # slight rotation
-rotateMatrix(x, 5) # no rotatation because angle is too small
+rotateMatrix(x, 5) # no rotation because angle is too small
 }
 \seealso{
 [base::t()]
