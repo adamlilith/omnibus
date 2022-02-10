@@ -17,9 +17,9 @@ Description: Simple helper functions.
 Depends: 
 Imports:
 Suggests:
-License: GPL (>=3) + file LICENSE
+License: GPL (>=3)
 LazyData: true
 LazyLoad: yes
-URL: http://www.github.com/adamlilith/omnibus
+URL: https://github.com/adamlilith/omnibus
 Encoding: UTF-8
 RoxygenNote: 7.1.2
