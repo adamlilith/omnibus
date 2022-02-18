@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
-Title: Ease-of-Use Tools
-Version: 1.1.1
-Date: 2022-02-09
+Title: Helper Tools for Managing Data, Dates, Missing Values, and Text
+Version: 1.1.2
+Date: 2022-02-14
 Authors@R: 
 	c(
 		person(
@@ -14,7 +14,12 @@ Authors@R:
 		)
 	)
 Maintainer: Adam B. Smith <adam.smith@mobot.org>
-Description: Simple helper functions.
+Description: An assortment of helper functions for managing data (e.g.,
+	rotating values in matrices by a user-defined angle, switching from
+	row- to column-indexing), dates (e.g., intuiting year from messy date
+	strings), handling missing values (e.g., removing elements/rows across
+	multiple vectors or matrices if any have an NA), and text (e.g.,
+	flushing reports to the console in real-time).
 Depends: 
 Imports:
 Suggests:
