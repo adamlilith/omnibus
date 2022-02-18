@@ -11,7 +11,7 @@
 #' @export
 naRows <- function(x, inf = FALSE, inverse = FALSE) {
 
-        if (class(x) != 'data.frame') x <- as.data.frame(x)
+        if (!inherits(x, 'data.frame')) x <- as.data.frame(x)
         
         focalRows <- lapply(x, is.na)
         focalRows <- unlist(lapply(focalRows, which))
