@@ -35,7 +35,7 @@
 #' maxRuns(x, fx, args=list(th=0))
 #'  
 #' @export
-maxRuns <- function(x, fx, args=NULL, failIfAllNA = FALSE) {
+maxRuns <- compiler::cmpfun(function(x, fx, args=NULL, failIfAllNA = FALSE) {
 
 	theseArgs <- c(list(x=x), args)
 	y <- do.call(fx, args=theseArgs)
@@ -60,4 +60,4 @@ maxRuns <- function(x, fx, args=NULL, failIfAllNA = FALSE) {
 	out <- max(out)
 	out
 
-}
+})
