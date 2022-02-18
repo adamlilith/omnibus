@@ -1,11 +1,14 @@
 # omnibus
 Utility functions for the 99%.
 
-To install `omnibus` do the following:
+An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), and text (e.g., flushing reports to the console in real-time).
+
+## Installation ##
+As of version 1.1.2, `omnibus` is on CRAN! You can install the latest CRAN-stable version it the normal way you install packages from CRAN, or the development version by using:
 
 `remotes::install_github('adamlilith/omnibus', dependencies=TRUE)`
 
-NB: If for some reason these commands do not work, you can install the package(s) by downloading the latest zip/tar file from the `zipTarFiles` directory and installing the package(s) manually.
+You may need to install the `remotes` package first.
 
 ## Data manipulation ##
 * `bracket`: Find values that bracket a given number.
@@ -48,7 +51,6 @@ NB: If for some reason these commands do not work, you can install the package(s
 * `which.pmax` and `which.pmin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
 
 ## System ##
-* `clear`: Erase everything in memory.
 * `dirCreate`: Nicer version of `dir.create()`.
 * `eps`: Smallest floating point value your computer can think of.
 * `listFiles`: Nicer version of `list.files()`.
