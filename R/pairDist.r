@@ -11,11 +11,11 @@
 #' x2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
 #' pairDist(x1, x2)
 #' @export
-pairDist <- function(x1, x2, na.rm = FALSE) {
+pairDist <- compiler::cmpfun(function(x1, x2, na.rm = FALSE) {
 
 	if (na.rm) {
-		if (length(naRows(x1)) > 0) x1 <- x1[-naRows(x1), , drop=FALSE]
-		if (length(naRows(x2)) > 0) x2 <- x1[-naRows(x2), , drop=FALSE]
+		x1 <- x1[stats::complete.cases(x1), , drop=FALSE]
+		x2 <- x2[stats::complete.cases(x2), , drop=FALSE]
 	}
 
 	dists <- matrix(NA, nrow=nrow(x1), ncol=nrow(x2))
@@ -28,6 +28,4 @@ pairDist <- function(x1, x2, na.rm = FALSE) {
 
 	dists
 
-}
-
-
+})

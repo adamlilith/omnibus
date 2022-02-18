@@ -62,11 +62,10 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 
 \section{System}{
 
-		\code{\link{clear}}: Erase everything in memory. \cr
 		\code{\link{dirCreate}}: Nicer version of \code{\link{dir.create}}. \cr
 		\code{\link{eps}}: Smallest floating point value your computer can think of. \cr
 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
-	\code{\link{lsos}}: Display largest objects in memory. \cr
+	\code{\link{memUse}}: Display largest objects in memory. \cr
 }
 
 \section{Text}{

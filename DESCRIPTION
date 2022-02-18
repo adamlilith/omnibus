@@ -1,25 +1,32 @@
 Package: omnibus
 Type: Package
-Title: Ease-of-use tools
-Version: 0.4.0
-Date: 2022-02-09
+Title: Helper Tools for Managing Data, Dates, Missing Values, and Text
+Version: 1.1.2
+Date: 2022-02-14
 Authors@R: 
 	c(
 		person(
-			given = c('Adam', 'B.'),
+			given = 'Adam B.',
 			family = 'Smith',
-			role = c('aut', 'cre'),
+			role = c('cre', 'aut'),
 			email = 'adam.smith@mobot.org',
 			comment = c(ORCID = '0000-0002-6420-1659')
 		)
 	)
-Description: Simple helper functions.
+Maintainer: Adam B. Smith <adam.smith@mobot.org>
+Description: An assortment of helper functions for managing data (e.g.,
+	rotating values in matrices by a user-defined angle, switching from
+	row- to column-indexing), dates (e.g., intuiting year from messy date
+	strings), handling missing values (e.g., removing elements/rows across
+	multiple vectors or matrices if any have an NA), and text (e.g.,
+	flushing reports to the console in real-time).
 Depends: 
 Imports:
 Suggests:
-License: GPL (>=3) + file LICENSE
+License: GPL (>=3)
 LazyData: true
 LazyLoad: yes
-URL: http://www.github.com/adamlilith/omnibus
+URL: https://github.com/adamlilith/omnibus
+BugReports: https://github.com/adamlilith/omnibus
 Encoding: UTF-8
 RoxygenNote: 7.1.2

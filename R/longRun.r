@@ -14,7 +14,7 @@
 #' longRun(x, 1, wrap=TRUE)
 #' @export
 
-longRun <- function(x, val, wrap = FALSE, na.rm = FALSE) {
+longRun <- compiler::cmpfun(function(x, val, wrap = FALSE, na.rm = FALSE) {
 
     if (na.rm) x <- stats::na.omit(x)
 
@@ -41,4 +41,4 @@ longRun <- function(x, val, wrap = FALSE, na.rm = FALSE) {
 
 	out
 
-}
+})

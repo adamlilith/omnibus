@@ -14,7 +14,7 @@
 #' rotateMatrix(x, 7) # slight rotation
 #' rotateMatrix(x, 5) # no rotation because angle is too small
 #' @export
-rotateMatrix <- function(
+rotateMatrix <- compiler::cmpfun(function(
 	x,
 	rot
 ) {
@@ -93,5 +93,4 @@ rotateMatrix <- function(
 
 	y
 
-}
-
+})

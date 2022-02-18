@@ -81,7 +81,7 @@
 #' x <- c(0.0667, 0.0667, 0.067)
 #' roundedSigDigits(x)
 #' @export
-roundedSigDigits <- function(x, minReps = 3) {
+roundedSigDigits <- compiler::cmpfun(function(x, minReps = 3) {
 
 	n <- length(x)
 	out <- rep(NA, n)
@@ -233,4 +233,4 @@ roundedSigDigits <- function(x, minReps = 3) {
 
 	out
 	
-}
+})
