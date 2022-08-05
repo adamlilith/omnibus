@@ -29,13 +29,12 @@ insertCol <- function(
 	x,
 	into,
 	at = NULL,
-	before=TRUE
+	before = TRUE
 ) {
 
 	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 
-	# if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
-	if (!is.null(at) && !(class(at) %in% c('numeric', 'integer'))) at <- which(colnames(into) %in% at)
+	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(colnames(into) %in% at)
 	
 	# x has no rows
 	if (nrow(into) == 0) {
@@ -91,7 +90,7 @@ insertRow <- function(
 	if (ncol(x) != ncol(into)) warning('Inserted row(s) do not have same number of columns as target data frame/matrix.')
 
 	# if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
-	if (!is.null(at) && !(class(at) %in% c('numeric', 'integer'))) at <- which(rownames(into) %in% at)
+	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(rownames(into) %in% at)
 	
 	# x has no rows
 	if (ncol(into) == 0) {
