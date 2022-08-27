@@ -7,7 +7,7 @@
 rowColIndexing(x, cell, dir)
 }
 \arguments{
-\item{x}{Either a matrix or a vector with two values, one for the number of rows and one for the number of columns in a matrix.}
+\item{x}{Either a matrix, \emph{or} a vector with two values, one for the number of rows and one for the number of columns in a matrix.}
 
 \item{cell}{One or more cell indices (positive integers).}
 

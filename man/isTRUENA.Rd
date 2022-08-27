@@ -22,9 +22,9 @@ These functions work exactly the same as \code{x == TRUE} and \code{x == FALSE} 
 }
 \section{Functions}{
 \itemize{
-\item \code{isFALSENA}: Vectorized test for truth robust to NA
-}}
+\item \code{isFALSENA()}: Vectorized test for truth robust to NA
 
+}}
 \examples{
 x <- c(TRUE, TRUE, FALSE, NA)
 x == TRUE

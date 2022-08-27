@@ -22,9 +22,9 @@ These functions are vectorized versions of \code{which.max} and \code{which.min}
 }
 \section{Functions}{
 \itemize{
-\item \code{which.pmin}: Which vector has minimum value at each element
-}}
+\item \code{which.pmin()}: Which vector has minimum value at each element
 
+}}
 \examples{
 set.seed(123)
 a <- sample(9, 5)
