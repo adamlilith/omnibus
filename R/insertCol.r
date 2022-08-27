@@ -34,26 +34,26 @@ insertCol <- function(
 
 	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 
-	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(colnames(into) %in% at)
-	
+	if (!is.null(at) && !(inherits(at, c('numeric', 'integer')))) at <- which(colnames(into) %in% at)
+
 	# x has no rows
 	if (nrow(into) == 0) {
-	
+
 		into <- x
-		
+
 	# x has rows
 	} else {
-	
+
 		rowNames <- row.names(into)
-			
+
 		# at is NULL
 		if (is.null(at)) {
-	
+
 			into <- cbind(into, x)
-	
-		# x has rows and at is not NULL	
+
+		# x has rows and at is not NULL
 		} else {
-			
+
 			intoCols <- ncol(into)
 
 			into <- if (at == 1 & before) {
@@ -67,13 +67,13 @@ insertCol <- function(
 			} else if (!before) {
 				cbind(into[ , 1:at], x, into[ , (at + 1):intoCols])
 			}
-			
+
 		}
-	  
+
 		rownames(into) <- rowNames
-		
+
 	}
-	
+
 	into
 
 }
@@ -90,24 +90,26 @@ insertRow <- function(
 	if (ncol(x) != ncol(into)) warning('Inserted row(s) do not have same number of columns as target data frame/matrix.')
 
 	# if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
-	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(rownames(into) %in% at)
-	
+	if (!is.null(at) & !(inherits(at, c('numeric', 'integer')))) {
+		at <- which(rownames(into) %in% at)
+	}
+
 	# x has no rows
 	if (ncol(into) == 0) {
-	
+
 		into <- x
-		
+
 	# x has rows
 	} else {
-	
+
 		# at is NULL
 		if (is.null(at)) {
-	
+
 			into <- rbind(into, x)
-	
-		# x has columns and at is not NULL	
+
+		# x has columns and at is not NULL
 		} else {
-			
+
 			intoRows <- nrow(into)
 
 			into <- if (at == 1 & before) {
@@ -121,11 +123,11 @@ insertRow <- function(
 			} else if (!before) {
 				rbind(into[1:at, , drop=FALSE], x, into[(at + 1):intoRows, , drop=FALSE])
 			}
-			
+
 		}
-	  
+
 	}
-	
+
 	into
 
 }

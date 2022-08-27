@@ -1,3 +1,6 @@
+omnibus 1.1.3 (2022-08-27)
+* Fixed bug in insertCol()
+
 omnibus 1.1.2 (2022-02-14)
 * Removed clear()
 

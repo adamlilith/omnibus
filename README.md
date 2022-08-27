@@ -1,8 +1,6 @@
 # omnibus
 Utility functions for the 99%.
 
-<img align="right" src="omnibus.png" height="250"/>
-
 An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), and text (e.g., flushing reports to the console in real-time).
 
 ## Installation ##
