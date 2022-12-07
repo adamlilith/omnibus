@@ -6,7 +6,7 @@
 #' @param at Character, integer, or \code{NULL}. Name of column or column number or name of row or row number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{cbind(into, x} except that it retains row numbers or column names from \code{into}.
 #' @param before Logical, if \code{TRUE} (default) then the insertion will occur in front of the column or row named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.
 #' @return A data frame.
-#' @seealso \code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}
+#' @seealso \code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insert}}
 #' @examples
 #'
 #' x <- data.frame(y1=11:15, y2=rev(letters)[1:5])

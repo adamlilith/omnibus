@@ -15,6 +15,7 @@ You may need to install the `remotes` package first.
 * `combineDf`: Combine data frames with different schema.
 * `corner`: Corner of a matrix or data frame.
 * `cull`: Force vectors or matrices/data frames to have the same length or number of rows.
+* `insert`: Insert values into a vector.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `mergeLists`: Merge lists.
 * `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.

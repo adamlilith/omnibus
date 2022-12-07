@@ -10,6 +10,7 @@
 #' 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 #' 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
 #' 		\code{\link{cull}}: Force vectors or matrices/data frames to have the same length or number of rows. \cr
+#' 		\code{\link{insert}}: Insert values into a vector. \cr
 #' 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
 #' 		\code{\link{maxRuns}}: Maximum number of continuous "runs" of values meeting a particular condition. \cr
 #' 		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
