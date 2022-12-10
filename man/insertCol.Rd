@@ -26,9 +26,9 @@ This function inserts one or more columns or rows before or after another column
 }
 \section{Functions}{
 \itemize{
-\item \code{insertRow}: Insert a column or row into a data frame or matrix
-}}
+\item \code{insertRow()}: Insert a column or row into a data frame or matrix
 
+}}
 \examples{
 
 x <- data.frame(y1=11:15, y2=rev(letters)[1:5])
@@ -48,5 +48,5 @@ insertRow(x, into)
 
 }
 \seealso{
-\code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}
+\code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insert}}
 }

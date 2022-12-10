@@ -6,7 +6,7 @@
 #' @param at Character, integer, or \code{NULL}. Name of column or column number or name of row or row number at which to do insertion. If \code{NULL} (default), the result is exactly the same as \code{cbind(into, x} except that it retains row numbers or column names from \code{into}.
 #' @param before Logical, if \code{TRUE} (default) then the insertion will occur in front of the column or row named in \code{at}, if \code{FALSE} then after. Ignored if \code{at} is \code{NULL}.
 #' @return A data frame.
-#' @seealso \code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}
+#' @seealso \code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insert}}
 #' @examples
 #'
 #' x <- data.frame(y1=11:15, y2=rev(letters)[1:5])
@@ -34,26 +34,28 @@ insertCol <- function(
 
 	if (nrow(x) != nrow(into)) warning('Inserted column does not have same number of rows as target data frame/matrix.')
 
-	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(colnames(into) %in% at)
-	
+	if (!is.null(at) && !(inherits(at, c('numeric', 'integer')))) {
+		at <- which(colnames(into) %in% at)
+	}
+
 	# x has no rows
 	if (nrow(into) == 0) {
-	
+
 		into <- x
-		
+
 	# x has rows
 	} else {
-	
+
 		rowNames <- row.names(into)
-			
+
 		# at is NULL
 		if (is.null(at)) {
-	
+
 			into <- cbind(into, x)
-	
-		# x has rows and at is not NULL	
+
+		# x has rows and at is not NULL
 		} else {
-			
+
 			intoCols <- ncol(into)
 
 			into <- if (at == 1 & before) {
@@ -67,13 +69,13 @@ insertCol <- function(
 			} else if (!before) {
 				cbind(into[ , 1:at], x, into[ , (at + 1):intoCols])
 			}
-			
+
 		}
-	  
+
 		rownames(into) <- rowNames
-		
+
 	}
-	
+
 	into
 
 }
@@ -90,24 +92,26 @@ insertRow <- function(
 	if (ncol(x) != ncol(into)) warning('Inserted row(s) do not have same number of columns as target data frame/matrix.')
 
 	# if (!(class(x) %in% c('data.frame', 'matrix'))) x <- as.data.frame(x)
-	if (!is.null(at) && !(inherits(at, c('numeric', 'integer'))) at <- which(rownames(into) %in% at)
-	
+	if (!is.null(at) & !(inherits(at, c('numeric', 'integer')))) {
+		at <- which(rownames(into) %in% at)
+	}
+
 	# x has no rows
 	if (ncol(into) == 0) {
-	
+
 		into <- x
-		
+
 	# x has rows
 	} else {
-	
+
 		# at is NULL
 		if (is.null(at)) {
-	
+
 			into <- rbind(into, x)
-	
-		# x has columns and at is not NULL	
+
+		# x has columns and at is not NULL
 		} else {
-			
+
 			intoRows <- nrow(into)
 
 			into <- if (at == 1 & before) {
@@ -121,11 +125,11 @@ insertRow <- function(
 			} else if (!before) {
 				rbind(into[1:at, , drop=FALSE], x, into[(at + 1):intoRows, , drop=FALSE])
 			}
-			
+
 		}
-	  
+
 	}
-	
+
 	into
 
 }

@@ -4,12 +4,12 @@
 \alias{pairDist}
 \title{Calculate pairwise distances between two matrices or data frames.}
 \usage{
-pairDist(x1, x2, na.rm = FALSE)
+pairDist(x1, x2 = NULL, na.rm = FALSE)
 }
 \arguments{
 \item{x1}{Data frame or matrix one or more columns wide.}
 
-\item{x2}{Data frame or matrix one or more columns wide.}
+\item{x2}{Data frame or matrix one or more columns wide. If \code{NULL}, then pairwise distances between all points in \code{x1} are calculated.}
 
 \item{na.rm}{Logical, if \code{TRUE} then any rows in \code{x1} or \code{x2} with at least one \code{NA} are removed first.}
 }
@@ -20,9 +20,12 @@ Matrix with \code{nrow(x1)} rows and \code{nrow(x2)} columns. Values are the dis
 This function takes two data frames or matrices and returns a matrix of pairwise Euclidean distances between the two.
 }
 \examples{
-x1 <- data.frame(x1=1:20, x2=round(100 * rnorm(20)))
-x2 <- data.frame(x1=sample(1:30, 30), x2=sort(round(100 * rnorm(30))))
+
+x1 <- data.frame(x=sample(1:30, 30), y=sort(round(100 * rnorm(30))), z=sample(1:30, 30))
+x2 <- data.frame(x=1:20, y=round(100 * rnorm(20)), z=sample(1:20, 20))
 pairDist(x1, x2)
+pairDist(x1)
+
 }
 \seealso{
 \code{\link[stats]{dist}}
