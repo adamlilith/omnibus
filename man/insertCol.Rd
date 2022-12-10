@@ -48,5 +48,5 @@ insertRow(x, into)
 
 }
 \seealso{
-\code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insertRow}}
+\code{\link[base]{merge}}, \code{\link{cbind}}, \code{\link{insert}}
 }

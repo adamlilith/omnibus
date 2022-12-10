@@ -16,11 +16,13 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
 		\code{\link{cull}}: Force vectors or matrices/data frames to have the same length or number of rows. \cr
+		\code{\link{insert}}: Insert values into a vector. \cr
 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
 		\code{\link{maxRuns}}: Maximum number of continuous "runs" of values meeting a particular condition. \cr
 		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
 		\code{\link{mmode}}: Modal value(s). \cr
 		\code{\link{mergeLists}}: Merge lists. \cr
+		\code{\link{renumSeq}}: Renumber a sequence. \cr
 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr

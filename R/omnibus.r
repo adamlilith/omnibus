@@ -16,6 +16,7 @@
 #' 		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
 #' 		\code{\link{mmode}}: Modal value(s). \cr
 #' 		\code{\link{mergeLists}}: Merge lists. \cr
+#' 		\code{\link{renumSeq}}: Renumber a sequence. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 #' 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 #' 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr

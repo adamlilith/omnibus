@@ -18,6 +18,7 @@ You may need to install the `remotes` package first.
 * `insert`: Insert values into a vector.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `mergeLists`: Merge lists.
+* 'renumSeq': Renumber a sequence.
 * `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.
 * `mirror`: Flip an object left-right (or up-down).
 * `mmode`: Modal value(s).
