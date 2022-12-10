@@ -12,14 +12,15 @@
 #' @seealso \code{\link{insertCol}}, \code{\link{insertRow}}
 #'
 #' @examples
-
-x <- -1:-3
-into <- 10:20
-at <- c(1, 3, 14)
-insert(x, into, at)
-
-insert(-1, into, at)
-
+#' 
+#' x <- -1:-3
+#' into <- 10:20
+#' at <- c(1, 3, 14)
+#' insert(x, into, at)
+#' 
+#' insert(-1, into, at)
+#' 
+#' @export
 insert <- function(x, into, at, warn = TRUE) {
 
 	if (length(x) > length(at)) stop('Length of x is longer than the number of indices.')
