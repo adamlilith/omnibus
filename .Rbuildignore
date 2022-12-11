@@ -5,3 +5,4 @@
 ^omnibus.png
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^\.github
