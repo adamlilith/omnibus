@@ -1,5 +1,5 @@
 # omnibus
-Utility functions for the 99%.
+R Utility Functions for the 99%
 
 <img align="right" src="omnibus.png" height="223"/>
 
