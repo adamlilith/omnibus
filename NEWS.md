@@ -1,8 +1,8 @@
 omnibus 1.1.3
 ===========
-o Fixed bug in insertCol()
 o Added insert()
 o Added renumSeq()
+o Fixed bug in insertCol()
 
 omnibus 1.1.2
 ===========
