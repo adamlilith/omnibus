@@ -1,8 +1,13 @@
 # omnibus
+
 <!-- badges: start -->
-[![R build status](https://github.com/r-lib/rcmdcheck/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/rcmdcheck/actions)
-[![](https://www.r-pkg.org/badges/version/rcmdcheck)](https://www.r-pkg.org/pkg/rcmdcheck)
+
+[![R-CMD-check](https://github.com/adamlilith/omnibus/workflows/R-CMD-check/badge.svg)](https://github.com/adamlilith/omnibus/actions)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![cran version](https://www.r-pkg.org/badges/version/omnibus)](https://cran.r-project.org/package=omnibus)
+
 <!-- badges: end -->
+
 
 R Utility Functions for the 99%
 
