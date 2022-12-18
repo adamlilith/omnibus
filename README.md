@@ -1,4 +1,9 @@
 # omnibus
+<!-- badges: start -->
+[![R build status](https://github.com/r-lib/rcmdcheck/workflows/R-CMD-check/badge.svg)](https://github.com/r-lib/rcmdcheck/actions)
+[![](https://www.r-pkg.org/badges/version/rcmdcheck)](https://www.r-pkg.org/pkg/rcmdcheck)
+<!-- badges: end -->
+
 R Utility Functions for the 99%
 
 <img align="right" src="omnibus.png" height="223"/>
