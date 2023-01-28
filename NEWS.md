@@ -1,3 +1,7 @@
+omnibus 1.1.4
+===========
+o Added notIn() and %notin%
+
 omnibus 1.1.3
 ===========
 o Added insert()

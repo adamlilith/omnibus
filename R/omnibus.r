@@ -16,6 +16,7 @@
 #' 		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
 #' 		\code{\link{mmode}}: Modal value(s). \cr
 #' 		\code{\link{mergeLists}}: Merge lists. \cr
+#' 		\code{\link{notIn}} and \code{\link[omnibus::notIn]{\%notin\%}}: Opposite of \code{\%in\%}. \cr
 #' 		\code{\link{renumSeq}}: Renumber a sequence. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 #' 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr

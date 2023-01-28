@@ -29,11 +29,12 @@ You may need to install the `remotes` package first.
 * `cull`: Force vectors or matrices/data frames to have the same length or number of rows.
 * `insert`: Insert values into a vector.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
-* `mergeLists`: Merge lists.
-* 'renumSeq': Renumber a sequence.
 * `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.
+* `mergeLists`: Merge lists.
 * `mirror`: Flip an object left-right (or up-down).
 * `mmode`: Modal value(s).
+* `notIn` and `%notin%`: Opposite of `%in%`.
+* 'renumSeq': Renumber a sequence.
 * `rotateMatrix`: Rotate a matrix.
 * `roundTo`: Rounds a value to the nearest target value.
 * `rowColIndexing`: Convert between row and column indexing of a matrix.
