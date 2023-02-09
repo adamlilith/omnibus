@@ -1,5 +1,6 @@
-omnibus 1.1.4
+omnibus 1.2.5
 ===========
+o Updated combineDf() for sophisticated combination of data frames
 o Added notIn() and %notin%
 
 omnibus 1.1.3
