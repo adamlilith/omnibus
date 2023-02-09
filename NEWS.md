@@ -1,6 +1,7 @@
 omnibus 1.2.5
 ===========
 o Updated combineDf() for sophisticated combination of data frames
+o combineDf() no longer compatible with prior versions of omnibus
 o Added notIn() and %notin%
 
 omnibus 1.1.3

@@ -13,7 +13,7 @@ R Utility Functions for the 99%
 
 <img align="right" src="omnibus.png" height="223"/>
 
-An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), and text (e.g., flushing reports to the console in real-time).
+An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), text (e.g., flushing reports to the console in real-time); and combining data frames with different schema (copying, filling, or concatenating columns or applying functions before combining).
 
 ## Installation ##
 As of version 1.1.2, `omnibus` is on CRAN! You can install the latest CRAN-stable version the normal way you install packages from CRAN, or the development version by using:

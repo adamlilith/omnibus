@@ -48,7 +48,8 @@
 #' @seealso \code{\link[base]{merge}}, \code{\link{rbind}}
 #'
 #' @examples
-#' df1 <- data.frame(x1=1:5, x2=FALSE, x3=letters[1:5], x4=LETTERS[1:5], x5='stuff', x6=11:15)
+#' df1 <- data.frame(x1=1:5, x2=FALSE, x3=letters[1:5], x4=LETTERS[1:5],
+#'        x5='stuff', x6=11:15)
 #' df2 <- data.frame(y1=11:15, y2=rev(letters)[1:5], y3=runif(5))
 #'
 #' crosswalk <- data.frame(
@@ -77,10 +78,7 @@ combineDf <- function(
 	if (verbose) say('Combining data frames...')
 
 	dots. <- list(...)
-	args. <- names(formals(combineDf))
-	dots. <- dots.[which(names(dots.) %notin% args.)]
-	
-	dfSource. <- if (length(dots.) > 0) { 'dots.' } else { 'crosswalk' }
+	dfSource. <- if (length(dots.) > 0L) { 'dots.' } else { 'crosswalk' }
 
 	# which data frames to use?
 	crosswalk <- as.data.frame(crosswalk)

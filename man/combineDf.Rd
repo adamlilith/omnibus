@@ -64,7 +64,8 @@ The data frames to be combined can be provided in \code{...} or as file names in
 All cells in each source data frame will have leading and trailing white spaces removed before combining.
 }
 \examples{
-df1 <- data.frame(x1=1:5, x2=FALSE, x3=letters[1:5], x4=LETTERS[1:5], x5='stuff', x6=11:15)
+df1 <- data.frame(x1=1:5, x2=FALSE, x3=letters[1:5], x4=LETTERS[1:5],
+       x5='stuff', x6=11:15)
 df2 <- data.frame(y1=11:15, y2=rev(letters)[1:5], y3=runif(5))
 
 crosswalk <- data.frame(
