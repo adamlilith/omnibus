@@ -2,7 +2,7 @@
 #'
 #' This function renumbers a sequence, which is helpful if "gaps" appear in the sequence. For example, consider the sequence \code{{1, 1, 3, 1, 8, 8, 8}}. This function will renumber the sequence \code{{1, 1, 2, 1, 3, 3, 3}}. \code{NA}s are ignored.
 #'
-#' @param x		Vector of numerical or character values.
+#' @param x	Numerical or character vector.
 #'
 #' @return A vector.
 #'

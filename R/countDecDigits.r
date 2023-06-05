@@ -1,7 +1,7 @@
-#' Calculate number of digits after a decimal place
+#' Number of digits after a decimal place
 #'
-#' This function calculates the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
-#' @param x Numeric or numeric list.
+#' Count the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
+#' @param x Numeric or numeric vector.
 #' @return Integer.
 #' @examples
 #' countDecDigits(c(1, 1.1, 1.12, 1.123, 1.1234, -1, 0, 10.0000, 10.0010))

@@ -1,8 +1,9 @@
 #' Capitalize first letter of a string
 #'
-#' This function capitalizes the first letter of a string or the first letters of a list of strings.
-#' @param x Character or character list.
-#' @return Character or character list.
+#' Capitalize the first letter of a string or the first letters of a list of strings.
+#'
+#' @param x Character or character vector.
+#' @return Character or character vector.
 #' @seealso \code{\link{toupper}}, \code{\link{tolower}}, 
 #' @examples
 #' x <- c('shots', 'were', 'exchanged at the ', 'hospital.')

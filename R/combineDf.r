@@ -23,7 +23,7 @@
 #'	will repeat the string "inspected" in every row of the output corresponding to the respective source data frame (any spaces immediately after \code{\%fill\%} are ignored).
 #'	\item Concatenating (pasting) columns together: To combine multiple fields, begin crosswalk cell with "\code{\%cat\%}", then list the fields to combine (with or without commas separating them). For example, if the crosswalk cell has\cr
 #'
-#' \code{\%cat\% field1, field2, field3}\cr
+#' \code{\%cat\% field1 field2 field3}\cr
 #'
 #' then the resulting column in the destination data frame will have values from \code{field1}, \code{field2}, and \code{field3} pasted together. See also argument \code{collapse}.
 #'	\item Applying a function: You can manipulate values by including functions in the crosswalk cell. The crosswalk cell should begin with "\code{\%fun\%}", then be followed an expression to evaluate. Expressions should generally \emph{not} use the "\code{<-}" operator (or the equals operator used in the same way).  For example:\cr
@@ -210,7 +210,7 @@ combineDf <- function(
 
 			# add field values from source table
 			} else {
-				if (crossCell. %notin% names(sourceFrame.)) stop('Cannot find this column in the source frame:', crossCell.)
+				if (crossCell. %notin% names(sourceFrame.)) stop('Cannot find this column in the source frame: ', crossCell.)
 				newField. <- data.frame(x.=sourceFrame.[ , crossCell.])
 			}
 

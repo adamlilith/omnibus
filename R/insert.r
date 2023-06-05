@@ -2,8 +2,8 @@
 #'
 #' This function inserts values into a vector, lengthening the overall vector. It is different from, say, \code{x[1:3] <- c('a', 'b', 'c')} which simply replaces the values at indices 1 through 3.
 #'
-#' @param x	Vector of values to insert.
-#' @param into vector of values into which to insert \code{x}.
+#' @param x	Vector of numeric, integer, character, or other values of the class of \code{x} to be inserted.
+#' @param into Vector of values into which to insert \code{x}.
 #' @param at Vector of positions (indices) where \code{x} should be inserted. If the length of \code{x} is shorter than the length of \code{at}, then values in \code{x} will be recycled and a warning produced.
 #' @param warn If \code{TRUE}, provide warnings.
 #'

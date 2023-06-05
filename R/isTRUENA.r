@@ -1,7 +1,7 @@
 #' Vectorized test for truth robust to NA
 #'
 #' These functions work exactly the same as \code{x == TRUE} and \code{x == FALSE} but by default return \code{FALSE} for cases that are \code{NA}.
-#' @param x Single value or condition or a vector of values to evaluate.
+#' @param x Logical, or a condition that evaluates to logical, or a vector of logical values or conditions to evaluate.
 #' @param ifNA Logical, value to return if the result of evaluating \code{x} is \code{NA}. Note that this can be anything (i.e., \code{TRUE}, \code{FALSE}, a number, etc.).
 #' @return Logical or value specified in \code{ifNA}.
 #' @seealso \code{\link{isTRUE}}, \code{\link{isFALSE}}, \code{\link{TRUE}}, \code{\link{logical}}
