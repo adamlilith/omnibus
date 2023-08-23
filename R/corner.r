@@ -1,7 +1,8 @@
 #' Corner of a matrix or data frame
 #'
-#' This function returns a corner of a matrix or data frame (i.e., upper left, upper right, lower left, lower right).
-#' @param x Data frame, matrix, or vector with same number of rows or elements as \code{into}.
+#' Return a corner of a matrix or data frame (i.e., upper left, upper right, lower left, lower right).
+#'
+#' @param x Data frame or matrix.
 #' @param corner Integer in the set {\code{1, 2, 3, 4}} or character in the set {\code{'topleft', 'topright', 'bottomleft', 'bottomright'}} or in the set {\code{'tl', 'tr', 'bl', 'br'}}. Indicates which corner to return. Integers 1, 2, 3 and 4 correspond to top left, top right, bottom left, and bottom right corners. The default is 1, the top left corner.
 #' @param size Positive integer, number of rows and columns to return. If there are fewer columns/rows than indicated then all columns/rows are returned.
 #' @return A matrix or data frame.

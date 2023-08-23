@@ -7,9 +7,9 @@
 quadArea(x, y)
 }
 \arguments{
-\item{x}{Numeric list. \code{x} coordinates of quadrilateral.}
+\item{x}{Numeric vector. \code{x} coordinates of quadrilateral.}
 
-\item{y}{Numeric list. \code{y} coordinates of quadrilateral.}
+\item{y}{Numeric vector. \code{y} coordinates of quadrilateral.}
 }
 \value{
 Numeric (area of a quadrilateral in same units as \code{x} and \code{y}.

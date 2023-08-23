@@ -1,9 +1,8 @@
 #' Merge two lists with precedence
 #'
 #' This function merges two lists to create a single, combined list. If there is a conflict (e.g., two elements have the same name), items in the second list gain preference. Adapted from Stack Overflow (http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion).
-#' @param list1 List object.
-#' @param list2 List object.
-#' @return List object.
+#' @param list1,list2 Lists.
+#' @return A list.
 #' @examples
 #' list1 <- list(a=1:3, b='Hello world', c=LETTERS[1:3])
 #' list2 <- list(x=4, b='Goodbye world', z=letters[1:2])

@@ -1,8 +1,8 @@
 #' Area of a quadrilateral
 #'
 #' Calculates the area of a quadrilateral by dividing it into two triangles and applying Heron's formula.
-#' @param x Numeric list. \code{x} coordinates of quadrilateral.
-#' @param y Numeric list. \code{y} coordinates of quadrilateral.
+#' @param x Numeric vector. \code{x} coordinates of quadrilateral.
+#' @param y Numeric vector. \code{y} coordinates of quadrilateral.
 #' @return Numeric (area of a quadrilateral in same units as \code{x} and \code{y}.
 #' @examples
 #' x <- c(0, 6, 4, 1)

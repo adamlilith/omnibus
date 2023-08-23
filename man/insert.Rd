@@ -7,9 +7,9 @@
 insert(x, into, at, warn = TRUE)
 }
 \arguments{
-\item{x}{Vector of values to insert.}
+\item{x}{Vector of numeric, integer, character, or other values of the class of \code{x} to be inserted.}
 
-\item{into}{vector of values into which to insert \code{x}.}
+\item{into}{Vector of values into which to insert \code{x}.}
 
 \item{at}{Vector of positions (indices) where \code{x} should be inserted. If the length of \code{x} is shorter than the length of \code{at}, then values in \code{x} will be recycled and a warning produced.}
 

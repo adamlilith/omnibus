@@ -12,7 +12,7 @@ listFiles(x, ...)
 \item{...}{Arguments to pass to \code{list.files} (other than \code{full.names}).}
 }
 \value{
-Character list.
+Character.
 }
 \description{
 This function is a slightly friendlier version of \code{\link[base]{list.files}} in that it automatically includes the \code{full.names=TRUE} argument.

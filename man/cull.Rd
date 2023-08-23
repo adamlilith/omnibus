@@ -10,7 +10,7 @@ cull(...)
 \item{...}{Vectors, matrices, or data frames.}
 }
 \value{
-List objects with one element per object supplied as an argument to the function.
+A list with one element per object supplied as an argument to the function.
 }
 \description{
 This function takes a set of vectors, data frames, or matrices and removes the last values/rows so that they all have a length/number of rows equal to the shortest among them.

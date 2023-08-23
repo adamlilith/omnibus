@@ -1,7 +1,7 @@
 #' Flip an object
 #'
 #' This function creates a "mirror" image of a character string, a number, a matrix, or a data frame. For example "Shots were exchanged at the hospital" becomes "latipsoh eht ta degnahcxe erew stohS' and 3.14159 becomes 95141.3. Data frames and matrices will be returned with the order of columns or order of rows reversed.
-#' @param x Numeric or character, a vector of numeric or character values, or a matrix or data frame.
+#' @param x A vector of numeric or character values, or a matrix or data frame.
 #' @param direction Only used if \code{x} is a matrix or data frame. Accepted values are \code{'lr'} (left-right mirror) or \code{'ud'} (up-down mirror).
 #' @returns Object with same class as \code{x}.
 #' @examples

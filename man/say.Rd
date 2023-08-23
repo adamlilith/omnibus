@@ -16,7 +16,7 @@ say(
 )
 }
 \arguments{
-\item{...}{character strings to print}
+\item{...}{Character strings to print}
 
 \item{pre}{Integer >= 0.  Number of blank lines to print before strings}
 

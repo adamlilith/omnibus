@@ -14,7 +14,7 @@ memUse(
 )
 }
 \arguments{
-\item{n}{Positive integer, maximum number of objects to display.}
+\item{n}{Positive integer: Maximum number of objects to display.}
 
 \item{orderBy}{Either \code{'size'} (default) or \code{'name'}.}
 

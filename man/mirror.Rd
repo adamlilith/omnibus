@@ -7,7 +7,7 @@
 mirror(x, direction = "lr")
 }
 \arguments{
-\item{x}{Numeric or character, a vector of numeric or character values, or a matrix or data frame.}
+\item{x}{A vector of numeric or character values, or a matrix or data frame.}
 
 \item{direction}{Only used if \code{x} is a matrix or data frame. Accepted values are \code{'lr'} (left-right mirror) or \code{'ud'} (up-down mirror).}
 }

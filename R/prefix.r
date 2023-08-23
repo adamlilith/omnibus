@@ -1,7 +1,7 @@
 #' Add leading characters to a string
 #'
 #' Add leading characters to a string. This function is useful for ensuring, say, files get sorted in a particular order. For example, on some operating systems a file name "file 1" would come first, then "file 10", then "file 11", "file 12", etc., then "file 2", "file 21", and so on. Using \code{prefix}, you can add one or more leading zeros so that file names are as "file 01", "file 02", "file 03", and so on... and they will sort that way.
-#' @param x Character or character list to which to add a prefix.
+#' @param x Character or character vector to which to add a prefix.
 #' @param len The total number of characters desired for each string. If a string is already this length or longer then nothing will be prefixed to that string.
 #' @param pad Character. Symbol to prefix to each string.
 #' @return Character or character vector.

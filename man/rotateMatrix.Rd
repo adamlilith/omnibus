@@ -7,7 +7,7 @@
 rotateMatrix(x, rot)
 }
 \arguments{
-\item{x}{Object of class \code{matrix}.}
+\item{x}{A \code{matrix}.}
 
 \item{rot}{Numeric. Number of degrees to rotate matrix. Values represent difference in degrees between "north" (up) and the clockwise direction.}
 }

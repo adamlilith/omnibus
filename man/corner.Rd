@@ -7,7 +7,7 @@
 corner(x, corner = 1, size = 5)
 }
 \arguments{
-\item{x}{Data frame, matrix, or vector with same number of rows or elements as \code{into}.}
+\item{x}{Data frame or matrix.}
 
 \item{corner}{Integer in the set {\code{1, 2, 3, 4}} or character in the set {\code{'topleft', 'topright', 'bottomleft', 'bottomright'}} or in the set {\code{'tl', 'tr', 'bl', 'br'}}. Indicates which corner to return. Integers 1, 2, 3 and 4 correspond to top left, top right, bottom left, and bottom right corners. The default is 1, the top left corner.}
 
@@ -17,7 +17,7 @@ corner(x, corner = 1, size = 5)
 A matrix or data frame.
 }
 \description{
-This function returns a corner of a matrix or data frame (i.e., upper left, upper right, lower left, lower right).
+Return a corner of a matrix or data frame (i.e., upper left, upper right, lower left, lower right).
 }
 \examples{
 x <- matrix(1:120, ncol=12, nrow=10)

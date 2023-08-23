@@ -7,9 +7,9 @@
 bracket(x, by, index = FALSE, inner = TRUE, warn = FALSE)
 }
 \arguments{
-\item{x}{One or more numeric or character values.}
+\item{x}{A numeric or character vector.}
 
-\item{by}{A vector of numeric or character values. These should be sorted (from high to low or low to high... if not, an error will result).}
+\item{by}{A numeric or character vector. These should be sorted (from high to low or low to high... if not, an error will result).}
 
 \item{index}{Logical. If \code{FALSE} (default), then numeric values in \code{by} will be returned. If \code{TRUE}, then the index or indices of the bracketing value(s) will be returned.}
 

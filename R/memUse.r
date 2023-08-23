@@ -1,7 +1,7 @@
 #' Size of objects taking most memory use
 #'
 #' Displays the largest objects in memUse.
-#' @param n Positive integer, maximum number of objects to display.
+#' @param n Positive integer: Maximum number of objects to display.
 #' @param orderBy Either \code{'size'} (default) or \code{'name'}.
 #' @param decreasing Logical, if \code{TRUE} (default), objects are displayed from largest to smallest.
 #' @param pos Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.#"

@@ -1,7 +1,7 @@
 #' Nicer version of \code{print()} or \code{cat()} function
 #'
 #' This function is a nicer version of \code{print()} or \code{cat()}, especially when used inline for functions because it displays immediately and pastes all strings together. It also does some rudimentary but optional word wrapping.
-#' @param ... character strings to print
+#' @param ... Character strings to print
 #' @param pre Integer >= 0.  Number of blank lines to print before strings
 #' @param post Integer >= 0. Number of blank lines to print after strings
 #' @param breaks Either \code{NULL}, which causes all strings to be printed on the same line (no wrap overflow) or a positive integer which wraps lines at this character length (e.g., \code{breaks=80} inserts line breaks every 80 characters).

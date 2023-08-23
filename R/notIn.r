@@ -14,7 +14,6 @@
 #' x %notin% y
 #'
 #' @export
-
 notIn <- compiler::cmpfun( function(x, y) !(x %in% y) )
 
 
