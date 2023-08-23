@@ -7,13 +7,13 @@
 capIt(x)
 }
 \arguments{
-\item{x}{Character or character list.}
+\item{x}{Character or character vector.}
 }
 \value{
-Character or character list.
+Character or character vector.
 }
 \description{
-This function capitalizes the first letter of a string or the first letters of a list of strings.
+Capitalize the first letter of a string or the first letters of a list of strings.
 }
 \examples{
 x <- c('shots', 'were', 'exchanged at the ', 'hospital.')

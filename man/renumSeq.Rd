@@ -7,7 +7,7 @@
 renumSeq(x)
 }
 \arguments{
-\item{x}{Vector of numerical or character values.}
+\item{x}{Numerical or character vector.}
 }
 \value{
 A vector.

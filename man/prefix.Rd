@@ -7,7 +7,7 @@
 prefix(x, len, pad = "0")
 }
 \arguments{
-\item{x}{Character or character list to which to add a prefix.}
+\item{x}{Character or character vector to which to add a prefix.}
 
 \item{len}{The total number of characters desired for each string. If a string is already this length or longer then nothing will be prefixed to that string.}
 

@@ -62,4 +62,6 @@
 #' @docType package
 #' @author Adam B. Smith
 #' @name omnibus
+#' @keywords internal 
+"_PACKAGE"
 NULL

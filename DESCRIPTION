@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
 Title: Helper Tools for Managing Data, Dates, Missing Values, and Text
-Version: 1.2.6
-Date: 2023-05-08
+Version: 1.2.7
+Date: 2023-08-21
 Authors@R: 
 	c(
 		person(
@@ -31,4 +31,4 @@ LazyLoad: yes
 URL: https://github.com/adamlilith/omnibus
 BugReports: https://github.com/adamlilith/omnibus
 Encoding: UTF-8
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3

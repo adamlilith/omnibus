@@ -3,6 +3,7 @@
 \docType{package}
 \name{omnibus}
 \alias{omnibus}
+\alias{omnibus-package}
 \title{omnibus: Fantabulous helper functions}
 \description{
 This package contains a set of helper functions.
@@ -78,6 +79,15 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{say}}: Replacement for \code{print('abc'); flush.console}. \cr
 }
 
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/adamlilith/omnibus}
+  \item Report bugs at \url{https://github.com/adamlilith/omnibus}
+}
+
+}
 \author{
 Adam B. Smith
 }
+\keyword{internal}

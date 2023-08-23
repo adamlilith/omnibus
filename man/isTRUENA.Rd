@@ -10,7 +10,7 @@ isTRUENA(x, ifNA = FALSE)
 isFALSENA(x, ifNA = FALSE)
 }
 \arguments{
-\item{x}{Single value or condition or a vector of values to evaluate.}
+\item{x}{Logical, or a condition that evaluates to logical, or a vector of logical values or conditions to evaluate.}
 
 \item{ifNA}{Logical, value to return if the result of evaluating \code{x} is \code{NA}. Note that this can be anything (i.e., \code{TRUE}, \code{FALSE}, a number, etc.).}
 }

@@ -7,7 +7,7 @@
 naOmitMulti(...)
 }
 \arguments{
-\item{...}{Vectors (numeric or character).}
+\item{...}{Numeric or character vectors.}
 }
 \value{
 List of objects of class \code{...}.

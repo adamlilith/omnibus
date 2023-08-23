@@ -2,18 +2,18 @@
 % Please edit documentation in R/countDecDigits.r
 \name{countDecDigits}
 \alias{countDecDigits}
-\title{Calculate number of digits after a decimal place}
+\title{Number of digits after a decimal place}
 \usage{
 countDecDigits(x)
 }
 \arguments{
-\item{x}{Numeric or numeric list.}
+\item{x}{Numeric or numeric vector.}
 }
 \value{
 Integer.
 }
 \description{
-This function calculates the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
+Count the number of digits after a decimal place. Note that trailing zeros will likely be ignored.
 }
 \examples{
 countDecDigits(c(1, 1.1, 1.12, 1.123, 1.1234, -1, 0, 10.0000, 10.0010))

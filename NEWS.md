@@ -1,3 +1,7 @@
+omnibus 1.2.7 (2023-08-21)
+===========
+o Updated `omnibus.r` file for compliance with CRAN
+
 omnibus 1.2.6
 ===========
 o Updated help for several functions

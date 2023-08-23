@@ -7,12 +7,10 @@
 mergeLists(list1, list2)
 }
 \arguments{
-\item{list1}{List object.}
-
-\item{list2}{List object.}
+\item{list1, list2}{Lists.}
 }
 \value{
-List object.
+A list.
 }
 \description{
 This function merges two lists to create a single, combined list. If there is a conflict (e.g., two elements have the same name), items in the second list gain preference. Adapted from Stack Overflow (http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion).

@@ -7,7 +7,7 @@
 yearFromDate(x, yearLast = TRUE)
 }
 \arguments{
-\item{x}{Character or character list, one or more dates.}
+\item{x}{Character or character vector, one or more dates.}
 
 \item{yearLast}{Logical, if \code{TRUE} assume that dates like "XX/YY/ZZ" list the year last (=ZZ).  If \code{FALSE}, assume they're first (=XX).}
 }
@@ -15,7 +15,7 @@ yearFromDate(x, yearLast = TRUE)
 Numeric.
 }
 \description{
-This function attempts to return the year from characters representing dates formats. The formats can be ambigous and varied within the same set.  For example, it returns "1982" (or 9982 if century is ambigous) from "11/20/82", "1982-11-20", "Nov. 20, 1982", "20 Nov 1982", "20-Nov-1982", "20/Nov/1982", "20 Nov. 82", "20 Nov 82". The function handles ambiguous centuries (e.g., 1813, 1913, 2013) by including a dummy place holder for the century place (i.e., 9913). Note that it may return warnings like "NAs introduced by coercion".
+This function attempts to return the year from characters representing dates formats. The formats can be ambigous and varied within the same set.  For example, it returns "1982" (or 9982 if century is ambiguous) from "11/20/82", "1982-11-20", "Nov. 20, 1982", "20 Nov 1982", "20-Nov-1982", "20/Nov/1982", "20 Nov. 82", "20 Nov 82". The function handles ambiguous centuries (e.g., 1813, 1913, 2013) by including a dummy place holder for the century place (i.e., 9913). Note that it may return warnings like "NAs introduced by coercion".
 }
 \examples{
 yearFromDate(1969, yearLast=TRUE)
