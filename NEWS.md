@@ -1,3 +1,9 @@
+omnibus 1.2.8 (2023-11-16)
+===========
+o Added `convertUnits()`
+o Added `conversionFactors` data frame object
+o Added `pmatchSafe()`
+
 omnibus 1.2.7 (2023-08-21)
 ===========
 o Updated `omnibus.r` file for compliance with CRAN
