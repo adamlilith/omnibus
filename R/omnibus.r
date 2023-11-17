@@ -61,6 +61,7 @@
 #' 		\code{\link{capIt}}: Capitalize first letter of a string. \cr
 #' 		\code{\link{pmatchSafe}}: Partial matching of strings with error checking. \cr
 #' 		\code{\link{prefix}}: Add repeating character to a string to ensure it has a user-defined length (e.g., \code{7} --> \code{007}). \cr
+#' 		\code{\link{rstring}}: Make a nearly-guaranteed unique string. \cr
 #' 		\code{\link{say}}: Replacement for \code{print('abc'); flush.console}. \cr
 #'
 #' @docType package

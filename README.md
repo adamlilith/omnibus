@@ -78,6 +78,7 @@ You may need to install the `remotes` package first.
 * `capIt`: Capitalize first letter of a string.
 * `pmatchSafe`: Partial matching of strings with error checking.
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
+* `rstring`: Make a nearly-guaranteed unique string.
 * `say`: Replacement for `print('abc'); flush.console()`.
 
 Adam
