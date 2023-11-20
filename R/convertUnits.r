@@ -59,10 +59,10 @@ convertUnits <- function(from = NULL, to = NULL, x = NULL) {
 	if (is.null(x)) {
 		
 		if (!is.null(from) & !is.null(to)) {
-			out <- conversionFactors$factor[conversionFactors$from == from & conversionFactors == to]
-		} else if (is.null(from) & !is.null(to)) {
-			out <- conversionFactors[conversionFactors$from == from, ]
+			out <- conversionFactors$factor[conversionFactors$from == from & conversionFactors$to == to]
 		} else if (!is.null(from) & is.null(to)) {
+			out <- conversionFactors[conversionFactors$from == from, ]
+		} else if (is.null(from) & !is.null(to)) {
 			out <- conversionFactors[conversionFactors$to == to, ]
 		}
 			
