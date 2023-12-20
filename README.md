@@ -25,7 +25,7 @@ You may need to install the `remotes` package first.
 ## Data manipulation ##
 * `bracket`: Find values that bracket a given number.
 * `combineDf`: Combine data frames with different schema.
-* `convertUnits``: Convert length or areal units.
+* `convertUnits`: Convert length or areal units.
 * `conversionFactors`: Data frame of conversion factors for length or areal units.
 * `corner`: Corner of a matrix or data frame.
 * `cull`: Force vectors or matrices/data frames to have the same length or number of rows.
