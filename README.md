@@ -42,6 +42,7 @@ You may need to install the `remotes` package first.
 * `roundTo`: Rounds a value to the nearest target value.
 * `rowColIndexing`: Convert between row and column indexing of a matrix.
 * `stretchMinMax`: Rescale values to a given range.
+* `unlistRecursive`: For any object in a list that is also a list, unlist it.
 
 ## Dates ##
 * `domLeap`: Data frame of days of each month in a leap year.
