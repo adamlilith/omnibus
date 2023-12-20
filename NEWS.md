@@ -3,6 +3,7 @@ omnibus 1.2.8 (2023-11-16)
 o Added `convertUnits()`
 o Added `conversionFactors` data frame object
 o Added `pmatchSafe()`
+o Added `unlistRecursive()`
 
 omnibus 1.2.7 (2023-08-21)
 ===========
