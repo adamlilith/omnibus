@@ -32,6 +32,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
+		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
 }
 
 \section{Dates}{
