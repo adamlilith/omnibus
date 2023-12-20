@@ -2,7 +2,7 @@ Package: omnibus
 Type: Package
 Title: Helper Tools for Managing Data, Dates, Missing Values, and Text
 Version: 1.2.8
-Date: 2023-11-16
+Date: 2023-12-06
 Authors@R: 
 	c(
 		person(
