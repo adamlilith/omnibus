@@ -16,7 +16,10 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{bracket}}: Find values that bracket a given number. \cr
 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
+		\code{\link{convertUnits}}: Convert length or areal units. \cr
+		\code{\link{conversionFactors}}: Data frame of conversion factors for length or areal units. \cr
 		\code{\link{cull}}: Force vectors or matrices/data frames to have the same length or number of rows. \cr
+		\code{\link{expandUnits}}: Convert unit abbreviations to proper unit names. \cr
 		\code{\link{insert}}: Insert values into a vector. \cr
 		\code{\link{insertCol}} and \code{\link{insertRow}}: Insert column(s)/row(s) in a matrix or data frame. \cr
 		\code{\link{maxRuns}}: Maximum number of continuous "runs" of values meeting a particular condition. \cr
@@ -29,6 +32,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
+		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
 }
 
 \section{Dates}{
@@ -75,7 +79,9 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 \section{Text}{
 
 		\code{\link{capIt}}: Capitalize first letter of a string. \cr
+		\code{\link{pmatchSafe}}: Partial matching of strings with error checking. \cr
 		\code{\link{prefix}}: Add repeating character to a string to ensure it has a user-defined length (e.g., \code{7} --> \code{007}). \cr
+		\code{\link{rstring}}: Make a nearly-guaranteed unique string. \cr
 		\code{\link{say}}: Replacement for \code{print('abc'); flush.console}. \cr
 }
 

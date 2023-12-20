@@ -6,12 +6,12 @@
 \alias{\%notin\%}
 \title{Opposite of '\%in\%'}
 \usage{
-notIn(x, y)
+notIn(x, table)
 
-x \%notin\% y
+x \%notin\% table
 }
 \arguments{
-\item{x, y}{Vectors.}
+\item{x, table}{Vectors.}
 }
 \value{
 A logical vector.

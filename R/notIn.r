@@ -2,7 +2,7 @@
 #'
 #' @description Indicate if elements of a vector are not in another vector.
 #'
-#' @param x,y Vectors.
+#' @param x,table Vectors.
 #' @return A logical vector.
 #'
 #' @examples
@@ -14,7 +14,7 @@
 #' x %notin% y
 #'
 #' @export
-notIn <- compiler::cmpfun( function(x, y) !(x %in% y) )
+notIn <- compiler::cmpfun( function(x, table) !(x %in% table) )
 
 
 #' @name `%notin%`
