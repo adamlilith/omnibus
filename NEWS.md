@@ -1,3 +1,7 @@
+omnibus 1.2.9 (2024-XX-XX)
+===========
+o Made `renumSeq()` faster.
+
 omnibus 1.2.8 (2023-11-16)
 ===========
 o Added `convertUnits()`
