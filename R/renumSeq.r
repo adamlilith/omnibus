@@ -13,26 +13,22 @@
 #' x <- c(1, 1, 3, 1, 8, 8, 8)
 #' renumSeq(x)
 #' 
-#' x <- c(1, 1, 3, 1, 8, NA, 8, 8)
-#' renumSeq(x)
-#'
-#' y <- c('c', 'c', 'b', 'a', 'w', 'a')
+#' y <- c(1, 1, 3, 1, 8, NA, 8, 8)
 #' renumSeq(y)
+#'
+#' z <- c('c', 'c', 'b', 'a', 'w', 'a')
+#' renumSeq(z)
 #' 
 #' @export
 renumSeq <- function(x) {
 
-	# x <- x - min(x, na.rm = TRUE) + 1
-	xUnique <- sort(unique(x))
-	n <- length(xUnique)
-	if (!all(xUnique == 1:n)) {
+	x <- x[!is.na(x)]
 
-		xNew <- rep(NA, length(x))
-		for (i in seq_along(xUnique)) xNew[x == xUnique[i]] <- i
-		x <- xNew
+	uniq <- unique(x)
+	nuniq <- length(uniq)
 	
-	}
-	
-	x
+	out <- factor(x, labels = seq_len(nuniq))
+	out <- as.integer(out)
+	out
 
 }
