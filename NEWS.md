@@ -1,4 +1,4 @@
-omnibus 1.2.9 (2024-XX-XX)
+omnibus 1.2.9 (2024-01-08)
 ===========
 o Made `renumSeq()` faster.
 
