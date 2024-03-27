@@ -1,8 +1,8 @@
 Package: omnibus
 Type: Package
 Title: Helper Tools for Managing Data, Dates, Missing Values, and Text
-Version: 1.2.9
-Date: 2024-01-08
+Version: 1.2.11
+Date: 2024-03-26
 Authors@R: 
 	c(
 		person(
@@ -22,7 +22,7 @@ Description: An assortment of helper functions for managing data (e.g.,
 	flushing reports to the console in real-time); and combining data frames
 	with different schema (copying, filling, or concatenating columns or
 	applying functions before combining).
-Depends: 
+Depends: R (>= 3.5.0)
 Imports:
 Suggests:
 License: GPL (>=3)
@@ -31,4 +31,4 @@ LazyLoad: yes
 URL: https://github.com/adamlilith/omnibus
 BugReports: https://github.com/adamlilith/omnibus
 Encoding: UTF-8
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.1
