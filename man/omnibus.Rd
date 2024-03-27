@@ -2,8 +2,8 @@
 % Please edit documentation in R/omnibus.r
 \docType{package}
 \name{omnibus}
-\alias{omnibus}
 \alias{omnibus-package}
+\alias{omnibus}
 \title{omnibus: Fantabulous helper functions}
 \description{
 This package contains a set of helper functions.
@@ -11,10 +11,11 @@ This package contains a set of helper functions.
 \details{
 Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 }
-\section{Data manipulation}{
+\section{Data manipulation and properties}{
 
 		\code{\link{bracket}}: Find values that bracket a given number. \cr
 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
+		\code{\link{compareFloat}}: Compare values to floating-point precision. \cr
 		\code{\link{corner}}: Corner of a matrix or data frame. \cr
 		\code{\link{convertUnits}}: Convert length or areal units. \cr
 		\code{\link{conversionFactors}}: Data frame of conversion factors for length or areal units. \cr
@@ -64,6 +65,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 
 		\code{\link{countDecDigits}}: Count number of digits after a decimal. \cr
 		\code{\link{longRun}}: Longest run of a given sequence in a vector. \cr
+		\code{\link{is.wholeNumber}}: Is a value a whole number to within floating-point precision?. \cr
 		\code{\link{roundedSigDigits}}: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded. \cr
 		\code{\link{which.pmax}} and \code{\link{which.pmin}}: Combine \code{\link{which.max}} with \code{\link{pmax}}, and \code{\link{which.min}} with \code{\link{pmin}} (vectorized \code{\link{which.max}} and \code{\link{which.min}}). \cr
 }
@@ -79,6 +81,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 \section{Text}{
 
 		\code{\link{capIt}}: Capitalize first letter of a string. \cr
+		\code{\link{forwardSlash}}: Replace backslash with forward slash. \cr
 		\code{\link{pmatchSafe}}: Partial matching of strings with error checking. \cr
 		\code{\link{prefix}}: Add repeating character to a string to ensure it has a user-defined length (e.g., \code{7} --> \code{007}). \cr
 		\code{\link{rstring}}: Make a nearly-guaranteed unique string. \cr
