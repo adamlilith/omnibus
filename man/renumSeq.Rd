@@ -20,11 +20,11 @@ This function renumbers a sequence, which is helpful if "gaps" appear in the seq
 x <- c(1, 1, 3, 1, 8, 8, 8)
 renumSeq(x)
 
-x <- c(1, 1, 3, 1, 8, NA, 8, 8)
-renumSeq(x)
-
-y <- c('c', 'c', 'b', 'a', 'w', 'a')
+y <- c(1, 1, 3, 1, 8, NA, 8, 8)
 renumSeq(y)
+
+z <- c('c', 'c', 'b', 'a', 'w', 'a')
+renumSeq(z)
 
 }
 \seealso{

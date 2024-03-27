@@ -25,6 +25,7 @@ You may need to install the `remotes` package first.
 ## Data manipulation ##
 * `bracket`: Find values that bracket a given number.
 * `combineDf`: Combine data frames with different schema.
+* `compareFloat`: Compare two values to within floating-point precision.
 * `convertUnits`: Convert length or areal units.
 * `conversionFactors`: Data frame of conversion factors for length or areal units.
 * `corner`: Corner of a matrix or data frame.
@@ -65,6 +66,7 @@ You may need to install the `remotes` package first.
 
 ## Data properties ##
 * `countDecDigits`: Count number of digits after a decimal.
+* `is.wholeNumber`: Is a numeric value a whole number, to within floating-point precision?
 * `longRun`: Longest run of a given sequence in a vector.
 * `roundedSigDigits`: Infers the number of significant digits represented by a decimal representation of a division operation or digits place to which an integer was rounded.
 * `which.pmax` and `which.pmin`: Combine `which.max` with `pmax` and `which.min` with `pmin` (vectorized `which.max` and `which.min`).
@@ -77,6 +79,7 @@ You may need to install the `remotes` package first.
 
 ## Text ##
 * `capIt`: Capitalize first letter of a string.
+* `forwardSlash`: Convert backslashes to forward slashes.
 * `pmatchSafe`: Partial matching of strings with error checking.
 * `prefix`: Add repeating character to a string to ensure it has a user-defined length (e.g., `7` --> `007`).
 * `rstring`: Make a nearly-guaranteed unique string.

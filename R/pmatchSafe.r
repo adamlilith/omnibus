@@ -45,9 +45,9 @@ pmatchSafe <- function(x, table, useFirst = FALSE, error = TRUE, ignoreCase = TR
 	if (ignoreCase) {
 		x <- tolower(x)
 		lowerTable <- tolower(table)
-		matches <- .pmatch(x, table = lowerTable, useFirst = useFirst, error = error)
+		matches <- .pmatchSafe(x, table = lowerTable, useFirst = useFirst, error = error)
 	} else {
-		matches <- .pmatch(x, table = table, useFirst = useFirst, error = error)
+		matches <- .pmatchSafe(x, table = table, useFirst = useFirst, error = error)
 	}
 	
 	if (length(matches) > nmax) stop('Only ', nmax, ' match(es) can be returned.')
@@ -61,7 +61,7 @@ pmatchSafe <- function(x, table, useFirst = FALSE, error = TRUE, ignoreCase = TR
 }
 
 #' @noRd
-.pmatch <- function(x, table, useFirst, error) {
+.pmatchSafe <- function(x, table, useFirst, error) {
 
 	nc <- nchar(x)
 

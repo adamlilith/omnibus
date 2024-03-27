@@ -1,4 +1,14 @@
-omnibus 1.2.9 (2024-XX-XX)
+omnibus 1.2.11 (2024-03-26)
+===========
+o Added functions `compareFloat()` and aliases
+o Added function `is.wholeNUmber()`
+o Added function `forwardSlash()`
+
+omnibus 1.2.10 (2024-03-10)
+===========
+o Internal fix to `pmatchSafe()` to avoid conflicts with other packages.
+
+omnibus 1.2.9 (2024-01-08)
 ===========
 o Made `renumSeq()` faster.
 
