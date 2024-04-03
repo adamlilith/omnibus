@@ -8,20 +8,22 @@ convertUnits(from = NULL, to = NULL, x = NULL)
 }
 \arguments{
 \item{from, to}{Character: Names of the units to convert from/to. Partial matching is used, and case is ignored. Valid values are listed below. The \code{'*2'} values represent areas (e.g., \code{'m2'} is "meters-squared").
-* \code{'m'} or \code{'meters'}
-* \code{'m2'} or \code{'meters2'}
-* \code{'km'} or \code{'kilometers'}
-* \code{'km2'} or \code{'kilometers2'}
-* \code{'mi'} or \code{'miles'}
-* \code{'mi2'} or \code{'miles2'}
-* \code{'ft'} or \code{'feet'}
-* \code{'ft2'} or \code{'feet2'}
-* \code{'yd'} or \code{'yards'}
-* \code{'yd2'} or \code{'yards2'}
-* \code{'ac'} or \code{'acres'}
-* \code{'ha'} or \code{'hectares'}
-* \code{'nmi'} or \code{'nautical miles'}
-* \code{'nmi2'} or \code{'nautical miles2'}}
+\itemize{
+\item \code{'m'} or \code{'meters'}
+\item  \code{'m2'} or \code{'meters2'}
+\item \code{'km'} or \code{'kilometers'}
+\item \code{'km2'} or \code{'kilometers2'}
+\item \code{'mi'} or \code{'miles'}
+\item \code{'mi2'} or \code{'miles2'}
+\item \code{'ft'} or \code{'feet'}
+\item \code{'ft2'} or \code{'feet2'}
+\item \code{'yd'} or \code{'yards'}
+\item \code{'yd2'} or \code{'yards2'}
+\item \code{'ac'} or \code{'acres'}
+\item \code{'ha'} or \code{'hectares'}
+\item \code{'nmi'} or \code{'nautical miles'}
+\item \code{'nmi2'} or \code{'nautical miles2'}
+}}
 
 \item{x}{Numeric or \code{NULL} (default). The value(s) to convert in the unit specified by \code{from}. If left as \code{NULL}, the conversion factor is reported instead.}
 }
