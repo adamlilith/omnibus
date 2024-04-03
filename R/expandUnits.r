@@ -3,20 +3,22 @@
 #' @description This function converts abbreviations of length and area units (e.g., "m", "km", and "ha") to their proper names (e.g., "meters", "kilometers", "hectares"). Square areal units are specified using an appended "2", where appropriate (e.g., "m2" means "meters-squared" and will be converted to "meters2").
 #'
 #' @param x Character: Abbreviations to convert. Case is ignored.
-#' * \code{'m'} will be converted to \code{'meters'}
-#' * \code{'m2'} will be converted to \code{'meters2'}
-#' * \code{'km'} will be converted to \code{'kilometers'}
-#' * \code{'km2'} will be converted to \code{'kilometers2'}
-#' * \code{'mi'} will be converted to \code{'miles'}
-#' * \code{'mi2'} will be converted to \code{'miles2'}
-#' * \code{'ft'} will be converted to \code{'feet'}
-#' * \code{'ft2'} will be converted to \code{'feet2'}
-#' * \code{'yd'} will be converted to \code{'yards'}
-#' * \code{'yd2'} will be converted to \code{'yards2'}
-#' * \code{'ac'} will be converted to \code{'acres'}
-#' * \code{'ha'} will be converted to \code{'hectares'}
-#' * \code{'nmi'} will be converted to \code{'nautical miles'}
-#' * \code{'nmi2'} will be converted to \code{'nautical miles2'}
+#' \itemize{
+#' \item \code{'m'} will be converted to \code{'meters'}
+#' \item \code{'m2'} will be converted to \code{'meters2'}
+#' \item \code{'km'} will be converted to \code{'kilometers'}
+#' \item \code{'km2'} will be converted to \code{'kilometers2'}
+#' \item \code{'mi'} will be converted to \code{'miles'}
+#' \item \code{'mi2'} will be converted to \code{'miles2'}
+#' \item \code{'ft'} will be converted to \code{'feet'}
+#' \item \code{'ft2'} will be converted to \code{'feet2'}
+#' \item \code{'yd'} will be converted to \code{'yards'}
+#' \item \code{'yd2'} will be converted to \code{'yards2'}
+#' \item \code{'ac'} will be converted to \code{'acres'}
+#' \item \code{'ha'} will be converted to \code{'hectares'}
+#' \item \code{'nmi'} will be converted to \code{'nautical miles'}
+#' \item \code{'nmi2'} will be converted to \code{'nautical miles2'}
+#' }
 #'
 #' @seealso \code{\link{convertUnits}}, \code{\link{conversionFactors}}
 #' 
