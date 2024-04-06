@@ -4,22 +4,27 @@
 \alias{mergeLists}
 \title{Merge two lists with precedence}
 \usage{
-mergeLists(list1, list2)
+mergeLists(...)
 }
 \arguments{
-\item{list1, list2}{Lists.}
+\item{...}{Two or more lists.}
 }
 \value{
 A list.
 }
 \description{
-This function merges two lists to create a single, combined list. If there is a conflict (e.g., two elements have the same name), items in the second list gain preference. Adapted from Stack Overflow (http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion).
+This function merges two or more lists to create a single, combined list. If two elements in different lists have the same name, items in the later list gain preference (e.g., if there are three lists, then values in the third list gain precedence over items with the same name in the second, and the second has precedence over items in the first). Adapted from \href{http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion}{Stack Overflow}.
 }
 \examples{
-list1 <- list(a=1:3, b='Hello world', c=LETTERS[1:3])
-list2 <- list(x=4, b='Goodbye world', z=letters[1:2])
+
+list1 <- list(a=1:3, b='Hello world!', c=LETTERS[1:3])
+list2 <- list(x=4, b='Goodbye world!', z=letters[1:2])
+list3 <- list(x=44, b='What up, world?', z=c('_A_', '_Z_'), w = TRUE)
+
 mergeLists(list1, list2)
 mergeLists(list2, list1)
-list3 <- list(m=list(n=4:7, o=pi), a=1:5)
-mergeLists(list1, list3)
+
+mergeLists(list1, list2, list3)
+mergeLists(list3, list2, list1)
+
 }
