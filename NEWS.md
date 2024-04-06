@@ -1,3 +1,7 @@
+omnibus 1.2.12 (2024-04-06)
+===========
+o Changed arguments of `mergeLists()` to `...` so it can handle >2 lists at a time
+
 omnibus 1.2.11 (2024-04-03)
 ===========
 o Added functions `compareFloat()` and aliases
