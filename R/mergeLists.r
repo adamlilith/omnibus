@@ -1,6 +1,6 @@
 #' Merge two lists with precedence
 #'
-#' This function merges two or more lists to create a single, combined list. If two elements in different lists have the same name, items in the later list gain preference (e.g., if there are three lists, then values in the third list gain precedence over items with the same name in the second, and the second has precedence over items in the first). Adapted from \href{http://stackoverflow.com/questions/13811501/r-merge-lists-with-overwrite-and-recursion}{Stack Overflow}.
+#' This function merges two or more lists to create a single, combined list. If two elements in different lists have the same name, items in the later list gain preference (e.g., if there are three lists, then values in the third list gain precedence over items with the same name in the second, and the second has precedence over items in the first).
 #'
 #' @param ... Two or more lists.
 #'
