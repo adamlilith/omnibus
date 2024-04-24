@@ -6,6 +6,8 @@
 #'
 #' @returns A list.
 #'
+#' @seealso \code{\link{appendLists}}
+#'
 #' @examples
 #'
 #' list1 <- list(a=1:3, b='Hello world!', c=LETTERS[1:3])
