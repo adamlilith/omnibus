@@ -6,6 +6,7 @@
 #' @details
 #'
 #' @section Data manipulation and properties:
+#' 		\code{\link{appendLists}}: Merge lists, appending elements with the same name. \cr
 #' 		\code{\link{bracket}}: Find values that bracket a given number. \cr
 #' 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 #' 		\code{\link{compareFloat}}: Compare values to floating-point precision. \cr
@@ -19,7 +20,7 @@
 #' 		\code{\link{maxRuns}}: Maximum number of continuous "runs" of values meeting a particular condition. \cr
 #' 		\code{\link{mirror}}: Flip an object left-right (or up-down). \cr
 #' 		\code{\link{mmode}}: Modal value(s). \cr
-#' 		\code{\link{mergeLists}}: Merge lists. \cr
+#' 		\code{\link{mergeLists}}: Merge lists, with precedence for elements of one list over another if they have the same names. \cr
 #' 		\code{\link{notIn}} and \code{\link[omnibus:notIn]{\%notin\%}}: Opposite of \code{\%in\%}. \cr
 #' 		\code{\link{renumSeq}}: Renumber a sequence. \cr
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
