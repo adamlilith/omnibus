@@ -1,4 +1,4 @@
-omnibus 1.2.XX (2024-04-19)
+omnibus 1.2.X3 (2024-05-01)
 ===========
 o Added `appendLists()` for combining lists with elements that may have the same names
 o `roundedSigDigits()` works for numbers expressed in scientific notation
