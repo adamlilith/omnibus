@@ -28,3 +28,6 @@ mergeLists(list1, list2, list3)
 mergeLists(list3, list2, list1)
 
 }
+\seealso{
+\code{\link{appendLists}}
+}

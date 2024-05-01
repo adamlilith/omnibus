@@ -23,6 +23,7 @@ As of version 1.1.2, `omnibus` is on CRAN! You can install the latest CRAN-stabl
 You may need to install the `remotes` package first.
 
 ## Data manipulation ##
+* `appendLists`: Merge lists, appending elements with the same name.
 * `bracket`: Find values that bracket a given number.
 * `combineDf`: Combine data frames with different schema.
 * `compareFloat`: Compare two values to within floating-point precision.
@@ -34,7 +35,7 @@ You may need to install the `remotes` package first.
 * `insert`: Insert values into a vector.
 * `insertCol` and `insertRow`: Insert column(s)/row(s) in a matrix or data frame.
 * `maxRuns`: Maximum number of continuous "runs" of values meeting a particular condition.
-* `mergeLists`: Merge lists.
+* `mergeLists`: Merge lists, with precedence for elements of one list over another if they have the same names.
 * `mirror`: Flip an object left-right (or up-down).
 * `mmode`: Modal value(s).
 * `notIn` and `%notin%`: Opposite of `%in%`.

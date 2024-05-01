@@ -1,3 +1,8 @@
+omnibus 1.2.X3 (2024-05-01)
+===========
+o Added `appendLists()` for combining lists with elements that may have the same names
+o `roundedSigDigits()` works for numbers expressed in scientific notation
+
 omnibus 1.2.12 (2024-04-06)
 ===========
 o Changed arguments of `mergeLists()` to `...` so it can handle >2 lists at a time

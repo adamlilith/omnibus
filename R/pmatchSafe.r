@@ -41,18 +41,19 @@
 #' 
 #' @export 
 pmatchSafe <- function(x, table, useFirst = FALSE, error = TRUE, ignoreCase = TRUE, nmax = length(x), ...) {
-
 	if (ignoreCase) {
+		
 		x <- tolower(x)
 		lowerTable <- tolower(table)
 		matches <- .pmatchSafe(x, table = lowerTable, useFirst = useFirst, error = error)
+	
 	} else {
 		matches <- .pmatchSafe(x, table = table, useFirst = useFirst, error = error)
 	}
 	
 	if (length(matches) > nmax) stop('Only ', nmax, ' match(es) can be returned.')
 
-	if (length(matches) < length(x)) {
+	if (length(matches) < length(x) & error) {
 		if (error) stop('Cannot find a match. Valid options include: ', paste(table, collapse=', '))
 	}
 

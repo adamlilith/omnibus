@@ -1,12 +1,12 @@
 #' Number of significant digits in rounded numbers
 #'
-#' This function "examines" a numeric value (typically with numbers after the decimal place) and estimates either:
+#' This function examines a numeric value (typically with numbers after the decimal place) and estimates either:
 #' \itemize{
 #'		\item The number of significant digits of the numerator and denominator of a fraction that would (approximately) result in the given value.
-#' 		\item The number of digits to which an integer may have been rounded, depending on whether the input has values after the decimal place or is an integer. Negative values are treated as positive values so the negative of a number will returns the same value as its positive version. See \emph{Details} for more details. \emph{Obviously, values can appear to be rounded or repeating even when they are not!}
+#' 		\item The number of digits to which an integer may have been rounded, depending on whether the input has values after the decimal place or is an integer. Negative values are treated as positive so the negative of a number will returns the same value as its positive version. See \emph{Details} for more details. \emph{Obviously, values can appear to be rounded or repeating even when they are not!}
 #' }
 #' @param x 		Numeric or numeric vector.
-#' @param minReps 	Integer. Number of times a digit or sequence of digits that occur after a decimal place needs to be repeated to assume it represents a repeating series and thus is assumed to arise from using decimal places to represent a fraction. Default is 3. For example, if \code{minReps} is 3 then 0.111 would be assumed to represent a repeating value because 1 occurs three times, so -1 would be returned. However, if \code{minReps} is 4 then the function would assume that if the value had had four digits, the next digit would not have been a 1, so returns -3 because there are three values after the decimal place. When the penultimate digit is >5 and the last digit is equal to the penultimate digit plus 1, then the last digit counts as a repeat of the penultimate digit.  So 0.067 is assumed to have two repeating 6s.  If \code{minReps} is 0 or 1 then the function will (usually) return the negative of the total number of decimal places in the value.
+#' @param minReps 	Integer. Number of times a digit or sequence of digits that occur after a decimal place needs to be repeated to assume it represents a repeating series and thus is assumed to arise from using decimal places to represent a fraction. Default is 3. For example, if \code{minReps} is 3 then 0.111 would be assumed to represent a repeating value because 1 occurs three times, so -1 would be returned since this decimal can be represented by 1/9 (i.e., division of 1 by a single-digit number). However, if \code{minReps} is 4 then the function would assume that if the value had had four digits, the next digit would not have been a 1, so returns -3 because there are three significant values after the decimal place. When the penultimate digit is >5 and the last digit is equal to the penultimate digit plus 1, then the last digit counts as a repeat of the penultimate digit.  So 0.067 is assumed to have two repeating 6s.  If \code{minReps} is 0 or 1 then the function will (usually) return the negative of the total number of decimal places in the value.
 #'
 #' @details For values with at least one non-zero digit after a decimal place with no repeated series of digits detected, the function simply returns the total number of digits (ignoring trailing zeros) times -1. For example:
 #' \itemize{
@@ -82,6 +82,9 @@
 #' roundedSigDigits(x)
 #' @export
 roundedSigDigits <- compiler::cmpfun(function(x, minReps = 3) {
+
+	opts <- options(scipen = 999)
+	on.exit(options(opts), add = TRUE)
 
 	n <- length(x)
 	out <- rep(NA, n)
