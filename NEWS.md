@@ -1,3 +1,7 @@
+omnibus 1.2.14 (2024-XX-XX)
+===========
+o Added function `unragMatrix()`.
+
 omnibus 1.2.12 (2024-05-16)
 ===========
 o Changed arguments of `mergeLists()` to `...` so it can handle >2 lists at a time
