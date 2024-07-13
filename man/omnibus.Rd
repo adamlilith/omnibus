@@ -35,6 +35,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
+		\code{\link{unragMatrix}}: Turn a "ragged" matrix into a "ragged" vector. \cr
 }
 
 \section{Dates}{

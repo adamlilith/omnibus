@@ -28,6 +28,7 @@
 #' 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
 #' 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 #' 		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
+#' 		\code{\link{unragMatrix}}: Turn a "ragged" matrix into a "ragged" vector. \cr
 #'
 #' @section Dates:
 #' 		\code{\link{domLeap}}: Data frame of days of each month in a leap year. \cr
