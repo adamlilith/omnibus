@@ -39,10 +39,12 @@ You may need to install the `remotes` package first.
 * `mirror()`: Flip an object left-right (or up-down).
 * `mmode()`: Modal value(s).
 * `notIn()` and `%notin%`: Opposite of `%in%`.
+* `renameCol()`: Rename a column.
 * `renumSeq()`: Renumber a sequence.
 * `rotateMatrix()`: Rotate a matrix.
 * `roundTo()`: Rounds a value to the nearest target value.
 * `rowColIndexing()`: Convert between row and column indexing of a matrix.
+* `side()`: Left/right side of a data frame or matrix.
 * `stretchMinMax()`: Rescale values to a given range.
 * `unlistRecursive()`: For any object in a list that is also a list, unlist it.
 * `unragMatrix()`: Turn a "ragged" matrix into a "ragged" vector.
