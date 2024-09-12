@@ -41,6 +41,10 @@
 #' 
 #' @export 
 pmatchSafe <- function(x, table, useFirst = FALSE, error = TRUE, ignoreCase = TRUE, nmax = length(x), ...) {
+
+	xOrder <- order(x)
+	x <- sort(x)
+
 	if (ignoreCase) {
 		
 		x <- tolower(x)
@@ -57,7 +61,9 @@ pmatchSafe <- function(x, table, useFirst = FALSE, error = TRUE, ignoreCase = TR
 		if (error) stop('Cannot find a match. Valid options include: ', paste(table, collapse=', '))
 	}
 
-	table[matches]
+	out <- table[matches]
+	out <- out[xOrder]
+	out
 
 }
 
