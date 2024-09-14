@@ -1,10 +1,10 @@
 #' Rename columns
 #'
-#' This function is short-hand for: \code{colnames(x)[colnames(x) %in% c('old_name_1', 'old_name_2')] <- c('new_name_1', 'new_name_2')}.
+#' @description Rename columns of a \code{data.frame} or \code{matrix}.
 #'
 #' @param x A \code{data.frame} or \code{matrix}.
 #' @param old Character vector with names(s), or numeric vector of the indices of the column(s) you want to rename.
-#' @param new Character vector of names.
+#' @param new Character vector of new names.
 #'
 #' @returns A \code{data.frame} or \code{matrix}.
 #'
@@ -15,6 +15,9 @@
 #' renameCol(x, c('old_y', 'old_z'), c('new_Y', 'new_Z'))
 #' renameCol(x, c(2, 3), c('new_Y', 'new_Z')) # same as above
 #' 
+#' # Long way:
+#' colnames(x)[match(c('old_y', 'old_z'), colnames(x))] <- new
+#'
 #' @export
 renameCol <- function(x, old, new) {
 
@@ -27,7 +30,7 @@ renameCol <- function(x, old, new) {
 	} else {
 		xNames <- colnames(x)
 		if (!all(old %in% xNames)) stop('All values in `old` must occur in the column names of `x`.')
-		colnames(x)[xNames %in% old] <- new
+		colnames(x)[match(old, xNames)] <- new
 	}
 
 	x

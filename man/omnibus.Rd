@@ -29,10 +29,12 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{mmode}}: Modal value(s). \cr
 		\code{\link{mergeLists}}: Merge lists, with precedence for elements of one list over another if they have the same names. \cr
 		\code{\link{notIn}} and \code{\link[omnibus:notIn]{\%notin\%}}: Opposite of \code{\%in\%}. \cr
+		\code{\link{renameCol}}: Rename a column. \cr
 		\code{\link{renumSeq}}: Renumber a sequence. \cr
 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
+		\code{\link{side}}: Left/right side of a data frame or matrix. \cr
 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
 		\code{\link{unragMatrix}}: Turn a "ragged" matrix into a "ragged" vector. \cr
