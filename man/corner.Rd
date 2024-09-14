@@ -14,7 +14,7 @@ corner(x, corner = 1, size = 5)
 \item{size}{Positive integer, number of rows and columns to return. If there are fewer columns/rows than indicated then all columns/rows are returned.}
 }
 \value{
-A matrix or data frame.
+A \code{matrix} or \code{data.frame}.
 }
 \description{
 Return a corner of a matrix or data frame (i.e., upper left, upper right, lower left, lower right).
@@ -28,5 +28,5 @@ corner(x, 3)
 corner(x, 4)
 }
 \seealso{
-\code{\link[utils]{head}}, \code{\link[utils]{tail}}
+\code{\link{side}}, \code{\link[utils]{head}}, \code{\link[utils]{tail}}
 }
