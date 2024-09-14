@@ -16,7 +16,7 @@ A list with one vector per matrix, plus 1) a vector named \code{startIndex} with
 }
 \description{
 This function turns a "ragged" matrix into a vector. Consider a case where you have a matrix that looks like:
-\cr
+\cr\cr
 1, 0,  1\cr
 2, 3,  NA\cr
 NA, 4, NA\cr
@@ -34,7 +34,6 @@ unragMatrix(x, skip = NULL)
 
 # skips rows with all "skip" values
 y <- matrix(c(1, 0, 1, NA, NA, NA, NA, 4, NA), byrow = TRUE, nrow = 3)
-unragMatrix(y)
 unragMatrix(y)
 
 }
