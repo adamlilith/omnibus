@@ -16,6 +16,7 @@
 #' renameCol(x, c(2, 3), c('new_Y', 'new_Z')) # same as above
 #' 
 #' # Long way:
+#' new <- c('new_Y', 'new_Z')
 #' colnames(x)[match(c('old_y', 'old_z'), colnames(x))] <- new
 #'
 #' @export
