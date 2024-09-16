@@ -1,4 +1,4 @@
-omnibus 1.2.14 (2024-XX-XX)
+omnibus 1.2.14 (2024-09-16)
 ===========
 o Added function `renameCol()` to shorten the process of renaming columns.  
 o Added function `side()` to extract the left/right side of a `data.frame` or `matrix`.  
