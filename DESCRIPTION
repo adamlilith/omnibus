@@ -29,6 +29,6 @@ License: GPL (>=3)
 LazyData: true
 LazyLoad: yes
 URL: https://github.com/adamlilith/omnibus
-BugReports: https://github.com/adamlilith/omnibus
+BugReports: https://github.com/adamlilith/omnibus/issues
 Encoding: UTF-8
 RoxygenNote: 7.3.1
