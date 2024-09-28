@@ -5,7 +5,7 @@ The data frames to be combined can be provided in ... or as file names in the fi
 All cells in each source data frame will have leading and trailing white spaces removed before combining.'><meta property="og:description" content='This function combines multiple "source" data frames, possibly with different column names, into a single "destination" data frame.  Usually merge will be faster and easier to implement if the columns to be merged on have the same names, and rbind will always be faster and much easier if the column names and data types match exactly.
 The key tool in this function is a "crosswalk" table (a data.frame) that tells the function which fields in each source data frame match to the final fields in the destination data frame. Values in source data frame fields can be used as-is, combined across fields, or have functions applied to them before they are put into the destination data frame. If a source data frame doe snot gave a field that matches the destination field, a default value (including NA) can be assigned to all cells for that source data frame.
 The data frames to be combined can be provided in ... or as file names in the first column of the crosswalk table. These can be either CSV files (extension ".csv"), TAB files (extension ".tab"), "Rdata" files (read using load and with a ".rda" or ".rdata" extension), or "RDS" files (read using readRDS and with a ".rds" extension). The file type will be intuited from the extension, and its case does not matter. Note that if an object in an Rdata file has the same name as an object in this function (i.e., any of the arguments plus any objects internal to the function), this may cause a conflict. To help obviate this issue, all internal objects are named with a period at the end (e.g., "crossCell." and "countDf.").
-All cells in each source data frame will have leading and trailing white spaces removed before combining.'><meta property="og:image" content="https://github.com/adamlilith/omnibus/logo.png"></head><body>
+All cells in each source data frame will have leading and trailing white spaces removed before combining.'><meta property="og:image" content="https://adamlilith.github.io/omnibus/logo.png"></head><body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
 
 
@@ -25,7 +25,7 @@ All cells in each source data frame will have leading and trailing white spaces 
 <li class="nav-item"><a class="nav-link" href="../news/index.html">Changelog</a></li>
       </ul><ul class="navbar-nav"><li class="nav-item"><form class="form-inline" role="search">
  <input class="form-control" type="search" name="search-input" id="search-input" autocomplete="off" aria-label="Search site" placeholder="Search for" data-search-index="../search.json"></form></li>
-<li class="nav-item"><a class="nav-link" href="https://github.com/adamlilith/omnibus/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
+<li class="nav-item"><a class="external-link nav-link" href="https://github.com/adamlilith/omnibus/" aria-label="GitHub"><span class="fa fab fa-github fa-lg"></span></a></li>
 <li class="nav-item dropdown">
   <button class="nav-link dropdown-toggle" type="button" id="dropdown-lightswitch" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" aria-label="Light switch"><span class="fa fa-sun"></span></button>
   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-lightswitch"><li><button class="dropdown-item" data-bs-theme-value="light"><span class="fa fa-sun"></span> Light</button></li>
@@ -40,7 +40,7 @@ All cells in each source data frame will have leading and trailing white spaces 
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>Combine data frames with different fields using a crosswalk table</h1>
-      <small class="dont-index">Source: <a href="https://github.com/adamlilith/omnibus/blob/master/R/combineDf.r"><code>R/combineDf.r</code></a></small>
+      <small class="dont-index">Source: <a href="https://github.com/adamlilith/omnibus/blob/master/R/combineDf.r" class="external-link"><code>R/combineDf.r</code></a></small>
       <div class="d-none name"><code>combineDf.Rd</code></div>
     </div>
 
