@@ -16,7 +16,7 @@
 cull <- function(...) {
 
 	# input/output
-	x <- list(...)
+	dots <- x <- list(...)
 
 	# if data frames or matrices
 	if (class(x[[1]]) %in% c('data.frame', 'matrix')) {
@@ -35,7 +35,7 @@ cull <- function(...) {
 	}
 	
 	# name elements of output same as names of x
-	inNames <- ellipseNames(...)
+	inNames <- names(dots)
 	if (length(inNames) == length(x)) names(x) <- inNames
 	
 	x
