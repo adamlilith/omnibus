@@ -4,14 +4,7 @@
 \alias{memUse}
 \title{Size of objects taking most memory use}
 \usage{
-memUse(
-  n = 10,
-  orderBy = "size",
-  decreasing = TRUE,
-  pos = 1,
-  display = TRUE,
-  ...
-)
+memUse(n = 10, orderBy = "size", decreasing = TRUE, pos = 1, ...)
 }
 \arguments{
 \item{n}{Positive integer: Maximum number of objects to display.}
@@ -20,17 +13,16 @@ memUse(
 
 \item{decreasing}{Logical, if \code{TRUE} (default), objects are displayed from largest to smallest.}
 
-\item{pos}{Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.#"}
-
-\item{display}{If \code{TRUE} (default), print a table with memUse used.}
+\item{pos}{Environment from which to obtain size of objects. Default is 1. See \code{\link{ls}}.}
 
 \item{...}{Other arguments to pass to \code{\link{ls}}.}
 }
 \value{
-Data frame (invisible).
+Data frame.
 }
 \description{
-Displays the largest objects in memUse.
+Displays the largest objects in memory
+.
 }
 \examples{
 memUse()
