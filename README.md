@@ -15,7 +15,7 @@ R Utility Functions for the 99%
 
 An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), text (e.g., flushing reports to the console in real-time); and combining data frames with different schema (copying, filling, or concatenating columns or applying functions before combining).
 
-## Installation ##
+## Installation
 As of version 1.1.2, `omnibus` is on CRAN! You can install the latest version on CRAN using:
 
 `devtools::install.padckages('omnibus')`
@@ -26,7 +26,7 @@ As of version 1.1.2, `omnibus` is on CRAN! You can install the latest version on
 
 You may need to install the `remotes` package first.
 
-## Data manipulation ##
+## Data manipulation
 * `appendLists()`: Merge lists, appending elements with the same name.
 * `bracket()`: Find values that bracket a given number.
 * `combineDf()`: Combine data frames with different schema.
