@@ -1,0 +1,75 @@
+url: https://github.com/adamlilith/omnibus
+template:
+  bootstrap: 5
+  light-switch: true
+  bootswatch: sandstone
+reference:
+- title: Data manipulation and properties
+- contents:
+  - appendLists
+  - bracket
+  - combineDf
+  - compareFloat
+  - corner
+  - convertUnits
+  - conversionFactors
+  - cull
+  - expandUnits
+  - insert
+  - insertCol
+  - maxRuns
+  - mirror
+  - mmode
+  - mergeLists
+  - notIn
+  - renameCol
+  - renumSeq
+  - rotateMatrix
+  - roundTo
+  - rowColIndexing
+  - side
+  - stretchMinMax
+  - unlistRecursive
+  - unragMatrix
+- title: Dates
+- contents:
+  - domLeap
+  - domNonLeap
+  - doyLeap
+  - doyNonLeap
+  - isLeapYear
+  - yearFromDate
+- title: Geometry
+- contents:
+  - pairDist
+  - quadArea
+- title: Handling `NA`s
+- contents:
+  - starts_with("%")
+  - isTRUENA
+  - isFALSENA
+  - naCompare
+  - naOmitMulti
+  - naRows
+- title: Data properties
+- contents:
+  - countDecDigits
+  - longRun
+  - is.wholeNumber
+  - roundedSigDigits
+  - which.pmax
+  - which.pmin
+- title: System
+- contents:
+  - dirCreate
+  - eps
+  - listFiles
+  - memUse
+- title: Text
+- contents:
+  - capIt
+  - forwardSlash
+  - pmatchSafe
+  - prefix
+  - rstring
+  - say
