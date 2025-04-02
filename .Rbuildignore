@@ -10,3 +10,4 @@
 ^docs$
 ^pkgdown$
 ^\.github$
+omnibus_workspace.code-workspace
