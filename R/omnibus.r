@@ -27,6 +27,7 @@
 #' 		\code{\link{rotateMatrix}}: Rotate a matrix. \cr
 #' 		\code{\link{roundTo}}: Rounds a value to the nearest target value. \cr
 #' 		\code{\link{rowColIndexing}}: Convert between row and column indexing of a matrix. \cr
+#' 		\code{\link{runifMatrix}}: Create a matrix of random uniform values, possibly with standardization by row or column. \cr
 #' 		\code{\link{side}}: Left/right side of a data frame or matrix. \cr
 #' 		\code{\link{stretchMinMax}}: Rescale values to a given range. \cr
 #' 		\code{\link{unlistRecursive}}: For any object in a list that is also a list, unlist it. \cr
@@ -63,6 +64,7 @@
 #' 		\code{\link{eps}}: Smallest floating point value your computer can think of. \cr
 #' 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
 #'		\code{\link{memUse}}: Display largest objects in memory. \cr
+#'		\code{\link{screenRes}}: Screen resolution. \cr
 #'
 #' @section Text:
 #' 		\code{\link{capIt}}: Capitalize first letter of a string. \cr

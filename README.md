@@ -50,6 +50,7 @@ You may need to install the `remotes` package first.
 * `rowColIndexing()`: Convert between row and column indexing of a matrix.
 * `side()`: Left/right side of a data frame or matrix.
 * `stretchMinMax()`: Rescale values to a given range.
+* `runifMatrix()`: Create a matrix of random uniform values, possibly with standardization by row or column.
 * `unlistRecursive()`: For any object in a list that is also a list, unlist it.
 * `unragMatrix()`: Turn a "ragged" matrix into a "ragged" vector.
 
@@ -85,6 +86,7 @@ You may need to install the `remotes` package first.
 * `eps()`: Smallest floating point value your computer can think of.
 * `listFiles()`: Nicer version of `list.files()`.
 * `memUse()`: Display largest objects in memory.
+* `screenRes()`: Get screen resolution in pixels.
 
 ## Text
 * `capIt()`: Capitalize first letter of a string.

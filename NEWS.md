@@ -1,8 +1,7 @@
-omnibus 1.2.14 (2024-09-16)
+omnibus 1.2.15 (2024-04-02)
 ===========
-o Added function `renameCol()` to shorten the process of renaming columns.  
-o Added function `side()` to extract the left/right side of a `data.frame` or `matrix`.  
-o Added function `unragMatrix()` to convert a ragged matrix to a vector.
+o Added function `runifMatrix()` that creates a random matrix with values standardized by row or column or all values.  
+o Added function `screenRes()` which returns the screen resolution in pixels.  
 
 omnibus 1.2.12 (2024-05-16)
 ===========

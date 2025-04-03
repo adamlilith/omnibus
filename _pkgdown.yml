@@ -27,6 +27,8 @@ reference:
   - rotateMatrix
   - roundTo
   - rowColIndexing
+  - runifMatrix
+  - screenRes
   - side
   - stretchMinMax
   - unlistRecursive
