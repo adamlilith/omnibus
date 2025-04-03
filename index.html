@@ -14,8 +14,8 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="apple-touch-icon-60x60.png">
 <script src="lightswitch.js"></script><script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
-<link href="deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Helper Tools for Managing Data, Dates, Missing Values, and Text">
 <meta name="description" content="An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), text (e.g., flushing reports to the console in real-time); and combining data frames with different schema (copying, filling, or concatenating columns or applying functions before combining).">
 <meta property="og:description" content="An assortment of helper functions for managing data (e.g., rotating values in matrices by a user-defined angle, switching from row- to column-indexing), dates (e.g., intuiting year from messy date strings), handling missing values (e.g., removing elements/rows across multiple vectors or matrices if any have an NA), text (e.g., flushing reports to the console in real-time); and combining data frames with different schema (copying, filling, or concatenating columns or applying functions before combining).">
@@ -29,7 +29,7 @@
 
     <a class="navbar-brand me-2" href="index.html">omnibus</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.2.14</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">1.2.15</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,6 +132,8 @@
 <li>
 <code><a href="reference/stretchMinMax.html">stretchMinMax()</a></code>: Rescale values to a given range.</li>
 <li>
+<code><a href="reference/runifMatrix.html">runifMatrix()</a></code>: Create a matrix of random uniform values, possibly with standardization by row or column.</li>
+<li>
 <code><a href="reference/unlistRecursive.html">unlistRecursive()</a></code>: For any object in a list that is also a list, unlist it.</li>
 <li>
 <code><a href="reference/unragMatrix.html">unragMatrix()</a></code>: Turn a “ragged” matrix into a “ragged” vector.</li>
@@ -209,6 +211,8 @@
 <code><a href="reference/listFiles.html">listFiles()</a></code>: Nicer version of <code><a href="https://rdrr.io/r/base/list.files.html" class="external-link">list.files()</a></code>.</li>
 <li>
 <code><a href="reference/memUse.html">memUse()</a></code>: Display largest objects in memory.</li>
+<li>
+<code><a href="reference/screenRes.html">screenRes()</a></code>: Get screen resolution in pixels.</li>
 </ul>
 </div>
 <div class="section level2">
