@@ -2,7 +2,6 @@ omnibus 1.2.15 (2024-04-02)
 ===========
 o Added function `runifMatrix()` that creates a random matrix with values standardized by row or column or all values.  
 o Added function `screenRes()` which returns the screen resolution in pixels.  
-o Added function `unsink()` to close all files opened with `sink()`.  
 
 omnibus 1.2.12 (2024-05-16)
 ===========

@@ -82,7 +82,6 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
 	\code{\link{memUse}}: Display largest objects in memory. \cr
 	\code{\link{screenRes}}: Screen resolution. \cr
-	\code{\link{unsink}}: Close all files opened with [sink()]. \cr
 }
 
 \section{Text}{

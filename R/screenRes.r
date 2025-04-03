@@ -6,11 +6,14 @@
 #' screenRes()
 #'
 #' @returns A list with two elements: `width` and `height`, which are the width and height of the screen in pixels.
-#' @export
+#'
+#' @aliases screenRes
+#' @rdname screenRes
+#' @export screenRes
 screenRes <- function() {
 
   	os <- Sys.info()['sysname']
-  
+
 	if (os == 'Windows') {
 
 		# res <- system('powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Size.Width, [System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Size.Height"', intern = TRUE)
@@ -23,26 +26,26 @@ screenRes <- function() {
 		# 		public static extern int GetSystemMetrics(int nIndex);
 		# 	}\';
 		# 	[ScreenRes]::GetSystemMetrics(0), [ScreenRes]::GetSystemMetrics(1)"', intern = TRUE)
-		
+
     	# res <- as.numeric(res)
 		# out <- c(width = res[2L], height = res[1L])
 
 		winVersion <- system('powershell -command "(Get-WmiObject Win32_OperatingSystem).Caption"', intern = TRUE)
 
 		if (grepl('Windows 7', winVersion) || grepl('Windows 8', winVersion)) {
-			
+
 			# Windows 7 and 8: Use wmic
 			res <- system('wmic desktopmonitor get screenheight, screenwidth', intern = TRUE)
 			res <- as.numeric(unlist(strsplit(res[2], "\\s+")))
 
 		} else {
 		# Windows 10 and 11: Use PowerShell
-		
+
 			res <- system('powershell -command "Add-Type -AssemblyName System.Windows.Forms; [System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Size.Width, [System.Windows.Forms.Screen]::PrimaryScreen.Bounds.Size.Height"', intern = TRUE)
 
 			res <- as.numeric(unlist(res))
-			
-		}		
+
+		}
 
 		out <- c(width = res[2L], height = res[1L])
 

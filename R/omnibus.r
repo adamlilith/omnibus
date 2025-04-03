@@ -65,7 +65,6 @@
 #' 		\code{\link{listFiles}}: Nicer version of \code{\link{list.files}}. \cr
 #'		\code{\link{memUse}}: Display largest objects in memory. \cr
 #'		\code{\link{screenRes}}: Screen resolution. \cr
-#'		\code{\link{unsink}}: Close all files opened with [sink()]. \cr
 #'
 #' @section Text:
 #' 		\code{\link{capIt}}: Capitalize first letter of a string. \cr

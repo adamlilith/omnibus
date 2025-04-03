@@ -87,7 +87,6 @@ You may need to install the `remotes` package first.
 * `listFiles()`: Nicer version of `list.files()`.
 * `memUse()`: Display largest objects in memory.
 * `screenRes()`: Get screen resolution in pixels.
-* `unsink()`: Close all files opened by `sink().
 
 ## Text
 * `capIt()`: Capitalize first letter of a string.
