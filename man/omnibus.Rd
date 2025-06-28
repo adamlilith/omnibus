@@ -14,6 +14,7 @@ Create an issue on \href{https://github.com/adamlilith/omnibus/issues}{GitHub}.
 \section{Data manipulation and properties}{
 
 		\code{\link{appendLists}}: Merge lists, appending elements with the same name. \cr
+		\code{\link{assignList}}: Assign values in a named list. \cr
 		\code{\link{bracket}}: Find values that bracket a given number. \cr
 		\code{\link{combineDf}}: Combine data frames with different schema. \cr
 		\code{\link{compareFloat}}: Compare values to floating-point precision. \cr

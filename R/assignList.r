@@ -1,0 +1,35 @@
+#' Assign values in a named list
+#'
+#' @description This function takes as an argument a named list and assigns values to the calling environment where the assignments have the same names as the list elements. For example, if the list is named \code{list(a = 1, b = 2)}, then \code{assignList(list)} will create an object variable named \code{a} with a value of 1 and an object \code{b} a value of 2 in the calling environment.
+#'
+#' @param x A named list of values to assign to the calling environment.
+#'
+#' @returns Returns \code{NULL} invisibly and as a side effect, creates variables in the calling environment.
+#'
+#' @examples
+#' 
+#' create a named list
+#' myList <- list(a_TEMP = 1, b_TEMP = 2, c_TEMP = 'three')
+#' ls() # What is in the environment before we assign the list?
+#' assignList(myList)
+#' ls() # What is in the environment after we assign the list?
+#' any(ls() == 'a_TEMP') # Check if the variable a_TEMP was created in the environment
+#' any(ls() == 'b_TEMP') # Check if the variable b_TEMP was created in the environment
+#' any(ls() == 'c_TEMP') # Check if the variable c_TEMP was created in the environment
+#' rm(a_TEMP, b_TEMP, c_TEMP) # Clean up the environment
+#'
+#' @export assignList
+assignList <- function(x) {
+
+	# is x is a named list?
+	if (!is.list(x) || is.null(names(x))) {
+		stop('Input must be a named list.')
+	}
+
+	for (name in names(x)) {
+		assign(name, x[[name]], envir = parent.frame())
+	}
+
+	invisible(NULL)
+
+}

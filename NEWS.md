@@ -1,3 +1,7 @@
+omnibus 1.2.16 (2024-04-XX)
+===========
+o Added function `assignList()` which creates objects in the calling environment with the same name as the list elements.  
+
 omnibus 1.2.15 (2024-04-02)
 ===========
 o Added function `runifMatrix()` that creates a random matrix with values standardized by row or column or all values.  

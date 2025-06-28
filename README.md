@@ -28,6 +28,7 @@ You may need to install the `remotes` package first.
 
 ## Data manipulation
 * `appendLists()`: Merge lists, appending elements with the same name.
+* `assignList()`: Assign values in a named list.
 * `bracket()`: Find values that bracket a given number.
 * `combineDf()`: Combine data frames with different schema.
 * `compareFloat()`: Compare two values to within floating-point precision.
